@@ -8,6 +8,9 @@ public class BaseActor : MonoBehaviour
 	protected int maxLife = 100;
 	
 	public int currentLife = 100;
-	
-	public Animator animator;
+
+	public virtual void Damage(int pDamage)
+	{
+
+	}
 }
