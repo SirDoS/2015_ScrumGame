@@ -16,6 +16,7 @@ public class GirlController : BaseChar
 		stateMachine = new SKMecanimStateMachine<GirlController>(animatorController.Animator, this, new Girl_IdleState());
 		stateMachine.addState(new Girl_IdleState());
 		stateMachine.addState(new Girl_RunState());
+		stateMachine.addState(new Girl_JumpState());
 
 		stateMachine.onStateChanged += () => {
 			Debug.Log(stateMachine.currentState.ToString());

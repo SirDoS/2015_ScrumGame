@@ -20,6 +20,7 @@ public class Girl_RunState : SKMecanimState<GirlController>
 
 		if(horizontal == 0.0f)
 			_machine.changeState<Girl_IdleState>();
+		return;
 	}
 
 	#region implemented abstract members of SKMecanimState
