@@ -25,6 +25,9 @@ public class Girl_LandState : SKMecanimState<GirlController>
 		}else if(vertical == 0.0f && horizontal != 0){
 			_machine.changeState<Girl_RunState>();
 			return;
+		}else if(vertical > 0){
+			_machine.changeState<Girl_JumpState>();
+			return;
 		}
 
 	}

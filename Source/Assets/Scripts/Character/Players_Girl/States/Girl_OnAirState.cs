@@ -7,16 +7,13 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 	public override void begin ()
 	{
 		base.begin ();
-		
-		//Tocar animacao IDLE.
-		//Parar o personagem.
 	}
 	
 	public override void reason ()
 	{
 		base.reason ();
 
-		float horizontal = Input.GetAxis("Horizontal");
+		/*float horizontal = Input.GetAxis("Horizontal");*/
 		float vertical = Input.GetAxis("Vertical");
 
 		if(vertical == 0.0f){

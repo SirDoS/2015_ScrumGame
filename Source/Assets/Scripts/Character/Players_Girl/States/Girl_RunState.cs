@@ -17,10 +17,15 @@ public class Girl_RunState : SKMecanimState<GirlController>
 		base.reason ();
 
 		float horizontal = Input.GetAxis("Horizontal");
+		float vertical = Input.GetAxis("Vertical");
 
-		if(horizontal == 0.0f)
+		if(horizontal == 0.0f){
 			_machine.changeState<Girl_IdleState>();
 		return;
+		}
+		if(vertical > 0){
+			_machine.changeState<Girl_JumpState>();
+		}
 	}
 
 	#region implemented abstract members of SKMecanimState
@@ -29,8 +34,9 @@ public class Girl_RunState : SKMecanimState<GirlController>
 		float horizontal = Input.GetAxis("Horizontal");
 
 		Vector3 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.SetVelocity(new Vector3(0, currentVelocity.y, 
-		                                                   horizontal * _context.horizontalMovementSpeed));
+		_context.physicsController.SetVelocity(new Vector3(horizontal * _context.horizontalMovementSpeed
+		                                                   , currentVelocity.y, 
+		                                                   0));
 	}
 	#endregion
 

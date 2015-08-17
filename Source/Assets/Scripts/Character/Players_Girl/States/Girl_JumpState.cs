@@ -4,11 +4,15 @@ using Prime31.StateKit;
 
 public class Girl_JumpState : SKMecanimState<GirlController>
 {
-	public bool jumped = false;
+	//public bool jumped = false;
 	public override void begin ()
 	{
 		base.begin ();
 		
+		Vector3 currentVelocity = _context.physicsController.GetVelocity();
+		_context.physicsController.SetVelocity(new Vector3(currentVelocity.x,
+		                                                   _context.girlJumpForce,
+		                                                   0));
 		//Tocar animacao JUMP.
 
 	}
@@ -16,12 +20,11 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 	public override void reason(){
 		base.reason ();
 
-		float vertical = Input.GetAxis("Vertical");
-		float horizontal = Input.GetAxis("Horizontal");
+		/*float vertical = Input.GetAxis("Vertical");
+		float horizontal = Input.GetAxis("Horizontal");*/
 
 		//Independente de qualquer condicao, passara para OnAirState
-		if(jumped)
-		_machine.changeState<Girl_OnAirState>();
+			_machine.changeState<Girl_OnAirState>();
 
 
 	}
@@ -29,13 +32,6 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 	#region implemented abstract members of SKMecanimState
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{
-		float vertical = Input.GetAxis("Vertical");
-		
-		Vector3 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.SetVelocity(new Vector3(0,
-		                                                   vertical * _context.verticalMovementSpeed,
-		                                                   currentVelocity.z));
-		jumped = true;
 	}
 	#endregion
 

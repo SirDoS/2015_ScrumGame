@@ -20,9 +20,9 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_OnAirState());
 		stateMachine.addState(new Girl_LandState());
 
-		stateMachine.onStateChanged += () => {
+		/*stateMachine.onStateChanged += () => {
 			Debug.Log(stateMachine.currentState.ToString());
-		};
+		};*/
 
 	}
 	
