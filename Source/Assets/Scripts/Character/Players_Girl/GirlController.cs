@@ -17,6 +17,8 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_IdleState());
 		stateMachine.addState(new Girl_RunState());
 		stateMachine.addState(new Girl_JumpState());
+		stateMachine.addState(new Girl_OnAirState());
+		stateMachine.addState(new Girl_LandState());
 
 		stateMachine.onStateChanged += () => {
 			Debug.Log(stateMachine.currentState.ToString());
