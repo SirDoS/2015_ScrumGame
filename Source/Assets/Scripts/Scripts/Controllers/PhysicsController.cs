@@ -1,20 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class PhysicsController : MonoBehaviour {
 
 	public bool isGrounded;
 
-	private Rigidbody cachedRigidbody;
+	private Rigidbody2D cachedRigidbody;
 
 	void Awake(){
 		if(cachedRigidbody == null){
-			cachedRigidbody = GetComponent<Rigidbody>();
+			cachedRigidbody = GetComponent<Rigidbody2D>();
 		}
 	}
 
-	public Rigidbody CachedRigidbody {
+	public Rigidbody2D CachedRigidbody {
 		get {
 			return cachedRigidbody;
 		}
@@ -27,15 +27,15 @@ public class PhysicsController : MonoBehaviour {
 		return true;
 	}
 
-	public void SetVelocity(Vector3 pVeloctiy){
+	public void SetVelocity(Vector2 pVeloctiy){
 		cachedRigidbody.velocity = pVeloctiy;
 	}
-	public Vector3 GetVelocity(){
+	public Vector2 GetVelocity(){
 		return cachedRigidbody.velocity;
 	}
 
-	public void AddForce(Vector3 pDirection, float pForce, ForceMode pMode = ForceMode.Force){
-		cachedRigidbody.AddForce(pDirection * pForce, pMode);
+	public void AddForce(Vector2 pDirection, float pForce){
+		cachedRigidbody.AddForce(pDirection * pForce);
 	}
 
 }

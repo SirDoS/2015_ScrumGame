@@ -9,10 +9,9 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 	{
 		base.begin ();
 		
-		Vector3 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.SetVelocity(new Vector3(currentVelocity.x,
-		                                                   _context.girlJumpForce,
-		                                                   0));
+		Vector2 currentVelocity = _context.physicsController.GetVelocity();
+		_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
+		                                                   _context.girlJumpForce));
 		//Tocar animacao JUMP.
 
 	}

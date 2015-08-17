@@ -13,7 +13,8 @@ public class GirlController : BaseChar
 		currentLife = maxLife;
 		isAlive = true;
 
-		stateMachine = new SKMecanimStateMachine<GirlController>(animatorController.Animator, this, new Girl_IdleState());
+		stateMachine = new SKMecanimStateMachine<GirlController>(animatorController.Animator,
+		                                                         this, new Girl_IdleState());
 		stateMachine.addState(new Girl_IdleState());
 		stateMachine.addState(new Girl_RunState());
 		stateMachine.addState(new Girl_JumpState());

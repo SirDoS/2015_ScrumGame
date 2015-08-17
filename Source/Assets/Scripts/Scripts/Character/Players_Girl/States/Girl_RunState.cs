@@ -31,12 +31,16 @@ public class Girl_RunState : SKMecanimState<GirlController>
 	#region implemented abstract members of SKMecanimState
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{
-		float horizontal = Input.GetAxis("Horizontal");
+	/*	float horizontal = Input.GetAxis("Horizontal");
 
 		Vector3 currentVelocity = _context.physicsController.GetVelocity();
 		_context.physicsController.SetVelocity(new Vector3(horizontal * _context.horizontalMovementSpeed
 		                                                   , currentVelocity.y, 
-		                                                   0));
+		                                                   0));*/
+
+		Vector2 currentVelocity = _context.physicsController.GetVelocity();
+		_context.physicsController.SetVelocity(new Vector2(_context.horizontalMovementSpeed,
+		                                                   currentVelocity.y));
 	}
 	#endregion
 
