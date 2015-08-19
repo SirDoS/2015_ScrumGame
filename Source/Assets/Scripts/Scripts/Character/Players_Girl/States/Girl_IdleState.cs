@@ -16,16 +16,24 @@ public class Girl_IdleState : SKMecanimState<GirlController>
 	{
 		base.reason ();
 
-		float horizontal = Input.GetAxis("Horizontal");
-		float vertical = Input.GetAxis("Vertical");
-
-		if(horizontal != 0.0f)
+		if(_context.physicsController.IsGrounded())
 		{
-			_machine.changeState<Girl_RunState>();
-			return;
+			float horizontal = Input.GetAxis("Horizontal");
+			//float vertical = Input.GetAxis("Vertical");
+			
+			if(horizontal != 0.0f)
+			{
+				_machine.changeState<Girl_RunState>();
+				return;
+			}
+			if(Input.GetKeyDown(KeyCode.Space)){
+				_machine.changeState<Girl_JumpState>();
+				return;
+			}
 		}
-		if(vertical > 0.0f){
-			_machine.changeState<Girl_JumpState>();
+		else
+		{
+			_machine.changeState<Girl_OnAirState>();
 			return;
 		}
 	}

@@ -11,8 +11,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 	public override void reason ()
 	{
 		base.reason ();
-		
-		float horizontal = Input.GetAxis("Horizontal");
+
 		float vertical = Input.GetAxis("Vertical");
 
 		if(vertical == 0.0f){

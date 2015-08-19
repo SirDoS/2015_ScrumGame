@@ -7,20 +7,21 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 	public override void begin ()
 	{
 		base.begin ();
-
-		float vertical = Input.GetAxis("Vertical");
-/*		float horizontal = Input.GetAxis("Horizontal");*/
-
-		if(vertical <0.5f){
-			_machine.changeState<Girl_LandState>();
-			return;
-		}/*if(horizontal > 0){
-
-		}*/
 	}
 	
 	public override void reason ()
 	{
+		float horizontal = Input.GetAxis("Horizontal");
+
+		if(_context.physicsController.IsGrounded()){
+			_machine.changeState<Girl_IdleState>();
+			return;
+		}
+		if (horizontal != 0.0f){
+			Vector2 currentVelocity = _context.physicsController.GetVelocity();
+			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
+			                                                   currentVelocity.y));
+		}
 		base.reason ();
 	}
 	

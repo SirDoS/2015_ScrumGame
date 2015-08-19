@@ -6,11 +6,19 @@ public class PhysicsController : MonoBehaviour {
 
 	public bool isGrounded;
 
+	public float skinWidth = 0.05f;
+
+	public LayerMask groundLayers;
+
 	private Rigidbody2D cachedRigidbody;
+	private Collider2D cachedCollider;
 
 	void Awake(){
 		if(cachedRigidbody == null){
 			cachedRigidbody = GetComponent<Rigidbody2D>();
+		}
+		if(cachedCollider == null){
+			cachedCollider = GetComponent<Collider2D>();
 		}
 	}
 
@@ -24,8 +32,13 @@ public class PhysicsController : MonoBehaviour {
 	}
 
 	public bool IsGrounded() {
-		RaycastHit2D hit;
-		return true;
+		RaycastHit2D hit = Physics2D.Raycast(cachedRigidbody.position, Vector2.down,
+		                                     (cachedCollider.bounds.size.y/2) + skinWidth, groundLayers.value);
+		if(hit.transform != null)
+			return true;
+		else
+			return false;
+
 	}
 
 	public void SetVelocity(Vector2 pVeloctiy){

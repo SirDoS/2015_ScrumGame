@@ -19,10 +19,10 @@ public class Girl_LandState : SKMecanimState<GirlController>
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
 
-		if(vertical == 0.0f && horizontal == 0.0f){
+		if(vertical < 0.3f && horizontal == 0.0f){
 			_machine.changeState<Girl_IdleState>();
 			return;
-		}if(vertical == 0.0f && horizontal != 0){
+		}if(vertical < 0.3f && horizontal != 0){
 			_machine.changeState<Girl_RunState>();
 			return;
 		}/*if(vertical > 0){
@@ -31,9 +31,7 @@ public class Girl_LandState : SKMecanimState<GirlController>
 		}*/
 
 	}
-	
-	
-	
+
 	#region implemented abstract members of SKMecanimState
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{

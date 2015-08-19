@@ -15,17 +15,23 @@ public class Girl_RunState : SKMecanimState<GirlController>
 	public override void reason ()
 	{
 		base.reason ();
+		if(_context.physicsController.IsGrounded()){
 
-		float horizontal = Input.GetAxis("Horizontal");
-		float vertical = Input.GetAxis("Vertical");
+			float horizontal = Input.GetAxis("Horizontal");
 
-		if(horizontal == 0.0f){
-			_machine.changeState<Girl_IdleState>();
-		return;
+			if(horizontal == 0.0f){
+				_machine.changeState<Girl_IdleState>();
+				return;
+			}
+			if(Input.GetKeyDown(KeyCode.Space)){
+				_machine.changeState<Girl_JumpState>();
+				return;
+			}
+		}else{
+			_machine.changeState<Girl_OnAirState>();
+			return;
 		}
-		if(vertical > 0){
-			_machine.changeState<Girl_JumpState>();
-		}
+
 	}
 
 	#region implemented abstract members of SKMecanimState

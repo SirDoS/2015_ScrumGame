@@ -21,9 +21,9 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_OnAirState());
 		stateMachine.addState(new Girl_LandState());
 
-		/*stateMachine.onStateChanged += () => {
+		stateMachine.onStateChanged += () => {
 			Debug.Log(stateMachine.currentState.ToString());
-		};*/
+		};
 
 	}
 	
@@ -41,5 +41,13 @@ public class GirlController : BaseChar
 //		if(Input.GetKeyDown(KeyCode.Space)){
 //			physicsController.AddForce(new Vector3(0.0f, 1.0f, 0.0f), girlJumpForce);
 //		}
+	}
+
+	void OnGUI()
+	{
+		if(stateMachine != null)
+		{
+			GUILayout.Box(stateMachine.currentState.ToString());
+		}
 	}
 }
