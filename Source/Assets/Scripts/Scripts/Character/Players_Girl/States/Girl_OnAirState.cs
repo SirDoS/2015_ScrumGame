@@ -9,14 +9,14 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 		base.begin ();
 
 		float vertical = Input.GetAxis("Vertical");
-		float horizontal = Input.GetAxis("Horizontal");
+/*		float horizontal = Input.GetAxis("Horizontal");*/
 
-		if(vertical == 0.0f){
+		if(vertical <0.5f){
 			_machine.changeState<Girl_LandState>();
 			return;
-		}if(horizontal > ){
+		}/*if(horizontal > 0){
 
-		}
+		}*/
 	}
 	
 	public override void reason ()

@@ -10,8 +10,8 @@ public class Girl_RunState : SKMecanimState<GirlController>
 
 		//Tocar animacao IDLE.
 		//Parar o personagem.
+ 		
 	}
-
 	public override void reason ()
 	{
 		base.reason ();

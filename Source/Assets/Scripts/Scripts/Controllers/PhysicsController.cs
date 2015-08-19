@@ -24,7 +24,7 @@ public class PhysicsController : MonoBehaviour {
 	}
 
 	public bool IsGrounded() {
-		return true;
+		RaycastHit2D hit;
 	}
 
 	public void SetVelocity(Vector2 pVeloctiy){
