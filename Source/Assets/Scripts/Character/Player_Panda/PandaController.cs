@@ -18,10 +18,22 @@ public class PandaController : BaseChar {
 		pandaStateMachine.addState(new Panda_JumpState());
 		pandaStateMachine.addState(new Panda_OnAirState());
 		pandaStateMachine.addState(new Panda_LandState());
+
+		pandaStateMachine.onStateChanged += () => {
+			Debug.Log(pandaStateMachine.currentState.ToString());
+		};
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		pandaStateMachine.update(Time.deltaTime);
+	}
+
+	void OnGUI()
+	{
+		if(pandaStateMachine != null)
+		{
+			GUILayout.Box(pandaStateMachine.currentState.ToString());
+		}
 	}
 }

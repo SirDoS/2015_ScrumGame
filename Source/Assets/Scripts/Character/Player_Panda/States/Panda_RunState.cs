@@ -8,22 +8,33 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 	{
 		base.begin ();
 		
-		//Tocar animacao Run.\
+		_machine.animator.Play("Run");
 	}
 	
 	public override void reason ()
 	{
 		base.reason ();
 		
-		float horizontal = Input.GetAxis("Horizontal");
-		float vertical = Input.GetAxis("Vertical");
-		
-		if(horizontal == 0.0f){
-			_machine.changeState<Panda_IdleState>();
+		if(_context.physicsController.IsGrounded()){
+			
+			float horizontal = Input.GetAxis("Horizontal");
+			
+			if(horizontal == 0.0f){
+				_machine.changeState<Panda_IdleState>();
+				return;
+			}
+			if(horizontal < 0.0f){
+				_context.transform.localScale = new Vector3(-1,1,1);
+			}else if (horizontal > 0.0f){
+				_context.transform.localScale = new Vector3(1,1,1);
+			}
+			if(Input.GetKeyDown(KeyCode.Space)){
+				_machine.changeState<Panda_JumpState>();
+				return;
+			}
+		}else{
+			_machine.changeState<Panda_OnAirState>();
 			return;
-		}
-		if(vertical > 0){
-			_machine.changeState<Panda_JumpState>();
 		}
 	}
 	
