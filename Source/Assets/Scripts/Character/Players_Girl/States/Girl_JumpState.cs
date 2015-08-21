@@ -12,14 +12,14 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 		_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
 		                                                   _context.girlJumpForce));
 
-		_machine.changeState<Girl_OnAirState>();
-
+		//_machine.animator.Play("Jump");
 		//Tocar animacao JUMP.
 
 	}
 
 	public override void reason(){
 		base.reason ();
+		_machine.changeState<Girl_OnAirState>();
 	}
 
 	#region implemented abstract members of SKMecanimState

@@ -8,9 +8,8 @@ public class Girl_RunState : SKMecanimState<GirlController>
 	{
 		base.begin ();
 
-		//Tocar animacao IDLE.
-		//Parar o personagem.
- 		
+		_machine.animator.Play("Run");
+
 	}
 	public override void reason ()
 	{

@@ -4,12 +4,20 @@ using Prime31.StateKit;
 
 public class Girl_IdleState : SKMecanimState<GirlController>
 {
+//	bool landed = false;
+
 	public override void begin ()
 	{
 		base.begin ();
 
-		//Tocar animacao IDLE.
-		//Parar o personagem.
+//		if(!landed){
+//			landed = true;
+//			_context.physicsController.SetVelocity(new Vector2(0.07f, 0.0f));
+//		}else{
+//			_context.physicsController.SetVelocity(Vector2.zero);
+//		}
+
+		_machine.animator.Play("Idle");
 	}
 
 	public override void reason ()
@@ -25,10 +33,15 @@ public class Girl_IdleState : SKMecanimState<GirlController>
 				_machine.changeState<Girl_RunState>();
 				return;
 			}
+//			else
+//				
+
 			if(Input.GetKeyDown(KeyCode.Space)){
 				_machine.changeState<Girl_JumpState>();
 				return;
 			}
+
+			_context.physicsController.SetVelocity(Vector2.zero);
 		}
 		else
 		{

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c0ecbeb2e6e3a4552b9d3b8f3c10c693
-timeCreated: 1439815437
+timeCreated: 1440158904
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -79,18 +79,18 @@ TextureImporter:
         y: 181
         width: 33
         height: 59
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_1
       rect:
         serializedVersion: 2
         x: 33
-        y: 180
+        y: 181
         width: 33
-        height: 60
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 59
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_2
       rect:
@@ -99,7 +99,7 @@ TextureImporter:
         y: 181
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_3
@@ -109,8 +109,8 @@ TextureImporter:
         y: 181
         width: 33
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_4
       rect:
@@ -119,8 +119,8 @@ TextureImporter:
         y: 181
         width: 33
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_5
       rect:
@@ -129,7 +129,7 @@ TextureImporter:
         y: 122
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_6
@@ -139,7 +139,7 @@ TextureImporter:
         y: 122
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_7
@@ -149,7 +149,7 @@ TextureImporter:
         y: 122
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_8
@@ -159,7 +159,7 @@ TextureImporter:
         y: 122
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_9
@@ -169,7 +169,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_10
@@ -179,7 +179,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_11
@@ -189,7 +189,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_12
@@ -199,7 +199,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_13
@@ -209,7 +209,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_14
@@ -219,7 +219,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_15
@@ -229,7 +229,7 @@ TextureImporter:
         y: 63
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_16
@@ -239,7 +239,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_17
@@ -249,7 +249,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_18
@@ -259,7 +259,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_19
@@ -269,7 +269,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_20
@@ -279,7 +279,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_21
@@ -289,7 +289,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grill_22
@@ -299,7 +299,7 @@ TextureImporter:
         y: 4
         width: 33
         height: 59
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 

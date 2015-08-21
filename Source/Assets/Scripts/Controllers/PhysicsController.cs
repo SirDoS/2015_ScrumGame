@@ -47,8 +47,8 @@ public class PhysicsController : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(groundCheckers[i].position, Vector2.down,
 			                                     (cachedCollider.bounds.size.y/2) + skinWidth, groundLayers.value);
 
-			//Debug.DrawRay(groundCheckers[i].position, Vector2.down * ((cachedCollider.bounds.size.y/2) + skinWidth), 
-			//Color.red, 0.50f);
+			Debug.DrawRay(groundCheckers[i].position, Vector2.down * ((cachedCollider.bounds.size.y/2) + skinWidth), 
+			Color.red, 0.50f);
 
 			if(hit.transform != null)
 				return true;
