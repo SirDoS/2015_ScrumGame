@@ -13,7 +13,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 	{
 		base.reason ();
 
-		float horizontal = Input.GetAxis("Horizontal");
+		float horizontal = Input.GetAxis("Horizontal2");
 		
 		if(_context.physicsController.IsGrounded()){
 			_machine.changeState<Panda_IdleState>();

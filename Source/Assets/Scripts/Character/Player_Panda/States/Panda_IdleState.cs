@@ -27,14 +27,14 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 		
 		if(_context.physicsController.IsGrounded())
 		{
-			float horizontal = Input.GetAxis("Horizontal");
+			float horizontal = Input.GetAxis("Horizontal2");
 			
 			if(horizontal != 0.0f)
 			{
 				_machine.changeState<Panda_RunState>();
 				return;
 			}
-			if(Input.GetKeyDown(KeyCode.Space)){
+			if(Input.GetKeyDown(KeyCode.UpArrow)){
 				_machine.changeState<Panda_JumpState>();
 				return;
 			}

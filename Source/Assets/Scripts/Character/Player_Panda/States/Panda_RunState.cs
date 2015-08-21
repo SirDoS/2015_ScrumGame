@@ -17,7 +17,7 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 		
 		if(_context.physicsController.IsGrounded()){
 			
-			float horizontal = Input.GetAxis("Horizontal");
+			float horizontal = Input.GetAxis("Horizontal2");
 			
 			if(horizontal == 0.0f){
 				_machine.changeState<Panda_IdleState>();
@@ -28,7 +28,7 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 			}else if (horizontal > 0.0f){
 				_context.transform.localScale = new Vector3(1,1,1);
 			}
-			if(Input.GetKeyDown(KeyCode.Space)){
+			if(Input.GetKeyDown(KeyCode.UpArrow)){
 				_machine.changeState<Panda_JumpState>();
 				return;
 			}
@@ -41,7 +41,7 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 	#region implemented abstract members of SKMecanimState
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{
-		float horizontal = Input.GetAxis("Horizontal");
+		float horizontal = Input.GetAxis("Horizontal2");
 		
 		Vector2 currentVelocity = _context.physicsController.GetVelocity();
 		_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed
