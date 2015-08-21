@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PhysicsController : MonoBehaviour {
 
+	public Transform[] groundCheckers;
+
 	public bool isGrounded;
 
 	public float skinWidth = 0.05f;
@@ -22,6 +24,15 @@ public class PhysicsController : MonoBehaviour {
 		}
 	}
 
+	public Collider2D CachedCollider {
+		get {
+			return cachedCollider;
+		}
+		set {
+			cachedCollider = value;
+		}
+	}
+
 	public Rigidbody2D CachedRigidbody {
 		get {
 			return cachedRigidbody;
@@ -32,12 +43,18 @@ public class PhysicsController : MonoBehaviour {
 	}
 
 	public bool IsGrounded() {
-		RaycastHit2D hit = Physics2D.Raycast(cachedRigidbody.position, Vector2.down,
-		                                     (cachedCollider.bounds.size.y/2) + skinWidth, groundLayers.value);
-		if(hit.transform != null)
-			return true;
-		else
-			return false;
+		for(int i = 0; i < groundCheckers.Length; i++){
+			RaycastHit2D hit = Physics2D.Raycast(groundCheckers[i].position, Vector2.down,
+			                                     (cachedCollider.bounds.size.y/2) + skinWidth, groundLayers.value);
+
+			//Debug.DrawRay(groundCheckers[i].position, Vector2.down * ((cachedCollider.bounds.size.y/2) + skinWidth), 
+			//Color.red, 0.50f);
+
+			if(hit.transform != null)
+				return true;
+		}
+
+		return false;
 
 	}
 

@@ -4,7 +4,6 @@ using Prime31.StateKit;
 
 public class Panda_JumpState : SKMecanimState<PandaController> {
 
-	//public bool jumped = false;
 	public override void begin ()
 	{
 		base.begin ();
@@ -12,18 +11,17 @@ public class Panda_JumpState : SKMecanimState<PandaController> {
 		Vector2 currentVelocity = _context.physicsController.GetVelocity();
 		_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
 		                                                   _context.pandaJumpForce));
-		//Tocar animacao JUMP.
+		_machine.animator.Play("Jump");
+
 		
 	}
 	
 	public override void reason(){
 		base.reason ();
-		
+		_machine.changeState<Panda_OnAirState>();
 		/*float vertical = Input.GetAxis("Vertical");
 		float horizontal = Input.GetAxis("Horizontal");*/
-		
-		//Independente de qualquer condicao, passara para OnAirState
-		_machine.changeState<Panda_OnAirState>();
+
 		
 		
 	}

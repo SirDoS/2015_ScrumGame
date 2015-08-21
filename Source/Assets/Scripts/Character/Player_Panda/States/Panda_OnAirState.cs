@@ -6,17 +6,23 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 	public override void begin ()
 	{
 		base.begin ();
+		_machine.animator.Play("OnAir");
 	}
 	
 	public override void reason ()
 	{
 		base.reason ();
 
-		float vertical = Input.GetAxis("Vertical");
-
-		if(vertical == 0.0f){
-			_machine.changeState<Panda_LandState>();
+		float horizontal = Input.GetAxis("Horizontal");
+		
+		if(_context.physicsController.IsGrounded()){
+			_machine.changeState<Panda_IdleState>();
 			return;
+		}
+		if (horizontal != 0.0f){
+			Vector2 currentVelocity = _context.physicsController.GetVelocity();
+			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
+			                                                   currentVelocity.y));
 		}
 	}
 	

@@ -6,26 +6,42 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 
 	public override void begin ()
 	{
+		bool landed = false;
 		base.begin ();
-		
-		//Tocar animacao IDLE.
-		//Parar o personagem.
+
+		if(!landed){
+			landed =true;
+			_context.physicsController.SetVelocity(new Vector2(0.05f, 0.0f));
+
+		}if(landed){
+			_context.physicsController.SetVelocity(Vector2.zero);
+		}
+
+		_machine.animator.Play("Idle");
+	//	_context.physicsController.SetVelocity(Vector2.zero);
 	}
 
 	public override void reason ()
 	{
 		base.reason ();
 		
-		float horizontal = Input.GetAxis("Horizontal");
-		float vertical = Input.GetAxis("Vertical");
-		
-		if(horizontal != 0.0f)
+		if(_context.physicsController.IsGrounded())
 		{
-			_machine.changeState<Panda_RunState>();
-			return;
+			float horizontal = Input.GetAxis("Horizontal");
+			
+			if(horizontal != 0.0f)
+			{
+				_machine.changeState<Panda_RunState>();
+				return;
+			}
+			if(Input.GetKeyDown(KeyCode.Space)){
+				_machine.changeState<Panda_JumpState>();
+				return;
+			}
 		}
-		if(vertical > 0.0f){
-			_machine.changeState<Panda_JumpState>();
+		else
+		{
+			_machine.changeState<Panda_OnAirState>();
 			return;
 		}
 	}
