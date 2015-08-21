@@ -19,8 +19,7 @@ public class Girl_IdleState : SKMecanimState<GirlController>
 		if(_context.physicsController.IsGrounded())
 		{
 			float horizontal = Input.GetAxis("Horizontal");
-			//float vertical = Input.GetAxis("Vertical");
-			
+
 			if(horizontal != 0.0f)
 			{
 				_machine.changeState<Girl_RunState>();
