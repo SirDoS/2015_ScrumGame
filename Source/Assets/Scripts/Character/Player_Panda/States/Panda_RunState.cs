@@ -23,11 +23,13 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 				_machine.changeState<Panda_IdleState>();
 				return;
 			}
+
 			if(horizontal < 0.0f){
 				_context.transform.localScale = new Vector3(-1,1,1);
 			}else if (horizontal > 0.0f){
 				_context.transform.localScale = new Vector3(1,1,1);
 			}
+
 			if(Input.GetKeyDown(KeyCode.UpArrow)){
 				_machine.changeState<Panda_JumpState>();
 				return;
