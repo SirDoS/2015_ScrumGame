@@ -23,6 +23,11 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 			Vector2 currentVelocity = _context.physicsController.GetVelocity();
 			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
 			                                                   currentVelocity.y));
+			if(horizontal < 0.0f){
+				_context.transform.localScale = new Vector3(-1,1,1);
+			}else if (horizontal > 0.0f){
+				_context.transform.localScale = new Vector3(1,1,1);
+			}
 		}
 		base.reason ();
 	}

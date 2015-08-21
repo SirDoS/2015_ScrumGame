@@ -22,6 +22,11 @@ public class Girl_RunState : SKMecanimState<GirlController>
 				_machine.changeState<Girl_IdleState>();
 				return;
 			}
+			if(horizontal < 0.0f){
+					_context.transform.localScale = new Vector3(-1,1,1);
+			}else if (horizontal > 0.0f){
+					_context.transform.localScale = new Vector3(1,1,1);
+			}
 			if(Input.GetKeyDown(KeyCode.Space)){
 				_machine.changeState<Girl_JumpState>();
 				return;
