@@ -24,11 +24,15 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
 			                                                   currentVelocity.y));
 
+			Vector3 currentScale = _context.transform.localScale;
+			
 			if(horizontal < 0.0f){
-				_context.transform.localScale = new Vector3(-1,1,1);
+				currentScale.x = Mathf.Abs(currentScale.x) * -1;
 			}else if (horizontal > 0.0f){
-				_context.transform.localScale = new Vector3(1,1,1);
+				currentScale.x = Mathf.Abs(currentScale.x) * 1;
 			}
+			
+			_context.transform.localScale = currentScale;
 		}
 	}
 	
