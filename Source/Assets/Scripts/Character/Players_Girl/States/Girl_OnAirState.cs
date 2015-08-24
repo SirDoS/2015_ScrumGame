@@ -27,11 +27,15 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 			
 			if(horizontal < 0.0f){
 				currentScale.x = Mathf.Abs(currentScale.x) * -1;
-			}else if (horizontal > 0.0f){
+			}else if(horizontal > 0.0f){
 				currentScale.x = Mathf.Abs(currentScale.x) * 1;
 			}
-			
 			_context.transform.localScale = currentScale;
+
+			if(Input.GetKeyDown(KeyCode.F)){
+				_machine.changeState<Girl_AttackOnAirState>();
+				return;
+			}
 		}
 		base.reason ();
 	}
