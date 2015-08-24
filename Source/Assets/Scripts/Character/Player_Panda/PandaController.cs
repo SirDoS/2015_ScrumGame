@@ -18,6 +18,9 @@ public class PandaController : BaseChar {
 		pandaStateMachine.addState(new Panda_JumpState());
 		pandaStateMachine.addState(new Panda_OnAirState());
 		pandaStateMachine.addState(new Panda_LandState());
+		pandaStateMachine.addState(new Panda_AttackOnIdleState());
+		pandaStateMachine.addState(new Panda_AttackOnRunState());
+		pandaStateMachine.addState(new Panda_AttackOnAirState());
 
 		pandaStateMachine.onStateChanged += () => {
 			Debug.Log(pandaStateMachine.currentState.ToString());

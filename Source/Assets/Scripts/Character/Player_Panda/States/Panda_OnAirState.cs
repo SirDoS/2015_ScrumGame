@@ -6,6 +6,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 	public override void begin ()
 	{
 		base.begin ();
+
 		_machine.animator.Play("OnAir");
 	}
 	
@@ -14,11 +15,21 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 		base.reason ();
 
 		float horizontal = Input.GetAxis("Horizontal2");
-		
-		if(_context.physicsController.IsGrounded()){
-			_machine.changeState<Panda_IdleState>();
-			return;
+
+		if(_context.physicsController.IsGrounded())
+		{
+			if(_context.physicsController.GetVelocity().y < 0.5f)
+			{
+				if(horizontal == 0){
+					_machine.changeState<Panda_IdleState>();
+					return;
+				} else if (horizontal != 0){
+					_machine.changeState<Panda_RunState>();
+					return;
+				}
+			}
 		}
+
 		if (horizontal != 0.0f){
 			Vector2 currentVelocity = _context.physicsController.GetVelocity();
 			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
@@ -34,8 +45,11 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 			
 			_context.transform.localScale = currentScale;
 		}
+
+		if(Input.GetKeyDown(KeyCode.Slash)){
+			_machine.changeState<Panda_AttackOnAirState>();
+		}
 	}
-	
 	
 	
 	#region implemented abstract members of SKMecanimState

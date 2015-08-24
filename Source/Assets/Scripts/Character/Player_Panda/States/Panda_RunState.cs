@@ -7,6 +7,11 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 	public override void begin ()
 	{
 		base.begin ();
+
+		/*if(_context.physicsController.GetVelocity().y > 0){
+			_machine.changeState<Panda_OnAirState>();
+			return;
+		}*/
 		
 		_machine.animator.Play("Run");
 	}
@@ -29,13 +34,18 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 			if(horizontal < 0.0f){
 				currentScale.x = Mathf.Abs(currentScale.x) * -1;
 			}else if (horizontal > 0.0f){
-				currentScale.x = Mathf.Abs(currentScale.x) * 1;
+				currentScale.x = Mathf.Abs(currentScale.x);
 			}
 			
-			_context.transform.localScale = currentScale;
+			_context.physicsController.SetScale(currentScale);
 
 			if(Input.GetKeyDown(KeyCode.UpArrow)){
 				_machine.changeState<Panda_JumpState>();
+				return;
+			}
+
+			if(Input.GetKeyDown(KeyCode.Slash)){
+				_machine.changeState<Panda_AttackOnRunState>();
 				return;
 			}
 		}else{
