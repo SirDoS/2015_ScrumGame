@@ -19,6 +19,10 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 			_machine.changeState<Girl_IdleState>();
 			return;
 		}
+		if(Input.GetKeyDown(KeyCode.F)){
+			_machine.changeState<Girl_AttackOnAirState>();
+			return;
+		}
 		if (horizontal != 0.0f){
 			Vector2 currentVelocity = _context.physicsController.GetVelocity();
 			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
@@ -32,10 +36,6 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 			}
 			_context.transform.localScale = currentScale;
 
-			if(Input.GetKeyDown(KeyCode.F)){
-				_machine.changeState<Girl_AttackOnAirState>();
-				return;
-			}
 		}
 		base.reason ();
 	}

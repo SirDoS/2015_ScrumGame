@@ -21,6 +21,7 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_OnAirState());
 		stateMachine.addState(new Girl_AttackOnAirState());
 		stateMachine.addState(new Girl_AttackState());
+		stateMachine.addState(new Girl_AttackOnRunState());
 		stateMachine.addState(new Girl_WallJumpState());
 
 		stateMachine.onStateChanged += () => {

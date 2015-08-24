@@ -34,7 +34,7 @@ public class Girl_RunState : SKMecanimState<GirlController>
 			_context.transform.localScale = currentScale;
 
 			if(Input.GetKeyDown(KeyCode.F)){
-				_machine.changeState<Girl_AttackState>();
+				_machine.changeState<Girl_AttackOnRunState>();
 				return;
 			}
 
