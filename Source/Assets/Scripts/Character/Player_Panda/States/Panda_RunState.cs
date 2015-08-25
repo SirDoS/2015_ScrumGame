@@ -7,11 +7,6 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 	public override void begin ()
 	{
 		base.begin ();
-
-		/*if(_context.physicsController.GetVelocity().y > 0){
-			_machine.changeState<Panda_OnAirState>();
-			return;
-		}*/
 		
 		_machine.animator.Play("Run");
 	}
