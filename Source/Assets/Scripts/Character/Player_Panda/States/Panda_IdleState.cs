@@ -38,6 +38,10 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 				_machine.changeState<Panda_JumpState>();
 				return;
 			}
+
+			if(Input.GetKeyDown(KeyCode.Slash)){
+				_machine.changeState<Panda_AttackOnIdleState>();
+			}
 		}
 		else
 		{

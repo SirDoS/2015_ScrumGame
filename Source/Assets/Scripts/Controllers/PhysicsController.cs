@@ -6,8 +6,6 @@ public class PhysicsController : MonoBehaviour {
 
 	public Transform[] groundCheckers;
 
-	public bool isGrounded;
-
 	public float skinWidth = 0.05f;
 
 	public LayerMask groundLayers;
@@ -55,7 +53,10 @@ public class PhysicsController : MonoBehaviour {
 		}
 
 		return false;
+	}
 
+	public void SetScale(Vector3 pScale){
+		transform.localScale = pScale;
 	}
 
 	public void SetVelocity(Vector2 pVeloctiy){
