@@ -11,7 +11,7 @@ public class Girl_AttackOnAirState : SKMecanimState<GirlController>
 		base.begin();
 		timeOnState = 0;
 		Debug.Log("Im Attacking OnAir, biatch!");
-		//_machine.animator.Play("AttackOnAir");
+		_machine.animator.Play("AttackOnAir");
 	}
 
 	public override void reason (){
