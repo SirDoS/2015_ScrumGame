@@ -6,11 +6,12 @@ public class BaseChar : BaseActor
 	public float horizontalMovementSpeed;
 	public float verticalMovementSpeed;
 
+	public GameplayController gameplayController;
 	public PhysicsController physicsController;
 	public AnimationController animatorController;
 
 	public override void Damage (int pDamage)
 	{
-		base.Damage (pDamage);
+		base.Damage(pDamage);
 	}
 }

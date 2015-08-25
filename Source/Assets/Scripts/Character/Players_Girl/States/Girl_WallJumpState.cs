@@ -7,9 +7,20 @@ public class Girl_WallJumpState : SKMecanimState<GirlController>
 	public override void begin ()
 	{
 		base.begin ();
-		
-		_machine.animator.Play("WallJump");
-		
+
+		_context.gameplayController.enableAirControl = false;
+
+		float horizontal = Input.GetAxis("Horizontal");
+
+		Vector2 currentVelocity = _context.physicsController.GetVelocity();
+		_context.physicsController.AddForce(new Vector2(currentVelocity.x,
+		                                                (Mathf.Abs(horizontal)* -1) * _context.girlJumpForce), -75f);
+
+		//Rotate(horizontal);
+
+		//_machine.animator.Play("WallJump");
+
+		_machine.changeState<Girl_OnAirState>();
 	}
 	public override void reason ()
 	{
@@ -20,27 +31,24 @@ public class Girl_WallJumpState : SKMecanimState<GirlController>
 	#region implemented abstract members of SKMecanimState
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{
-		float horizontal = Input.GetAxis("Horizontal");
-				
-		Vector2 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
-		                                                   currentVelocity.y));
 
-		if(horizontal > 0.0f){
-			if(Input.GetKeyDown(KeyCode.Space) && isWallAhead()){
-
-			}
-		}
 	}
 	#endregion
 
-	public bool isWallAhead(){
-		return true;
-	}
-	
 	public override void end ()
 	{
 		base.end ();
+	}
+
+	public void Rotate(float pDirection){
+		Vector3 currentScale = _context.transform.localScale;
+		
+		if(pDirection < 0.0f){
+			currentScale.x = Mathf.Abs(currentScale.x) * -1;
+		}else if(pDirection > 0.0f){
+			currentScale.x = Mathf.Abs(currentScale.x) * 1;
+		}
+		_context.transform.localScale = currentScale;
 	}
 
 }
