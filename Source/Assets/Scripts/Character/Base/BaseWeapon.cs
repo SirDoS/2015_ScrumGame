@@ -1,8 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class AttackController : MonoBehaviour {
-	
+public class BaseWeapon : MonoBehaviour {
+
+	public float damagePoints;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +15,3 @@ public class AttackController : MonoBehaviour {
 		
 	}
 }
-

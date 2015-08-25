@@ -10,8 +10,12 @@ public class BaseChar : BaseActor
 	public PhysicsController physicsController;
 	public AnimationController animatorController;
 
-	public override void Damage (int pDamage)
+	public void doDamage (float pDamage, GameObject pCauser)
 	{
-		base.Damage(pDamage);
+		
+	}
+
+	public void receiveDamage(){
+
 	}
 }
