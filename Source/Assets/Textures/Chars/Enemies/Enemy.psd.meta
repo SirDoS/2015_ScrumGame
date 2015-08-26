@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: e82fa8e8f26504341b6ebe67fcc52e58
+timeCreated: 1440600691
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy_0
+    21300002: Enemy_1
+    21300004: Enemy_2
+    21300006: Enemy_3
+    21300008: Enemy_4
+    21300010: Enemy_5
+    21300012: Enemy_6
+    21300014: Enemy_7
+    21300016: Enemy_8
+    21300018: Enemy_9
+    21300020: Enemy_10
+    21300022: Enemy_11
+    21300024: Enemy_12
+    21300026: Enemy_13
+    21300028: Enemy_14
+    21300030: Enemy_15
+    21300032: Enemy_16
+    21300034: Enemy_17
+    21300036: Enemy_18
+    21300038: Enemy_19
+    21300040: Enemy_20
+    21300042: Enemy_21
+    21300044: Enemy_22
+    21300046: Enemy_23
+    21300048: Enemy_24
+    21300050: Enemy_25
+    21300052: Enemy_26
+    21300054: Enemy_27
+    21300056: Enemy_28
+    21300058: Enemy_29
+    21300060: Enemy_30
+    21300062: Enemy_31
+    21300064: Enemy_32
+    21300066: Enemy_33
+    21300068: Enemy_34
+    21300070: Enemy_35
+    21300072: Enemy_36
+    21300074: Enemy_37
+    21300076: Enemy_38
+    21300078: Enemy_39
+    21300080: Enemy_40
+    21300082: Enemy_41
+    21300084: Enemy_42
+    21300086: Enemy_43
+    21300088: Enemy_44
+    21300090: Enemy_45
+    21300092: Enemy_46
+    21300094: Enemy_47
+    21300096: Enemy_48
+    21300098: Enemy_49
+    21300100: Enemy_50
+    21300102: Enemy_51
+    21300104: Enemy_52
+    21300106: Enemy_53
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 337
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 337
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 337
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 337
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 337
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 337
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_6
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 340
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_7
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 337
+        width: 86
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_8
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 337
+        width: 76
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_9
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 337
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 207
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 212
+        width: 65
+        height: 86
+      alignment: 9
+      pivot: {x: .512107611, y: .298674464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 207
+        width: 77
+        height: 95
+      alignment: 9
+      pivot: {x: .520441413, y: .301179111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 207
+        width: 48
+        height: 98
+      alignment: 9
+      pivot: {x: .499999672, y: .30726546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_14
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 207
+        width: 84
+        height: 87
+      alignment: 9
+      pivot: {x: .743594944, y: .264804721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 202
+        width: 77
+        height: 61
+      alignment: 9
+      pivot: {x: .745298326, y: .422590166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_17
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 201
+        width: 73
+        height: 61
+      alignment: 9
+      pivot: {x: .769519567, y: .487098306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_18
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 203
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_19
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 202
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_20
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 207
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_21
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 207
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_22
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 91
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_23
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 91
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_24
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 91
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_26
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 91
+        width: 119
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_27
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 91
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_28
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 91
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_29
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 91
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_30
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 84
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_31
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 83
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_32
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 91
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_33
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 91
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_34
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 6
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_35
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 3
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_36
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_37
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 3
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_38
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 3
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_39
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 3
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_40
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 3
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_41
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 3
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 3
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_43
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_44
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_45
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_46
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 3
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_47
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 3
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_48
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 3
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_49
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_50
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 3
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_51
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 3
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_52
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 5
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy_53
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 3
+        width: 50
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
