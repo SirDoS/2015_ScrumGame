@@ -1,20 +1,26 @@
 using UnityEngine;
 using System.Collections;
 using Prime31.StateKit;
-
+// Classe da menina que herda de BaseChar
 public class GirlController : BaseChar
 {
+	// Forca do pulo da menina
 	public float girlJumpForce = 500.0f;
 
+	// Declaracao da maquina de estados
 	public SKMecanimStateMachine<GirlController> stateMachine;
 
 	void Start()
 	{
+		// Vida atual recebe o maximo de vida possivel
 		currentLife = maxLife;
+		// Esta vivo
 		isAlive = true;
 
 		stateMachine = new SKMecanimStateMachine<GirlController>(animatorController.Animator,
 		                                                         this, new Girl_IdleState());
+
+		//Todos os estados da menina sao adicionados na maquina de estado
 		stateMachine.addState(new Girl_IdleState());
 		stateMachine.addState(new Girl_RunState());
 		stateMachine.addState(new Girl_JumpState());
@@ -24,6 +30,7 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_AttackOnRunState());
 		stateMachine.addState(new Girl_WallJumpState());
 
+		// Quando passa de um estado para outro, imprime na tela este estado
 		stateMachine.onStateChanged += () => {
 			Debug.Log(stateMachine.currentState.ToString());
 		};
@@ -34,18 +41,8 @@ public class GirlController : BaseChar
 	{
 		stateMachine.update(Time.deltaTime);
 
-//		float horizontal = Input.GetAxis("Horizontal");
-//		float vertical = Input.GetAxis("Vertical");
-//
-//		Vector3 currentVelocity = physicsController.GetVelocity();
-//		physicsController.SetVelocity(new Vector3(0,
-//		                                          currentVelocity.y ,
-//		                                          horizontal * horizontalMovementSpeed));
-//		if(Input.GetKeyDown(KeyCode.Space)){
-//			physicsController.AddForce(new Vector3(0.0f, 1.0f, 0.0f), girlJumpForce);
-//		}
 	}
-
+	// Debugger para mostrar o estado atual na tela
 	void OnGUI()
 	{
 		if(stateMachine != null)
