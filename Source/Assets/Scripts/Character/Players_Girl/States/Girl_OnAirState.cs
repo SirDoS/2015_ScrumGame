@@ -18,8 +18,15 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 
 		if(_context.physicsController.IsGrounded()){
 			_context.gameplayController.enableAirControl = true;
-			_machine.changeState<Girl_IdleState>();
-			return;
+			if(_context.physicsController.GetVelocity().y < 0.5f){
+				if(horizontal == 0){
+					_machine.changeState<Girl_IdleState>();
+					return;
+				}else if(horizontal != 0){
+					_machine.changeState<Girl_RunState>();
+					return;
+				}
+			}
 		}
 		if(Input.GetKeyDown(KeyCode.F)){
 			_machine.changeState<Girl_AttackOnAirState>();

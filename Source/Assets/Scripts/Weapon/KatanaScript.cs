@@ -1,16 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class AttackController : MonoBehaviour {
-	
+public class KatanaScript : BaseWeapon {
+
 	// Use this for initialization
 	void Start () {
-		
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+	
 	}
 }
-

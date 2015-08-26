@@ -16,7 +16,6 @@ public class Girl_WallJumpState : SKMecanimState<GirlController>
 		_context.physicsController.AddForce(new Vector2(currentVelocity.x,
 		                                                (Mathf.Abs(horizontal)* -1) * _context.girlJumpForce), -75f);
 
-		//Rotate(horizontal);
 
 		//_machine.animator.Play("WallJump");
 
