@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+// Classe que tem atributos para servir de base a tudo que tem vida, nao necessariamente um personagem
 public class BaseActor : MonoBehaviour
 {
 	// Armazena uma instancia de Transform, pois o custo de sempre chamar essa classe eh alto.
@@ -11,8 +12,6 @@ public class BaseActor : MonoBehaviour
 	protected bool isAlive = true;
 	//Sua vida maxima eh 100
 	protected int maxLife = 100;
-
-	public int SYNCADEMONIO = 666;
 
 	//Vida atual eh 100
 	public int currentLife = 100;

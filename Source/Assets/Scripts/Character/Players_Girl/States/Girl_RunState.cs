@@ -51,13 +51,17 @@ public class Girl_RunState : SKMecanimState<GirlController>
 
 	#region implemented abstract members of SKMecanimState
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
-	{
+	{	
+		// horizontal recebe os inputs referentes ao eixo horizontal((A & D) ou (<- & ->))
 		float horizontal = Input.GetAxis("Horizontal");
-
-
+		
+		// Velocidade atual recebe a velocidade passada pelo controlador de Fisica
 		Vector2 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
-		                                                   currentVelocity.y));
+		// Define a velocidade de acordo com o apertar dos botoes 
+		// No eixo X : ((A & D) ou (<- & ->)) e a velocidade na horizontal
+		// No eixo Y : recebe a velocidade em que ele esta
+		_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed
+		                                                   , currentVelocity.y));
 	}
 	#endregion
 

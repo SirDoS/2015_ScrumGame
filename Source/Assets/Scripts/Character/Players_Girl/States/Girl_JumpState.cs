@@ -7,18 +7,23 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 	public override void begin ()
 	{
 		base.begin ();
-		
+
+		// Velocidade atual recebe a velocidade passada pelo controlador de Fisica
 		Vector2 currentVelocity = _context.physicsController.GetVelocity();
+
+		// Define a velocidade
+		// em X: como sua velocidade atual
+		// em Y: de acordo com a forca de pulo da menina
 		_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
 		                                                   _context.girlJumpForce));
 
+		//Toca a animacao de Pulo
 		_machine.animator.Play("Jump");
-		//Tocar animacao JUMP.
-
 	}
 
 	public override void reason(){
 		base.reason ();
+		//Passa para o estado OnAir, pois a forca do pulo ja foi aplicada
 		_machine.changeState<Girl_OnAirState>();
 	}
 
