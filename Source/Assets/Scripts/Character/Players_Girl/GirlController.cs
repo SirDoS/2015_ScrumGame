@@ -5,7 +5,7 @@ using Prime31.StateKit;
 public class GirlController : BaseChar
 {
 	// Forca do pulo da menina
-	public float girlJumpForce = 500.0f;
+	public float girlJumpForce = 4;
 
 	// Declaracao da maquina de estados
 	public SKMecanimStateMachine<GirlController> stateMachine;
