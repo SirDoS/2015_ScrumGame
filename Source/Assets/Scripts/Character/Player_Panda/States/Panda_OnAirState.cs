@@ -18,6 +18,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 
 		if(_context.physicsController.IsGrounded())
 		{
+			_context.gameplayController.enableAirControl = true;
 			if(_context.physicsController.GetVelocity().y < 0.5f)
 			{
 				if(horizontal == 0){
@@ -30,25 +31,39 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 			}
 		}
 
-		if (horizontal != 0.0f){
-			Vector2 currentVelocity = _context.physicsController.GetVelocity();
-			_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
-			                                                   currentVelocity.y));
+		if(_context.gameplayController.enableAirControl){
+			if (horizontal != 0.0f){
+				Vector2 currentVelocity = _context.physicsController.GetVelocity();
+				_context.physicsController.SetVelocity(new Vector2(horizontal * _context.horizontalMovementSpeed,
+				                                                   currentVelocity.y));
 
-			Vector3 currentScale = _context.transform.localScale;
-			
-			if(horizontal < 0.0f){
-				currentScale.x = Mathf.Abs(currentScale.x) * -1;
-			}else if (horizontal > 0.0f){
-				currentScale.x = Mathf.Abs(currentScale.x) * 1;
+				Rotate(horizontal);
+
+				RaycastHit2D wallHit = Physics2D.Raycast(_context.Position, 
+				                                         new Vector2(horizontal, 0), 0.3f, 
+				                                         1 << 10);
+				if(wallHit.transform != null && Input.GetKeyDown(KeyCode.UpArrow)){
+					Rotate(-horizontal);
+					_machine.changeState<Panda_WallJumpState>();
+				}
 			}
-			
-			_context.transform.localScale = currentScale;
 		}
 
 		if(Input.GetKeyDown(KeyCode.Slash)){
 			_machine.changeState<Panda_AttackOnAirState>();
 		}
+	}
+
+	public void Rotate(float pDirection){
+		Vector3 currentScale = _context.transform.localScale;
+
+		if(pDirection < 0.0f){
+			currentScale.x = Mathf.Abs(currentScale.x) * -1;
+		}else if (pDirection > 0.0f){
+			currentScale.x = Mathf.Abs(currentScale.x) * 1;
+		}
+		
+		_context.transform.localScale = currentScale;
 	}
 	
 	

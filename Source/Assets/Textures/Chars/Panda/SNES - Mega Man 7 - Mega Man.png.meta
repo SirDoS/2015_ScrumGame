@@ -1,0 +1,2563 @@
+fileFormatVersion: 2
+guid: 5c0918f812fe349178ca0e04e84497f8
+timeCreated: 1440514677
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - Mega Man 7 - Mega Man_0
+    21300002: SNES - Mega Man 7 - Mega Man_1
+    21300004: SNES - Mega Man 7 - Mega Man_2
+    21300006: SNES - Mega Man 7 - Mega Man_3
+    21300008: SNES - Mega Man 7 - Mega Man_4
+    21300010: SNES - Mega Man 7 - Mega Man_5
+    21300012: PandaV3_Idle1
+    21300014: PandaV3_Idle2
+    21300016: PandaV3_Idle3
+    21300018: PandaV3_Idle4
+    21300020: PandaV3_Idle5
+    21300022: PandaV3_Idle6
+    21300024: PandaV3_Walk1
+    21300026: PandaV3_Walk2
+    21300028: PandaV3_Walk3
+    21300030: PandaV3_Walk4
+    21300032: PandaV3_Walk5
+    21300034: PandaV3_Walk6
+    21300036: PandaV3_Walk7
+    21300038: PandaV3_Walk8
+    21300040: PandaV3_Walk9
+    21300042: PandaV3_Walk10
+    21300044: PandaV3_Walk11
+    21300046: PandaV3_Walk12
+    21300048: PandaV3_Jump1
+    21300050: PandaV3_Jump2
+    21300052: PandaV3_Jump3
+    21300054: PandaV3_Jump4
+    21300056: PandaV3_Jump5
+    21300058: PandaV3_Jump6
+    21300060: PandaV3_Attack1
+    21300062: PandaV3_Attack2
+    21300064: PandaV3_Attack3
+    21300066: PandaV3_Attack4
+    21300068: PandaV3_Attack5
+    21300070: PandaV3_Attack6
+    21300072: PandaV3_Attack7
+    21300074: PandaV3_AttackOnRun1
+    21300076: PandaV3_AttackOnRun2
+    21300078: PandaV3_AttackOnRun3
+    21300080: PandaV3_AttackOnRun4
+    21300082: PandaV3_AttackOnRun5
+    21300084: PandaV3_AttackOnRun6
+    21300086: PandaV3_AttackOnRun7
+    21300088: PandaV3_AttackOnRun8
+    21300090: PandaV3_AttackOnRun9
+    21300092: PandaV3_AttackOnRun10
+    21300094: PandaV3_AttackOnRun11
+    21300096: PandaV3_AttackOnAir1
+    21300098: PandaV3_AttackOnAir2
+    21300100: PandaV3_AttackOnAir3
+    21300102: PandaV3_AttackOnAir4
+    21300104: PandaV3_AttackOnAir5
+    21300106: PandaV3_AttackOnAir6
+    21300108: SNES - Mega Man 7 - Mega Man_54
+    21300110: SNES - Mega Man 7 - Mega Man_55
+    21300112: SNES - Mega Man 7 - Mega Man_56
+    21300114: SNES - Mega Man 7 - Mega Man_57
+    21300116: SNES - Mega Man 7 - Mega Man_58
+    21300118: SNES - Mega Man 7 - Mega Man_59
+    21300120: SNES - Mega Man 7 - Mega Man_60
+    21300122: PandaV3_Dash1
+    21300124: PandaV3_Dash2
+    21300126: PandaV3_Dash3
+    21300128: PandaV3_Dash4
+    21300130: SNES - Mega Man 7 - Mega Man_65
+    21300132: SNES - Mega Man 7 - Mega Man_66
+    21300134: SNES - Mega Man 7 - Mega Man_67
+    21300136: SNES - Mega Man 7 - Mega Man_68
+    21300138: SNES - Mega Man 7 - Mega Man_69
+    21300140: SNES - Mega Man 7 - Mega Man_70
+    21300142: SNES - Mega Man 7 - Mega Man_71
+    21300144: SNES - Mega Man 7 - Mega Man_72
+    21300146: SNES - Mega Man 7 - Mega Man_73
+    21300148: SNES - Mega Man 7 - Mega Man_74
+    21300150: SNES - Mega Man 7 - Mega Man_75
+    21300152: SNES - Mega Man 7 - Mega Man_76
+    21300154: SNES - Mega Man 7 - Mega Man_77
+    21300156: SNES - Mega Man 7 - Mega Man_78
+    21300158: PandaV3_WallJump1
+    21300160: PandaV3_WallJump2
+    21300162: SNES - Mega Man 7 - Mega Man_81
+    21300164: SNES - Mega Man 7 - Mega Man_82
+    21300166: SNES - Mega Man 7 - Mega Man_83
+    21300168: SNES - Mega Man 7 - Mega Man_84
+    21300170: SNES - Mega Man 7 - Mega Man_85
+    21300172: SNES - Mega Man 7 - Mega Man_86
+    21300174: SNES - Mega Man 7 - Mega Man_87
+    21300176: SNES - Mega Man 7 - Mega Man_88
+    21300178: SNES - Mega Man 7 - Mega Man_89
+    21300180: SNES - Mega Man 7 - Mega Man_90
+    21300182: SNES - Mega Man 7 - Mega Man_91
+    21300184: SNES - Mega Man 7 - Mega Man_92
+    21300186: SNES - Mega Man 7 - Mega Man_93
+    21300188: SNES - Mega Man 7 - Mega Man_94
+    21300190: SNES - Mega Man 7 - Mega Man_95
+    21300192: SNES - Mega Man 7 - Mega Man_96
+    21300194: SNES - Mega Man 7 - Mega Man_97
+    21300196: SNES - Mega Man 7 - Mega Man_98
+    21300198: SNES - Mega Man 7 - Mega Man_99
+    21300200: SNES - Mega Man 7 - Mega Man_100
+    21300202: SNES - Mega Man 7 - Mega Man_101
+    21300204: SNES - Mega Man 7 - Mega Man_102
+    21300206: SNES - Mega Man 7 - Mega Man_103
+    21300208: SNES - Mega Man 7 - Mega Man_104
+    21300210: SNES - Mega Man 7 - Mega Man_105
+    21300212: SNES - Mega Man 7 - Mega Man_106
+    21300214: SNES - Mega Man 7 - Mega Man_107
+    21300216: SNES - Mega Man 7 - Mega Man_108
+    21300218: SNES - Mega Man 7 - Mega Man_109
+    21300220: SNES - Mega Man 7 - Mega Man_110
+    21300222: SNES - Mega Man 7 - Mega Man_111
+    21300224: SNES - Mega Man 7 - Mega Man_112
+    21300226: SNES - Mega Man 7 - Mega Man_113
+    21300228: SNES - Mega Man 7 - Mega Man_114
+    21300230: SNES - Mega Man 7 - Mega Man_115
+    21300232: SNES - Mega Man 7 - Mega Man_116
+    21300234: SNES - Mega Man 7 - Mega Man_117
+    21300236: SNES - Mega Man 7 - Mega Man_118
+    21300238: SNES - Mega Man 7 - Mega Man_119
+    21300240: SNES - Mega Man 7 - Mega Man_120
+    21300242: SNES - Mega Man 7 - Mega Man_121
+    21300244: SNES - Mega Man 7 - Mega Man_122
+    21300246: SNES - Mega Man 7 - Mega Man_123
+    21300248: SNES - Mega Man 7 - Mega Man_124
+    21300250: SNES - Mega Man 7 - Mega Man_125
+    21300252: SNES - Mega Man 7 - Mega Man_126
+    21300254: SNES - Mega Man 7 - Mega Man_127
+    21300256: SNES - Mega Man 7 - Mega Man_128
+    21300258: SNES - Mega Man 7 - Mega Man_129
+    21300260: SNES - Mega Man 7 - Mega Man_130
+    21300262: SNES - Mega Man 7 - Mega Man_131
+    21300264: SNES - Mega Man 7 - Mega Man_132
+    21300266: SNES - Mega Man 7 - Mega Man_133
+    21300268: SNES - Mega Man 7 - Mega Man_134
+    21300270: SNES - Mega Man 7 - Mega Man_135
+    21300272: SNES - Mega Man 7 - Mega Man_136
+    21300274: SNES - Mega Man 7 - Mega Man_137
+    21300276: SNES - Mega Man 7 - Mega Man_138
+    21300278: SNES - Mega Man 7 - Mega Man_139
+    21300280: SNES - Mega Man 7 - Mega Man_140
+    21300282: SNES - Mega Man 7 - Mega Man_141
+    21300284: SNES - Mega Man 7 - Mega Man_142
+    21300286: SNES - Mega Man 7 - Mega Man_143
+    21300288: SNES - Mega Man 7 - Mega Man_144
+    21300290: SNES - Mega Man 7 - Mega Man_145
+    21300292: SNES - Mega Man 7 - Mega Man_146
+    21300294: SNES - Mega Man 7 - Mega Man_147
+    21300296: SNES - Mega Man 7 - Mega Man_148
+    21300298: SNES - Mega Man 7 - Mega Man_149
+    21300300: SNES - Mega Man 7 - Mega Man_150
+    21300302: SNES - Mega Man 7 - Mega Man_151
+    21300304: SNES - Mega Man 7 - Mega Man_152
+    21300306: SNES - Mega Man 7 - Mega Man_153
+    21300308: SNES - Mega Man 7 - Mega Man_154
+    21300310: SNES - Mega Man 7 - Mega Man_155
+    21300312: SNES - Mega Man 7 - Mega Man_156
+    21300314: SNES - Mega Man 7 - Mega Man_157
+    21300316: SNES - Mega Man 7 - Mega Man_158
+    21300318: SNES - Mega Man 7 - Mega Man_159
+    21300320: SNES - Mega Man 7 - Mega Man_160
+    21300322: SNES - Mega Man 7 - Mega Man_161
+    21300324: SNES - Mega Man 7 - Mega Man_162
+    21300326: SNES - Mega Man 7 - Mega Man_163
+    21300328: SNES - Mega Man 7 - Mega Man_164
+    21300330: SNES - Mega Man 7 - Mega Man_165
+    21300332: SNES - Mega Man 7 - Mega Man_166
+    21300334: SNES - Mega Man 7 - Mega Man_167
+    21300336: SNES - Mega Man 7 - Mega Man_168
+    21300338: SNES - Mega Man 7 - Mega Man_169
+    21300340: SNES - Mega Man 7 - Mega Man_170
+    21300342: SNES - Mega Man 7 - Mega Man_171
+    21300344: SNES - Mega Man 7 - Mega Man_172
+    21300346: SNES - Mega Man 7 - Mega Man_173
+    21300348: SNES - Mega Man 7 - Mega Man_174
+    21300350: SNES - Mega Man 7 - Mega Man_175
+    21300352: SNES - Mega Man 7 - Mega Man_176
+    21300354: SNES - Mega Man 7 - Mega Man_177
+    21300356: SNES - Mega Man 7 - Mega Man_178
+    21300358: SNES - Mega Man 7 - Mega Man_179
+    21300360: SNES - Mega Man 7 - Mega Man_180
+    21300362: SNES - Mega Man 7 - Mega Man_181
+    21300364: SNES - Mega Man 7 - Mega Man_182
+    21300366: SNES - Mega Man 7 - Mega Man_183
+    21300368: SNES - Mega Man 7 - Mega Man_184
+    21300370: SNES - Mega Man 7 - Mega Man_185
+    21300372: SNES - Mega Man 7 - Mega Man_186
+    21300374: SNES - Mega Man 7 - Mega Man_187
+    21300376: SNES - Mega Man 7 - Mega Man_188
+    21300378: SNES - Mega Man 7 - Mega Man_189
+    21300380: SNES - Mega Man 7 - Mega Man_190
+    21300382: SNES - Mega Man 7 - Mega Man_191
+    21300384: SNES - Mega Man 7 - Mega Man_192
+    21300386: SNES - Mega Man 7 - Mega Man_193
+    21300388: SNES - Mega Man 7 - Mega Man_194
+    21300390: SNES - Mega Man 7 - Mega Man_195
+    21300392: SNES - Mega Man 7 - Mega Man_196
+    21300394: SNES - Mega Man 7 - Mega Man_197
+    21300396: SNES - Mega Man 7 - Mega Man_198
+    21300398: SNES - Mega Man 7 - Mega Man_199
+    21300400: SNES - Mega Man 7 - Mega Man_200
+    21300402: SNES - Mega Man 7 - Mega Man_201
+    21300404: SNES - Mega Man 7 - Mega Man_202
+    21300406: SNES - Mega Man 7 - Mega Man_203
+    21300408: SNES - Mega Man 7 - Mega Man_204
+    21300410: SNES - Mega Man 7 - Mega Man_205
+    21300412: SNES - Mega Man 7 - Mega Man_206
+    21300414: SNES - Mega Man 7 - Mega Man_207
+    21300416: SNES - Mega Man 7 - Mega Man_208
+    21300418: SNES - Mega Man 7 - Mega Man_209
+    21300420: SNES - Mega Man 7 - Mega Man_210
+    21300422: SNES - Mega Man 7 - Mega Man_211
+    21300424: SNES - Mega Man 7 - Mega Man_212
+    21300426: SNES - Mega Man 7 - Mega Man_213
+    21300428: SNES - Mega Man 7 - Mega Man_214
+    21300430: SNES - Mega Man 7 - Mega Man_215
+    21300432: SNES - Mega Man 7 - Mega Man_216
+    21300434: SNES - Mega Man 7 - Mega Man_217
+    21300436: SNES - Mega Man 7 - Mega Man_218
+    21300438: SNES - Mega Man 7 - Mega Man_219
+    21300440: SNES - Mega Man 7 - Mega Man_220
+    21300442: SNES - Mega Man 7 - Mega Man_221
+    21300444: SNES - Mega Man 7 - Mega Man_222
+    21300446: SNES - Mega Man 7 - Mega Man_223
+    21300448: SNES - Mega Man 7 - Mega Man_224
+    21300450: SNES - Mega Man 7 - Mega Man_225
+    21300452: SNES - Mega Man 7 - Mega Man_226
+    21300454: SNES - Mega Man 7 - Mega Man_227
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SNES - Mega Man 7 - Mega Man_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 357
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 357
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 357
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 357
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 357
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 357
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Idle1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Idle2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Idle3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Idle4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Idle5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Idle6
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 357
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 357
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 357
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk4
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 357
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 357
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk6
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 357
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 357
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk8
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 357
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 357
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk10
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 357
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk11
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 357
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Walk12
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 357
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Jump1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 301
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Jump2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 301
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Jump3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 301
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Jump4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 301
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Jump5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 301
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Jump6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 302
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 301
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 301
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 301
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack4
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 301
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack5
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 301
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack6
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 301
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Attack7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 301
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 301
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 301
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 301
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 301
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 301
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun6
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 301
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun7
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 301
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun8
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 301
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun9
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 301
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun10
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 301
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnRun11
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 301
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnAir1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 239
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnAir2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 239
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnAir3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 239
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnAir4
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 239
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnAir5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 239
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_AttackOnAir6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 240
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_54
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 239
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_55
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 239
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_56
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 239
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_57
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 239
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_58
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 239
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_59
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 251
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_60
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 239
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Dash1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 239
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Dash2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 239
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Dash3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 239
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_Dash4
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 239
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_65
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 239
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_66
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 239
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_67
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 239
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_68
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 239
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_69
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 239
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_70
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 239
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_71
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 240
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_72
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 239
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_73
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 239
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_74
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 239
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_75
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 179
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_76
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 179
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_77
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 179
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_78
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 179
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_WallJump1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 184
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PandaV3_WallJump2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 185
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_81
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 179
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_82
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 181
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_83
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 179
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_84
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 179
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_85
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 179
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_86
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 179
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_87
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 186
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_88
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 179
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_89
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 183
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_90
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 183
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_91
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 179
+        width: 59
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_92
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 187
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_93
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 187
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_94
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 182
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_95
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 179
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_96
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 179
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_97
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 179
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_98
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 179
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_99
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 181
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_100
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 124
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_101
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 124
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_102
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 124
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_103
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 124
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_104
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 124
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_105
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 124
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_106
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_107
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_108
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_109
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_110
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 124
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 124
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_112
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 124
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_113
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_114
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_115
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 124
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_116
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 124
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_117
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 124
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_118
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 124
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_119
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 124
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_120
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 124
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_121
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 124
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_122
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 123
+        width: 336
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_123
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 109
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_124
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 109
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_125
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 109
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_126
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 109
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_127
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 109
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_128
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 109
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_129
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 92
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_130
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 92
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_131
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 92
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_132
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 92
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_133
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 92
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_134
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 92
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_135
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 92
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_136
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 92
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_137
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 92
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_138
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 91
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_139
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 91
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_140
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 91
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_141
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 91
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_142
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 91
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_143
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 90
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_144
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 101
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_145
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 101
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_146
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 101
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_147
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 101
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_148
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 101
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_149
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 39
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_150
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 2
+        width: 41
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_151
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2
+        width: 39
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 37
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_153
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2
+        width: 39
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_154
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 41
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_155
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_156
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 90
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_157
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 101
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_158
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_159
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 99
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_160
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_161
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 101
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_162
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_163
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_164
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 101
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_165
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_166
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 101
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_167
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 101
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_168
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_169
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 99
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_170
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_171
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 101
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_172
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_173
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_174
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 101
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_175
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 99
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_176
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 99
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_177
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_178
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 99
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_179
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 101
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_180
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 101
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_181
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_182
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 101
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_183
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 101
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_184
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 101
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_185
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 101
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_186
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 90
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_187
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 88
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_188
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 88
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_189
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 88
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_190
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 88
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_191
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 88
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_192
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 88
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_193
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 88
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_194
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 88
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_195
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 88
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_196
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 88
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_197
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_198
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 88
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_199
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 88
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_200
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 55
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_201
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 55
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_202
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 55
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_203
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_204
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 75
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_205
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 73
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_206
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 75
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_207
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 75
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_208
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 75
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_209
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_210
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 55
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_211
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 55
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_212
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 55
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_213
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 55
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_214
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 55
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_215
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 55
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_216
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_217
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_218
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_219
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 55
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_220
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 62
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_221
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 62
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_222
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 62
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_223
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_224
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_225
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_226
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SNES - Mega Man 7 - Mega Man_227
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
