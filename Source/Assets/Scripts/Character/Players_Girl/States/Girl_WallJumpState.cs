@@ -5,6 +5,7 @@ using Prime31.StateKit;
 public class Girl_WallJumpState : SKMecanimState<GirlController>
 {
 	float timeOnState;
+	float girlWalljumpForce = -90.0f;
 	public override void begin ()
 	{
 		base.begin ();
@@ -24,7 +25,7 @@ public class Girl_WallJumpState : SKMecanimState<GirlController>
 		// em Y: O modulo do valor de deslocamento horizontal multiplicado por -1, e isso multiplicado pela forca do pulo
 		// Forca propriamente dita: 75
 		_context.physicsController.AddForce(new Vector2(currentVelocity.x,
-		                                                (Mathf.Abs(horizontal)* -1)), -90f);
+		                                                (Mathf.Abs(horizontal)* -1)), girlWalljumpForce);
 
 
 		_machine.animator.Play("WallJump");
