@@ -3,13 +3,21 @@ using System.Collections;
 
 public class KatanaScript : BaseWeapon {
 
-	// Use this for initialization
-	void Start () {
-	
+	public override void Attack ()
+	{
+		base.Attack ();
+		
+		foreach(RaycastHit2D hit in GetEnemiesAhead()){
+			Debug.Log(hit.transform.name);
+			BaseActor actor = hit.transform.GetComponent<BaseActor>();
+			DoDamage(actor);
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public override void DoDamage (BaseActor pTarget)
+	{
+		Debug.Log("Katana Do Damage");
+		
+		base.DoDamage (pTarget);
 	}
 }

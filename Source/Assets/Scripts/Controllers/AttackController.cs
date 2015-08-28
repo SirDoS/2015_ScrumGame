@@ -1,16 +1,16 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
 
 public class AttackController : MonoBehaviour {
-	
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public BaseWeapon equippedWeapon;
+	List <BaseWeapon> weaponsList;
+
+	public void Attack()
+	{
+		equippedWeapon.Attack();
 	}
 }
 

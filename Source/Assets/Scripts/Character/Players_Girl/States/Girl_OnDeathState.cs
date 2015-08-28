@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SwordScript : BaseWeapon {
+public class Girl_OnDeathState : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

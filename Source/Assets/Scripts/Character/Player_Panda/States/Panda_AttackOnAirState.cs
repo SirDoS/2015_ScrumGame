@@ -10,6 +10,7 @@ public class Panda_AttackOnAirState : SKMecanimState<PandaController>
 		base.begin();
 		timeOnState = 0;
 		_machine.animator.Play("AttackOnAir");
+		_context.attackController.Attack();
 	}
 	
 	public override void reason (){

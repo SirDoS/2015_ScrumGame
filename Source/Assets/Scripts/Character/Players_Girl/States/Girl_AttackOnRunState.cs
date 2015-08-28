@@ -13,6 +13,7 @@ public class Girl_AttackOnRunState : SKMecanimState<GirlController>
 		timeOnState = 0;
 		//Toca a animacao de Ataque
 		_machine.animator.Play("Attack");
+		_context.attackController.Attack();
 	}
 	
 	public override void reason (){

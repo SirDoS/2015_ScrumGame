@@ -10,6 +10,7 @@ public class Panda_AttackOnRunState : SKMecanimState<PandaController>
 		base.begin();
 		timeOnState = 0;
 		_machine.animator.Play("AttackOnRun");
+		_context.attackController.Attack();
 	}
 	
 	public override void reason (){

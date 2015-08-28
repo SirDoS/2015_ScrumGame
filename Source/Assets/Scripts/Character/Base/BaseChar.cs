@@ -12,6 +12,7 @@ public class BaseChar : BaseActor
 	public GameplayController gameplayController;
 	public PhysicsController physicsController;
 	public AnimationController animatorController;
+	public AttackController attackController;
 
 	/**
 	 *	Metodo que aplica dano. 

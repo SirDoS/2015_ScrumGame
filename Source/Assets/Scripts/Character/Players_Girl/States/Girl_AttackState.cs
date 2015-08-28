@@ -14,8 +14,7 @@ public class Girl_AttackState : SKMecanimState<GirlController>
 		Debug.Log("Im attacking, bitch!");
 		//Toca a animacao de Ataque
 		_machine.animator.Play("Attack");
-
-		_context.physicsController.SetVelocity(Vector2.zero);
+		_context.attackController.Attack();
 	}
 	
 	public override void reason (){
