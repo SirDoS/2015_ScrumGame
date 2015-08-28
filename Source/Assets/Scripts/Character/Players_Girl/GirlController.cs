@@ -32,9 +32,9 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_OnDeathState());
 
 		// Quando passa de um estado para outro, imprime na tela este estado
-		stateMachine.onStateChanged += () => {
+		/*stateMachine.onStateChanged += () => {
 			Debug.Log(stateMachine.currentState.ToString());
-		};
+		};*/
 
 	}
 	

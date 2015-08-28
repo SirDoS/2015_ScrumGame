@@ -42,6 +42,8 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 			if(Input.GetKeyDown(KeyCode.Slash)){
 				_machine.changeState<Panda_AttackOnIdleState>();
 			}
+
+			_context.physicsController.SetVelocity(Vector2.zero);
 		}
 		else
 		{

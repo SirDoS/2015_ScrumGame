@@ -38,6 +38,7 @@ public class Girl_IdleState : SKMecanimState<GirlController>
 			//Define a velocidade como 0, em x e y
 			_context.physicsController.SetVelocity(Vector2.zero);
 		}
+
 		// Caso nenhuma das situacoes acima se apliquem, eh porque ele esta caindo, portanto vai para o OnAir
 		else{
 			_machine.changeState<Girl_OnAirState>();
