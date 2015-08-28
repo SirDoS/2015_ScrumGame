@@ -29,6 +29,7 @@ public class GirlController : BaseChar
 		stateMachine.addState(new Girl_AttackState());
 		stateMachine.addState(new Girl_AttackOnRunState());
 		stateMachine.addState(new Girl_WallJumpState());
+		stateMachine.addState(new Girl_OnDeathState());
 
 		// Quando passa de um estado para outro, imprime na tela este estado
 		stateMachine.onStateChanged += () => {
@@ -40,6 +41,8 @@ public class GirlController : BaseChar
 	void Update()
 	{
 		stateMachine.update(Time.deltaTime);
+		if(!isAlive)
+			stateMachine.changeState<Girl_OnDeathState>();
 
 	}
 	// Debugger para mostrar o estado atual na tela

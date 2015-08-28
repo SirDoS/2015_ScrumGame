@@ -9,7 +9,7 @@ public class BaseActor : MonoBehaviour
 
 	// Por padrao o jogador esta vivo
 	[SerializeField] 
-	protected bool isAlive = true;
+	public bool isAlive = true;
 	//Sua vida maxima eh 100
 	protected int maxLife = 100;
 
@@ -25,14 +25,14 @@ public class BaseActor : MonoBehaviour
 			// retorna a posicao de cachedTransform
 			return cachedTransform.position;
 		}
-				
-		
 	}
 
 	// Metodo para aplicacao de Dano
 	public virtual void Damage(int pDamage)
 	{
-
+		currentLife -= pDamage;
+		if(currentLife <= 0)
+			isAlive = false;
 	}
 
 }

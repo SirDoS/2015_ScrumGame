@@ -2,7 +2,8 @@
 using System.Collections;
 
 //Classe de base para as armas do jogo
-public class BaseWeapon : MonoBehaviour {
+public class BaseWeapon : MonoBehaviour 
+{
 	// Quanto de dano tera a arma
 	public GameObject boxCastOrigin;
 	public int weaponDamage;
@@ -19,7 +20,7 @@ public class BaseWeapon : MonoBehaviour {
 
 	public virtual void DoDamage(BaseActor pTarget){
 		if(pTarget != null)
-			pTarget.currentLife -= weaponDamage;
+			pTarget.Damage(weaponDamage);
 	}
 
 	public virtual void Attack()

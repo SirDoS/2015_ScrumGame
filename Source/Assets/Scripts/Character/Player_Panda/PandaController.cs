@@ -21,6 +21,7 @@ public class PandaController : BaseChar {
 		pandaStateMachine.addState(new Panda_AttackOnIdleState());
 		pandaStateMachine.addState(new Panda_AttackOnRunState());
 		pandaStateMachine.addState(new Panda_AttackOnAirState());
+		pandaStateMachine.addState(new Panda_OnDeathState());
 
 		pandaStateMachine.onStateChanged += () => {
 			Debug.Log(pandaStateMachine.currentState.ToString());
@@ -30,6 +31,8 @@ public class PandaController : BaseChar {
 	// Update is called once per frame
 	void Update () {
 		pandaStateMachine.update(Time.deltaTime);
+		if(!isAlive)
+			pandaStateMachine.changeState<Panda_OnDeathState>();
 	}
 
 	void OnGUI()
