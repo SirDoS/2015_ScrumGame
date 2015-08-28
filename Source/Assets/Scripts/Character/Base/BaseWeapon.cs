@@ -31,7 +31,8 @@ public class BaseWeapon : MonoBehaviour {
 	}
 
 	void DoDamage(BaseActor pTarget){
-
+		if(pTarget != null)
+			pTarget.currentLife -= 10;
 	}
 
 
