@@ -4,6 +4,7 @@ using System.Collections;
 //Classe de base para as armas do jogo
 public class BaseWeapon : MonoBehaviour 
 {
+	public WEAPON_ID weaponID;
 	// Quanto de dano tera a arma
 	public GameObject boxCastOrigin;
 	public int weaponDamage;
