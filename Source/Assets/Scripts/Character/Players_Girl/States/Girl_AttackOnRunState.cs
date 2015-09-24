@@ -19,8 +19,6 @@ public class Girl_AttackOnRunState : SKMecanimState<GirlController>
 	public override void reason (){
 		base.reason();
 
-
-
 		if(timeOnState > 0.5f){
 
 			// horizontal recebe os inputs referentes ao eixo horizontal((A & D) ou (<- & ->))

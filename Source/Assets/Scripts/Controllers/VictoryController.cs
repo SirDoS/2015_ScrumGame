@@ -4,15 +4,18 @@ using System.Collections;
 public class VictoryController : MonoBehaviour {
 
 	bool isPlayerInside = false;
+    bool isGanhou;
+
 	// Use this for initialization
 	void Start () {
-
+        isGanhou = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(isPlayerInside){
-			Debug.Log("GANHOU FILHO DA PUTA!!!");
+		if(isPlayerInside && !isGanhou){
+            isGanhou = true;
+			Debug.Log("Ganhou");
 		}
 	}
 
