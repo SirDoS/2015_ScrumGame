@@ -8,6 +8,7 @@ public class Panda_OnDeathState : SKMecanimState<PandaController> {
 	{
 		base.begin ();
 		respawnTime = 0;
+		_context.physicsController.SetVelocity(Vector2.zero);
 		_machine.animator.Play ("OnDeath");
 	}
 
