@@ -16,6 +16,10 @@ public class TurtleTrapScript : BaseTrap {
 			}
 			lastDamageTime = 0;
 		}
+		if(tickCounter >= maxTicks){
+			Debug.Log("Esta Passando");
+			Despawn();
+		}
 	}
 
 	public override void DoDamage (BaseActor pTarget)

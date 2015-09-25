@@ -2,18 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class BaseTrap : MonoBehaviour {
-
+public class BaseTrap : MonoBehaviour, IPoolObject
+{
 	public TRAP_ID trapID;
 
-	public int tickCounter;
-	public int maxTicks = 4;
+	protected int tickCounter;
+	protected int maxTicks = 4;
 
     public int trapDamage;
 	public float damageCooldown = 2f;
 	protected float lastDamageTime;
 
 	public List<BaseActor> actorsInside;
+
+	private SpawnPool myPool;
 
 	protected virtual void Update(){
 		lastDamageTime += Time.deltaTime;
@@ -48,4 +50,22 @@ public class BaseTrap : MonoBehaviour {
 		}
 	}
 
+	#region IPoolObject implementation
+	public void OnSpawn (SpawnPool pMyPool)
+	{
+		myPool = pMyPool;
+	}
+
+	public void Despawn ()
+	{
+		myPool.Despawn(gameObject);
+	}
+
+	public void DespawnIn (float fDelay)
+	{
+	}
+	public void OnDespawn ()
+	{
+	}
+	#endregion
 }
