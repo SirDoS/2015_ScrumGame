@@ -9,8 +9,8 @@ public class Panda_JumpState : SKMecanimState<PandaController> {
 		base.begin ();
 		
 		Vector2 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
-		                                                   _context.pandaJumpForce));
+		_context.physicsController.AddForce(new Vector2(currentVelocity.x,
+		                                                   _context.pandaJumpForce), 2);
 		_machine.animator.Play("Jump");
 
 		

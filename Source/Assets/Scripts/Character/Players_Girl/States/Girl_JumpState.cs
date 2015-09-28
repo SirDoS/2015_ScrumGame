@@ -14,8 +14,9 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 		// Define a velocidade
 		// em X: como sua velocidade atual
 		// em Y: de acordo com a forca de pulo da menina
-		_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
-		                                                   _context.girlJumpForce));
+		//_context.physicsController.SetVelocity(new Vector2(currentVelocity.x,
+		                                                   //_context.girlJumpForce));
+		_context.physicsController.AddForce(new Vector2(currentVelocity.x, _context.girlJumpForce), 2);
 
 		//Toca a animacao de Pulo
 		_machine.animator.Play("Jump");
