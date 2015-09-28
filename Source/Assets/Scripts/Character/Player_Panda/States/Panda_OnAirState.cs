@@ -39,14 +39,15 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 
 				Rotate(horizontal);
 
-				RaycastHit2D wallHit = Physics2D.Raycast(_context.Position, 
-				                                         new Vector2(horizontal, 0), 0.3f, 
-				                                         1 << 10);
-				if(wallHit.transform != null && Input.GetKeyDown(KeyCode.UpArrow)){
-					Rotate(-horizontal);
-					_machine.changeState<Panda_WallJumpState>();
-				}
 			}
+		}
+
+		RaycastHit2D wallHit = Physics2D.Raycast(_context.Position, 
+		                                         new Vector2(horizontal, 0), 0.3f, 
+		                                         1 << 10);
+		if(wallHit.transform != null && Input.GetKeyDown(KeyCode.UpArrow)){
+			Rotate(-horizontal);
+			_machine.changeState<Panda_WallJumpState>();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Slash)){

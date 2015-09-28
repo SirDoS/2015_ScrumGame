@@ -5,7 +5,6 @@ using Prime31.StateKit;
 public class Panda_WallJumpState : SKMecanimState<PandaController>
 {
 	float timeOnState;
-	float pandaWalljumpForce = -90;
 
 	public override void begin ()
 	{
@@ -17,10 +16,13 @@ public class Panda_WallJumpState : SKMecanimState<PandaController>
 		
 		float horizontal = Input.GetAxis("Horizontal2");
 		
-		Vector2 currentVelocity = _context.physicsController.GetVelocity();
-		_context.physicsController.AddForce(new Vector2(currentVelocity.x,
-		                                                ((Mathf.Abs(horizontal))* -1)), pandaWalljumpForce);
+		Vector2 velocity = _context.physicsController.GetVelocity();
+
+		_context.physicsController.AddForce(new Vector2(velocity.x,
+		                                                ((Mathf.Abs(horizontal))* -1)), _context.gameplayController.wallJumpForce.y);
 		
+		//_context.physicsController.SetVelocity(_context.gameplayController.wallJumpForce);
+
 		_machine.animator.Play("WallJump");
 	}
 	public override void reason ()
