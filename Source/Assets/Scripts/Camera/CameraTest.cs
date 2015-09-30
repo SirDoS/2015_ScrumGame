@@ -10,7 +10,7 @@ public class CameraTest : MonoBehaviour {
 	private void LateUpdate(){
 
 		transform.position = Vector3.MoveTowards(transform.position, 
-		                                         target.position + cameraOffset + new Vector3(3, 0,0), 
+		                                         target.position + cameraOffset, 
 		                                         Time.deltaTime * cameraSpeed);
 
 	}
