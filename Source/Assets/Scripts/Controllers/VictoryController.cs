@@ -20,8 +20,8 @@ public class VictoryController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D ganhador){
-		GirlController girlController = ganhador.gameObject.GetComponent<GirlController>();
-		if(girlController != null){
+		PandaController pandaController = ganhador.gameObject.GetComponent<PandaController>();
+		if(pandaController != null){
 			isPlayerInside = true;
 		}
 	}

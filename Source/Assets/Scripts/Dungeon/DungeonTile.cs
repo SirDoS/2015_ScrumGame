@@ -8,9 +8,19 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 
 	private SpawnPool myPool;
 
+	public bool alreadyTriggered;
 
 	void Start () {
 		//DungeonManager.Instance.AddDungeonTiles(this);
+	}
+
+	public void OnTriggerEnter2D(Collider2D pCollider){
+		//Debug.Log (pCollider.name);
+		if(pCollider.CompareTag("Player") && alreadyTriggered == false){
+			DungeonManager.Instance.MessageInAEnter();
+			alreadyTriggered = true;
+		}
+
 	}
 
 	#region IPoolObject implementation
@@ -23,6 +33,7 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 	{
 		Debug.Log("Despawn, apenas", this);
 		myPool.Despawn(this.gameObject);
+		alreadyTriggered = false;
 	}
 	public void DespawnIn (float fDelay)
 	{
