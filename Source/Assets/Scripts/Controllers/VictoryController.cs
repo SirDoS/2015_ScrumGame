@@ -3,26 +3,28 @@ using System.Collections;
 
 public class VictoryController : MonoBehaviour {
 
-	bool isPlayerInside = false;
-    bool isGanhou;
+	public bool alreadyTriggered;
+
+	public TriggerEvent victoryTrigger;
 
 	// Use this for initialization
 	void Start () {
-        isGanhou = false;
+		if(victoryTrigger != null){
+			victoryTrigger.onTriggerEnterCallback += OnTriggerEntrance;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(isPlayerInside && !isGanhou){
-            isGanhou = true;
+
+	}
+
+	public void OnTriggerEntrance(Collider2D pCollider){
+		Debug.Log(pCollider.name);
+		if(pCollider.CompareTag("Player") && alreadyTriggered == false){
 			Debug.Log("Ganhou");
+			alreadyTriggered = true;
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D ganhador){
-		PandaController pandaController = ganhador.gameObject.GetComponent<PandaController>();
-		if(pandaController != null){
-			isPlayerInside = true;
-		}
-	}
 }

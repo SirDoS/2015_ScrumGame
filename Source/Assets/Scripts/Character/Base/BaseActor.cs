@@ -28,7 +28,13 @@ public class BaseActor : MonoBehaviour
 	}
 
 	// Metodo para aplicacao de Dano
-	public virtual void Damage(int pDamage)
+	public virtual void DoDamage(int pDamage, BaseActor pTarget)
+	{
+		pTarget.ReceiveDamage(pDamage, this);
+	}
+
+	// Metodo para recebicao de Dano
+	public virtual void ReceiveDamage(int pDamage, BaseActor pBully)
 	{
 		currentLife -= pDamage;
 		if(currentLife <= 0)

@@ -10,17 +10,12 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 
 	public bool alreadyTriggered;
 
+	public TriggerEvent triggerEntrance;
+
 	void Start () {
-		//DungeonManager.Instance.AddDungeonTiles(this);
-	}
-
-	public void OnTriggerEnter2D(Collider2D pCollider){
-		//Debug.Log (pCollider.name);
-		if(pCollider.CompareTag("Player") && alreadyTriggered == false){
-			DungeonManager.Instance.MessageInAEnter();
-			alreadyTriggered = true;
+		if(triggerEntrance != null){
+			triggerEntrance.onTriggerEnterCallback += OnTriggerEntrance;
 		}
-
 	}
 
 	#region IPoolObject implementation
@@ -42,4 +37,13 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 	{
 	}
 	#endregion
+
+	public void OnTriggerEntrance(Collider2D pCollider){
+		Debug.Log(pCollider.name);
+		if(pCollider.CompareTag("Player") && alreadyTriggered == false){
+			DungeonManager.Instance.MessageInAEnter();
+			alreadyTriggered = true;
+		}
+	}
+
 }

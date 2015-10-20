@@ -18,7 +18,7 @@ public class BaseChar : BaseActor
 	 *	Metodo que aplica dano. 
 	 *	Recebe como parametro a quantidade de dano, e quem eh o causador de dano. 
 	 */
-	public void doDamage (float pDamage, GameObject pCauser)
+	public void doDamage (float pDamage, BaseActor pCauser)
 	{
 		
 	}
@@ -26,7 +26,7 @@ public class BaseChar : BaseActor
 	/**
 	 *	Metodo para receber dano. 
 	 */
-	public void receiveDamage(){
+	public void receiveDamage(float pDamage, BaseActor pCauser){
 
 	}
 }

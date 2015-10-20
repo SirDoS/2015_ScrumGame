@@ -24,7 +24,7 @@ public class PandaController : BaseChar {
 		pandaStateMachine.addState(new Panda_OnDeathState());
 
 		pandaStateMachine.onStateChanged += () => {
-			Debug.Log(pandaStateMachine.currentState.ToString());
+		//	Debug.Log(pandaStateMachine.currentState.ToString());
 		};
 	}
 	

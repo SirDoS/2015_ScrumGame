@@ -9,6 +9,8 @@ public class BaseWeapon : MonoBehaviour
 	public GameObject boxCastOrigin;
 	public int weaponDamage;
 
+	public BaseActor weaponOwner;
+
 	public Vector2 weaponSize;
 	public LayerMask enemiesLayer;
 
@@ -21,7 +23,7 @@ public class BaseWeapon : MonoBehaviour
 
 	public virtual void DoDamage(BaseActor pTarget){
 		if(pTarget != null)
-			pTarget.Damage(weaponDamage);
+			weaponOwner.DoDamage(weaponDamage, pTarget);
 	}
 
 	public virtual void Attack()

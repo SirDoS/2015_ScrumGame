@@ -44,7 +44,7 @@ public class BaseTrap : MonoBehaviour, IPoolObject
 	public virtual void DoDamage(BaseActor pTarget){
 		if(pTarget != null){
 			if((tickCounter < maxTicks) || maxTicks <= 0){
-				pTarget.Damage(trapDamage);
+				pTarget.DoDamage(trapDamage, null);
 				tickCounter++;
 			}
 		}
