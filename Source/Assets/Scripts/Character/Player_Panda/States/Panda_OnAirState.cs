@@ -7,7 +7,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 	{
 		base.begin ();
 
-		_machine.animator.Play("OnAir");
+		_context.animatorController.PlayState("OnAir");
 	}
 	
 	public override void reason ()

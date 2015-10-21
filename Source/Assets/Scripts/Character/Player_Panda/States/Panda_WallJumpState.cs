@@ -23,7 +23,7 @@ public class Panda_WallJumpState : SKMecanimState<PandaController>
 		
 		//_context.physicsController.SetVelocity(_context.gameplayController.wallJumpForce);
 
-		_machine.animator.Play("WallJump");
+		_context.animatorController.PlayState("WallJump");
 	}
 	public override void reason ()
 	{
