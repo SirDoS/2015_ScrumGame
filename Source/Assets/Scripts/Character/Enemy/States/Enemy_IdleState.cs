@@ -11,7 +11,7 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 
 		if(!landed){
 			landed = true;
-			_context.physicsController.SetVelociy(new Vector2(0.05f, 0.0f));
+			_context.physicsController.SetVelocity(new Vector2(0.05f, 0.0f));
 		}
 		_context.animatorController.PlayState("Enemy1_Idle");
 	}

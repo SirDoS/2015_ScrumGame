@@ -2,31 +2,31 @@
 using System.Collections;
 using Prime31.StateKit;
 
-	public class EnemyController : BaseChar, IPoolObject
-	{
-		private SpawnPool myPool;
-		private SKMecanimStateMachine<EnemyController> enemyStateMachine;
-		public SKMecanimStateMachine<EnemyController> EnemyStateMachine {
+public class EnemyController : BaseChar, IPoolObject
+{
+	private SpawnPool myPool;
+	private SKMecanimStateMachine<EnemyController> enemyStateMachine;
+	public SKMecanimStateMachine<EnemyController> EnemyStateMachine {
 		get {
 			if(enemyStateMachine == null){
-					enemyStateMachine = new SKMecanimStateMachine<EnemyController>(animatorController.CachedAnimator, this, new Enemy_IdleState());
-					enemyStateMachine.addState(new Enemy_IdleState());
-					enemyStateMachine.addState(new Enemy_WalkState());
-					enemyStateMachine.addState(new Enemy_OnHitState());
-					enemyStateMachine.addState(new Enemy_AttackState());
-					enemyStateMachine.addState(new Enemy_OnDeathState());
+				enemyStateMachine = new SKMecanimStateMachine<EnemyController>(animatorController.CachedAnimator, this, new Enemy_IdleState());
+				enemyStateMachine.addState(new Enemy_IdleState());
+				enemyStateMachine.addState(new Enemy_WalkState());
+				enemyStateMachine.addState(new Enemy_OnHitState());
+				enemyStateMachine.addState(new Enemy_AttackState());
+				enemyStateMachine.addState(new Enemy_OnDeathState());
 			}
 			return enemyStateMachine;
-			}
 		}
+	}
+
 	void Update(){
 		EnemyStateMachine.update(Time.deltaTime);
 		if(!isAlive)
 			EnemyStateMachine.changeState<Enemy_OnHitState>();
 	}
 
-	public override void OnDeath (int pDamage, BaseActor pKiller)
-	{
+	public override void OnDeath (int pDamage, BaseActor pKiller){
 		base.OnDeath (pDamage, pKiller);
 
 		Despawn();
