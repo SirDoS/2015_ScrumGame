@@ -18,7 +18,6 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 		}
 
 		_context.animatorController.PlayState("Idle");
-	//	_context.physicsController.SetVelocity(Vector2.zero);
 	}
 
 	public override void reason ()
