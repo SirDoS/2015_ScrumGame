@@ -7,6 +7,7 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 	public override void begin()
 	{
 		base.begin ();
+		_context.animatorController.PlayState("Enemy1_Idle");
 	}
 
 	public override void reason()

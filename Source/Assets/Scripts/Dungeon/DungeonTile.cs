@@ -21,12 +21,12 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 	#region IPoolObject implementation
 	public void OnSpawn (SpawnPool pMyPool)
 	{
-		Debug.Log("OnSpawn, apenas");
+		//Debug.Log("OnSpawn, apenas");
 		myPool = pMyPool;
 	}
 	public void Despawn ()
 	{
-		Debug.Log("Despawn, apenas", this);
+		//Debug.Log("Despawn, apenas", this);
 		myPool.Despawn(this.gameObject);
 		alreadyTriggered = false;
 	}
@@ -39,7 +39,7 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 	#endregion
 
 	public void OnTriggerEntrance(Collider2D pCollider){
-		Debug.Log(pCollider.name);
+		//Debug.Log(pCollider.name);
 		if(pCollider.CompareTag("Player") && alreadyTriggered == false){
 			DungeonManager.Instance.MessageInAEnter();
 			alreadyTriggered = true;

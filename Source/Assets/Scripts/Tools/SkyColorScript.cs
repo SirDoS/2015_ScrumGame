@@ -23,7 +23,7 @@ public class SkyColorScript : MonoBehaviour {
 		   && Mathf.Abs((currentColor.g - skyColorTrasitions[nextColorIndex].g)) <= 0.01f
 		   && Mathf.Abs((currentColor.b - skyColorTrasitions[nextColorIndex].b)) <= 0.01f)
 		{
-			Debug.Log("Oi "+nextColorIndex);
+			//Debug.Log("Changing color background! "+nextColorIndex);
 			nextColorIndex++;
 			if(nextColorIndex >= skyColorTrasitions.Length)
 			{

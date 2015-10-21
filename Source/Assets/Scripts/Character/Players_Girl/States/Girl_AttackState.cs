@@ -11,7 +11,7 @@ public class Girl_AttackState : SKMecanimState<GirlController>
 		base.begin();
 		//Seta o tempo para 0
 		timeOnState = 0;
-		Debug.Log("Im attacking, bitch!");
+		//Debug.Log("Im attacking, bitch!");
 		//Toca a animacao de Ataque
 		_machine.animator.Play("Attack");
 		_context.attackController.Attack();

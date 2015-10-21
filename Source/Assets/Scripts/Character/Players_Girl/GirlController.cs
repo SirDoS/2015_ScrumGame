@@ -17,7 +17,7 @@ public class GirlController : BaseChar
 		// Esta vivo
 		isAlive = true;
 
-		stateMachine = new SKMecanimStateMachine<GirlController>(animatorController.Animator,
+		stateMachine = new SKMecanimStateMachine<GirlController>(animatorController.CachedAnimator,
 		                                                         this, new Girl_IdleState());
 
 		//Todos os estados da menina sao adicionados na maquina de estado
