@@ -19,7 +19,7 @@ public class Girl_JumpState : SKMecanimState<GirlController>
 		_context.physicsController.AddForce(new Vector2(currentVelocity.x, _context.girlJumpForce), 2);
 
 		//Toca a animacao de Pulo
-		_machine.animator.Play("Jump");
+		_context.animatorController.PlayState("Jump");
 	}
 
 	public override void reason(){

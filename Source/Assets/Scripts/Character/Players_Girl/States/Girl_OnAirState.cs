@@ -8,7 +8,7 @@ public class Girl_OnAirState : SKMecanimState<GirlController>
 	{
 		base.begin ();
 		//Toca a animacao de estar no ar
-		_machine.animator.Play("OnAir");
+		_context.animatorController.PlayState("OnAir");
 	}
 	
 	public override void reason ()

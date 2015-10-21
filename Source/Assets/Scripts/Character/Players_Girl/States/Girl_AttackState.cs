@@ -13,7 +13,7 @@ public class Girl_AttackState : SKMecanimState<GirlController>
 		timeOnState = 0;
 		//Debug.Log("Im attacking, bitch!");
 		//Toca a animacao de Ataque
-		_machine.animator.Play("Attack");
+		_context.animatorController.PlayState("Attack");
 		_context.attackController.Attack();
 	}
 	

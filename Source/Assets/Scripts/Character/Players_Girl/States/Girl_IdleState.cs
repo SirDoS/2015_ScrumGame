@@ -8,7 +8,7 @@ public class Girl_IdleState : SKMecanimState<GirlController>
 	{
 		base.begin ();
 		//Toca a animacao de Idle
-		_machine.animator.Play("Idle");
+		_context.animatorController.PlayState("Idle");
 	}
 
 	public override void reason ()

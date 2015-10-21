@@ -8,7 +8,7 @@ public class Girl_RunState : SKMecanimState<GirlController>
 	{
 		base.begin ();
 		//Toca a animacao de correr
-		_machine.animator.Play("Run");
+		_context.animatorController.PlayState("Run");
 
 	}
 	public override void reason ()

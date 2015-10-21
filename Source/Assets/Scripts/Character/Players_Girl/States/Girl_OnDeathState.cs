@@ -9,7 +9,7 @@ public class Girl_OnDeathState : SKMecanimState<GirlController> {
 		base.begin ();
 		respawnTime = 0;
 		_context.physicsController.SetVelocity(Vector2.zero);
-		_machine.animator.Play ("OnDeath");
+		_context.animatorController.PlayState("OnDeath");
 	}
 	
 	public override void reason ()

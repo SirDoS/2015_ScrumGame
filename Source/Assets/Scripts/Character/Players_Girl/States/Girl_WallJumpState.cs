@@ -28,7 +28,7 @@ public class Girl_WallJumpState : SKMecanimState<GirlController>
 		                                                (Mathf.Abs(horizontal)* -1)), girlWalljumpForce);
 
 
-		_machine.animator.Play("WallJump");
+		_context.animatorController.PlayState("WallJump");
 
 	}
 	public override void reason ()
