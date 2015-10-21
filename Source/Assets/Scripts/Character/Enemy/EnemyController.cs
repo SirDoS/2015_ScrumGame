@@ -18,6 +18,7 @@ public class EnemyController : BaseChar
 		enemyStateMachine.addState(new Enemy_WalkState());
 		enemyStateMachine.addState(new Enemy_OnHitState());
 		enemyStateMachine.addState(new Enemy_AttackState());
+		//enemyStateMachine.addState(new Enemy_OnDeathState());
 	}
 	
 	// Update is called once per frame

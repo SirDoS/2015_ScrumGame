@@ -12,6 +12,7 @@ public class Girl_AttackOnAirState : SKMecanimState<GirlController>
 		// Tempo eh setado para 0
 		timeOnState = 0;
 		// Toca a animacao de Ataque no Ar
+		//_context.animatorController.PlayState("asd");
 		_machine.animator.Play("AttackOnAir");
 		_context.attackController.Attack();
 	}
