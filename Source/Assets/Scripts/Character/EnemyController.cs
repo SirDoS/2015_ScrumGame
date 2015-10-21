@@ -2,64 +2,64 @@
 using System.Collections;
 using Prime31.StateKit;
 
-public class Panda_IdleState : SKMecanimState<PandaController> {
-	
-	public override void begin ()
+	public class EnemyController : BaseChar, IPoolObject
 	{
-		bool landed = false;
-		base.begin ();
-		
-		if(!landed){
-			landed =true;
-			_context.physicsController.SetVelocity(new Vector2(0.05f, 0.0f));
-			
-		}if(landed){
-			_context.physicsController.SetVelocity(Vector2.zero);
+		private SpawnPool myPool;
+		private SKMecanimStateMachine<EnemyController> enemyStateMachine;
+		public SKMecanimStateMachine<EnemyController> EnemyStateMachine {
+		get {
+			if(enemyStateMachine == null){
+					enemyStateMachine = new SKMecanimStateMachine<EnemyController>(animatorController.CachedAnimator, this, new Enemy_IdleState());
+					enemyStateMachine.addState(new Enemy_IdleState());
+					enemyStateMachine.addState(new Enemy_WalkState());
+					enemyStateMachine.addState(new Enemy_OnHitState());
+					enemyStateMachine.addState(new Enemy_AttackState());
+					enemyStateMachine.addState(new Enemy_OnDeathState());
+			}
+			return enemyStateMachine;
+			}
 		}
-		
-		_context.animatorController.PlayState("Idle");
+	void Update(){
+		EnemyStateMachine.update(Time.deltaTime);
+		if(!isAlive)
+			EnemyStateMachine.changeState<Enemy_OnHitState>();
 	}
-	
-	public override void reason ()
+
+	public override void OnDeath (int pDamage, BaseActor pKiller)
 	{
-		base.reason ();
-		
-		if(_context.physicsController.IsGrounded())
-		{
-			float horizontal = Input.GetAxis("Horizontal2");
-			
-			if(horizontal != 0.0f)
-			{
-				_machine.changeState<Panda_RunState>();
-				return;
-			}
-			if(Input.GetKeyDown(KeyCode.UpArrow)){
-				_machine.changeState<Panda_JumpState>();
-				return;
-			}
-			
-			if(Input.GetKeyDown(KeyCode.Slash)){
-				_machine.changeState<Panda_AttackOnIdleState>();
-			}
-			
-			_context.physicsController.SetVelocity(Vector2.zero);
-		}
-		else
-		{
-			_machine.changeState<Panda_OnAirState>();
-			return;
-		}
+		base.OnDeath (pDamage, pKiller);
+
+		Despawn();
 	}
+
+	public override void Reset(){
+		base.Reset();
+		EnemyStateMachine.changeState<Enemy_IdleState>();
+	}
+
+	#region IPoolObject implementation
 	
-	#region implemented abstract members of SKMecanimState
-	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
+		public void OnSpawn (SpawnPool pMyPool)
 	{
-		
+		Reset();
+
+		myPool = pMyPool;
 	}
+
+	public void Despawn ()
+	{
+		myPool.Despawn(gameObject);
+	}
+
+	public void DespawnIn (float fDelay)
+	{
+
+	}
+
+	public void OnDespawn ()
+	{
+
+	}
+
 	#endregion
-	
-	public override void end ()
-	{
-		base.end ();
-	}
 }
