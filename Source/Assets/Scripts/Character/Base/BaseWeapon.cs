@@ -28,7 +28,7 @@ public class BaseWeapon : MonoBehaviour
 
 	public virtual void Attack()
 	{
-		Debug.Log("Ola deus, Attack classe pai!");
+		//Debug.Log("Ola deus, Attack classe pai!");
 	}
 
 	void OnDrawGizmos(){

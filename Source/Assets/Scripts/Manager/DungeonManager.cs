@@ -49,7 +49,7 @@ public class DungeonManager : MonoBehaviour {
 	}
 	
 	public void CreateDungeonTile(Vector3 pPosition){
-		Debug.Log ("CreatingDungeonTile");
+		//Debug.Log ("CreatingDungeonTile");
 		int i = Random.Range(0, tilesPools.Count);
 		DungeonTile tile = tilesPools[i].Spawn<DungeonTile>(pPosition, Quaternion.identity);
 
@@ -63,7 +63,7 @@ public class DungeonManager : MonoBehaviour {
 	}
 
 	public void CreateStartDungeonTile(Vector3 pPosition){
-		Debug.Log ("CreatingStartDungeonTile");
+		//Debug.Log ("CreatingStartDungeonTile");
 		int i = Random.Range (0, startTilePools.Count);
 		DungeonTile tile = startTilePools[i].Spawn<DungeonTile>(pPosition, Quaternion.identity);
 
@@ -77,7 +77,7 @@ public class DungeonManager : MonoBehaviour {
 	}
 
 	public void CreateEndDungeonTile(Vector3 pPosition){
-		Debug.Log ("CreatingEndDungeonTile");
+		//Debug.Log ("CreatingEndDungeonTile");
 		int i = Random.Range (0, endTilePools.Count);
 		DungeonTile tile = endTilePools[i].Spawn<DungeonTile>(pPosition, Quaternion.identity);
 		

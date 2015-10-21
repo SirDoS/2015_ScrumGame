@@ -6,15 +6,16 @@ public class AnimationController : MonoBehaviour
 	private Animator animator;
 
 
-	public Animator Animator {
+	public Animator CachedAnimator {
 		get {
+			if(animator == null)
+				animator = GetComponent<Animator>();
+			   
 			return animator;
 		}
 	}
 
-	void Awake()
-	{
-		if(animator == null)
-			animator = GetComponent<Animator>();
+	public void PlayState (string pStateName){
+		CachedAnimator.Play(pStateName);
 	}
 }

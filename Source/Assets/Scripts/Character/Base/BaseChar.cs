@@ -13,20 +13,4 @@ public class BaseChar : BaseActor
 	public PhysicsController physicsController;
 	public AnimationController animatorController;
 	public AttackController attackController;
-
-	/**
-	 *	Metodo que aplica dano. 
-	 *	Recebe como parametro a quantidade de dano, e quem eh o causador de dano. 
-	 */
-	public void doDamage (float pDamage, BaseActor pCauser)
-	{
-		
-	}
-
-	/**
-	 *	Metodo para receber dano. 
-	 */
-	public void receiveDamage(float pDamage, BaseActor pCauser){
-
-	}
 }
