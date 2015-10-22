@@ -9,7 +9,9 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 	public override void begin()
 	{
 		bool landed = false;
+		time = 0;
 		base.begin ();
+		_context.lineOfSight.onTriggerEnterCallback += OnTargetEnter;
 
 		if(!landed){
 			landed = true;
@@ -27,15 +29,9 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 
 		if(_context.physicsController.IsGrounded())
 		{
-			// Fazer IA
-			//Debug.Log("Entrou aqui, entrou ai?");
 			if(time >= 2.0f){
 				_machine.changeState<Enemy_PatrolState>();
 			}
-		}
-		else
-		{
-			// Idem
 		}
 	}
 
@@ -44,9 +40,17 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 		time += Time.deltaTime;
 	}
 
+	public void OnTargetEnter(Collider2D pTarget){
+		if(pTarget.CompareTag("Player")){
+			Debug.Log(pTarget.name);
+			_machine.changeState<Enemy_OnChaseState>();
+		}
+	}
+
 	public override void end()
 	{
 		base.end ();
+		_context.lineOfSight.onTriggerEnterCallback -= OnTargetEnter;
 	}
 	
 }

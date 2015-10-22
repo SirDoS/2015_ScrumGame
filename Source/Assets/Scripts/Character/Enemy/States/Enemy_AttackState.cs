@@ -7,6 +7,8 @@ public class Enemy_AttackState : SKMecanimState<EnemyController> {
 	public override void begin()
 	{
 		base.begin ();
+
+		_context.animatorController.PlayState("Enemy1_Attack");
 	}
 	
 	public override void reason()

@@ -14,6 +14,7 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 			_context.physicsController.SetVelocity(new Vector2(0.05f, 0.0f));
 
 		}
+
 		if(landed){
 			_context.physicsController.SetVelocity(Vector2.zero);
 		}
