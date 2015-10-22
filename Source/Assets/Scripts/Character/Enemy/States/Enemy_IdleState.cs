@@ -4,6 +4,8 @@ using Prime31.StateKit;
 
 public class Enemy_IdleState : SKMecanimState<EnemyController> {
 
+	float time;
+
 	public override void begin()
 	{
 		bool landed = false;
@@ -22,11 +24,24 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 	public override void reason()
 	{
 		base.reason ();
+
+		if(_context.physicsController.IsGrounded())
+		{
+			// Fazer IA
+			//Debug.Log("Entrou aqui, entrou ai?");
+			if(time >= 2.0f){
+				_machine.changeState<Enemy_PatrolState>();
+			}
+		}
+		else
+		{
+			// Idem
+		}
 	}
 
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{
-
+		time += Time.deltaTime;
 	}
 
 	public override void end()
