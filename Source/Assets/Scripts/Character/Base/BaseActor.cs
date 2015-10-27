@@ -35,6 +35,17 @@ public class BaseActor : MonoBehaviour
 		}
 	}
 
+	// Getter do cachedTransform, para retornar sua escala
+	public Vector3 Scale{
+		get {
+			if(cachedTransform == null){
+				cachedTransform = transform;
+			}
+
+			return cachedTransform.localScale;
+		}
+	}
+
 	// Metodo para aplicacao de Dano
 	public virtual void DoDamage(int pDamage, BaseActor pTarget)
 	{

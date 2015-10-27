@@ -5,14 +5,13 @@ using Prime31.StateKit;
 public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 
 	float time;
+	Vector3 targetPosition;
 
 	public override void begin()
 	{
 		time = 0;
 		base.begin ();
-		_context.lineOfAttack.onTriggerEnterCallback += OnTargetEnter;
-
-		_context.physicsController.SetVelocity(Vector2.zero);
+		_context.lineOfSight.onTriggerExitCallback += OnTargetExit;
 		_context.animatorController.PlayState("Enemy1_Walk");
 	}
 
@@ -22,26 +21,50 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 
 		if(_context.physicsController.IsGrounded())
 		{
-
+			targetPosition  = _context.iaController.iaTarget.Position;
 		}
 	}
 
 	public override void update (float deltaTime, AnimatorStateInfo stateInfo)
 	{
 		time += Time.deltaTime;
-	}
 
-	public void OnTargetEnter(Collider2D pTarget){
-		if(pTarget.CompareTag("Player")){
-			Debug.Log(pTarget.name);
-			_machine.changeState<Enemy_AttackState>();
-		}
+		Chase(targetPosition);
 	}
 
 		public override void end()
 	{
 		base.end ();
-		_context.lineOfAttack.onTriggerEnterCallback -= OnTargetEnter;
+
+		_context.lineOfSight.onTriggerExitCallback -= OnTargetExit;
+	}
+
+	public void Chase (Vector3 pTargetPosition){
+		Vector3 direction = pTargetPosition - _context.Position;
+		Vector3 scale = _context.transform.localScale;
+		direction.Normalize();
+
+		if (direction.x > 0.0f) {
+			scale.x = -1;
+			_context.physicsController.SetScale (scale);
+		} else if (direction.x < 0.0f) {
+			scale.x = 1;
+			_context.physicsController.SetScale (scale);
+		}
+
+		_context.physicsController.SetVelocity(new Vector2(direction.x, _context.physicsController.GetVelocity().y));
+	}
+
+	public void OnTargetExit (Collider2D pCollider) {
+		if(pCollider.CompareTag("Player")) {
+			Debug.Log (pCollider.name);
+			BaseActor actor = pCollider.GetComponent<BaseActor>();
+
+			if (actor == _context.iaController.iaTarget) {
+				_machine.changeState<Enemy_PatrolState>();
+			}
+		}
+
 	}
 	
 }

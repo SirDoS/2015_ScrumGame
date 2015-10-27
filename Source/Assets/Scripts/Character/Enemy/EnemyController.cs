@@ -7,6 +7,8 @@ public class EnemyController : BaseChar, IPoolObject
 	private SpawnPool myPool;
 	private SKMecanimStateMachine<EnemyController> enemyStateMachine;
 
+	public IAController iaController;
+
 	public TriggerEvent lineOfSight;
 	public TriggerEvent lineOfAttack;
 
@@ -23,6 +25,7 @@ public class EnemyController : BaseChar, IPoolObject
 				enemyStateMachine.addState(new Enemy_AttackState());
 				enemyStateMachine.addState(new Enemy_OnDeathState());
 				enemyStateMachine.addState(new Enemy_OnChaseState());
+
 			}
 			return enemyStateMachine;
 		}
@@ -30,6 +33,7 @@ public class EnemyController : BaseChar, IPoolObject
 
 	void Update(){
 		EnemyStateMachine.update(Time.deltaTime);
+		Debug.Log(enemyStateMachine.currentState.ToString());
 
 		if(!isAlive)
 			EnemyStateMachine.changeState<Enemy_OnHitState>();
@@ -57,7 +61,8 @@ public class EnemyController : BaseChar, IPoolObject
 
 	public void Despawn ()
 	{
-		myPool.Despawn(gameObject);
+		if(gameObject != null)
+			myPool.Despawn(gameObject);
 	}
 
 	public void DespawnIn (float fDelay)
