@@ -7,8 +7,8 @@ public class Enemy_PatrolState : SKMecanimState<EnemyController> {
 	public override void begin()
 	{
 		base.begin ();
-		//_context.transform.Rotate(new Vector3(0, 180, 0));
-		_context.physicsController.SetScale (new Vector3(_context.Scale.x * -1, _context.Scale.y, _context.Scale.z));
+		_context.transform.Rotate(new Vector3(0, 180, 0));
+		//_context.physicsController.SetScale (new Vector3(_context.Scale.x * -1, _context.Scale.y, _context.Scale.z));
 		_context.animatorController.PlayState("Enemy1_Walk");
 
 		_context.lineOfSight.onTriggerEnterCallback += OnTargetEnter;
@@ -56,7 +56,7 @@ public class Enemy_PatrolState : SKMecanimState<EnemyController> {
 		if(pTarget.CompareTag("Player")){
 			//Debug.Log(pTarget.name);
 			_context.iaController.iaTarget = pTarget.GetComponent<BaseActor>();
-			_machine.changeState<Enemy_OnChaseState>();
+			//_machine.changeState<Enemy_OnChaseState>();
 		}
 	}
 	

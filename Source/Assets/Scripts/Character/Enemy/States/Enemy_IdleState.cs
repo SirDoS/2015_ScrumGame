@@ -44,7 +44,7 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 		if(pTarget.CompareTag("Player")){
 			//Debug.Log(pTarget.name);
 			_context.iaController.iaTarget = pTarget.GetComponent<BaseActor>();
-			_machine.changeState<Enemy_OnChaseState>();
+			//_machine.changeState<Enemy_OnChaseState>();
 		}
 	}
 
