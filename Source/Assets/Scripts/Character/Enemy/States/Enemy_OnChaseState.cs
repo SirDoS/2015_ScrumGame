@@ -12,6 +12,7 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 		time = 0;
 		base.begin ();
 		_context.lineOfSight.onTriggerExitCallback += OnTargetExit;
+		_context.lineOfAttack.onTriggerEnterCallback += OnTargetEnterAttack;
 		_context.animatorController.PlayState("Enemy1_Walk");
 	}
 
@@ -37,6 +38,7 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 		base.end ();
 
 		_context.lineOfSight.onTriggerExitCallback -= OnTargetExit;
+		_context.lineOfAttack.onTriggerEnterCallback -= OnTargetEnterAttack;
 	}
 
 	public void Chase (Vector3 pTargetPosition){
@@ -45,19 +47,33 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 		direction.Normalize();
 
 		if (direction.x > 0.0f) {
-			scale.x = -1;
-			_context.physicsController.SetScale (scale);
+//			scale.x = -1;
+//			_context.physicsController.SetScale (scale);
+			_context.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
 		} else if (direction.x < 0.0f) {
-			scale.x = 1;
-			_context.physicsController.SetScale (scale);
+//			scale.x = 1;
+//			_context.physicsController.SetScale (scale);
+			_context.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
 		}
 
 		_context.physicsController.SetVelocity(new Vector2(direction.x, _context.physicsController.GetVelocity().y));
 	}
 
+	public void OnTargetEnterAttack(Collider2D pTarget){
+		if(pTarget.CompareTag("Player")){
+			//Debug.Log(pTarget.name);
+			BaseActor actor = pTarget.GetComponent<BaseActor>();
+
+			if(actor == _context.iaController.iaTarget){
+				_machine.changeState<Enemy_AttackState>();
+			}
+
+		}
+	}
+
 	public void OnTargetExit (Collider2D pCollider) {
 		if(pCollider.CompareTag("Player")) {
-			Debug.Log (pCollider.name);
+			//Debug.Log (pCollider.name);
 			BaseActor actor = pCollider.GetComponent<BaseActor>();
 
 			if (actor == _context.iaController.iaTarget) {

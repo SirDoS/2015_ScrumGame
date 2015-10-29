@@ -42,9 +42,9 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 
 	public void OnTargetEnter(Collider2D pTarget){
 		if(pTarget.CompareTag("Player")){
-			//Debug.Log(pTarget.name);
+			Debug.Log(pTarget.name);
 			_context.iaController.iaTarget = pTarget.GetComponent<BaseActor>();
-			//_machine.changeState<Enemy_OnChaseState>();
+			_machine.changeState<Enemy_OnChaseState>();
 		}
 	}
 
