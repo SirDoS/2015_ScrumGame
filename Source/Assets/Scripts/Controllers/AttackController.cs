@@ -16,7 +16,7 @@ public class AttackController : MonoBehaviour {
 	public List <BaseWeapon> weaponsList ;
 
 	public void Update(){
-		if(Input.GetKeyDown(KeyCode.F1)){
+        if (Input.GetKeyDown(KeyCode.F1)){
 			SelectWeapon(WEAPON_ID.SWORD);
 		}else if(Input.GetKeyDown(KeyCode.F2)){
 			SelectWeapon(WEAPON_ID.KATANA);
@@ -25,7 +25,7 @@ public class AttackController : MonoBehaviour {
 
 	public void Attack()
 	{
-		equippedWeapon.Attack();
+        equippedWeapon.Attack();        
 	}
 
 	/*public void Teste(){

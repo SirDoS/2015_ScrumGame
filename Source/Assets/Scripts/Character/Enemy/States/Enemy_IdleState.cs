@@ -29,7 +29,7 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 
 		if(_context.physicsController.IsGrounded())
 		{
-			if(time >= 2.0f){
+			if(time >= 1.0f){
 				_machine.changeState<Enemy_PatrolState>();
 			}
 		}

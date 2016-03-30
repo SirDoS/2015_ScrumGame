@@ -10,6 +10,8 @@ public class Enemy_AttackState : SKMecanimState<EnemyController> {
 
 		_context.animatorController.PlayState("Enemy1_Attack");
 		_context.attackController.Attack();
+
+        _machine.changeState<Enemy_PatrolState>();
 	}
 	
 	public override void reason()
