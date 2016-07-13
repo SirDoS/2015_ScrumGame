@@ -6,6 +6,7 @@ public class TriggerEvent : MonoBehaviour {
 	public delegate void OnTriggerDelegate(Collider2D pCollider); // Lista de metodos que tem como parametro Collider2D
 	public OnTriggerDelegate onTriggerEnterCallback;
 	public OnTriggerDelegate onTriggerExitCallback;
+	public OnTriggerDelegate onTriggerStayCallback;
 	
 	void OnTriggerEnter2D(Collider2D pCollider){
 		if(onTriggerEnterCallback != null){
@@ -18,6 +19,12 @@ public class TriggerEvent : MonoBehaviour {
 		if(onTriggerExitCallback != null){
 			//Debug.Log ("OnTriggerExit , im leaving Tiago");
 			onTriggerExitCallback(pCollider);
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D pCollider){
+		if(onTriggerStayCallback != null){
+			onTriggerStayCallback(pCollider);
 		}
 	}
 }

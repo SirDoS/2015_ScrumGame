@@ -11,15 +11,16 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 	{
 		time = 0;
 		base.begin ();
+		_context.animatorController.PlayState("Enemy1_Walk");
 		_context.lineOfSight.onTriggerExitCallback += OnTargetExit;
 		_context.lineOfAttack.onTriggerEnterCallback += OnTargetEnterAttack;
-		_context.animatorController.PlayState("Enemy1_Walk");
+
 	}
 
 	public override void reason()
 	{
 		base.reason ();
-
+		_context.lineOfAttack.onTriggerStayCallback += OnTargetStay;
 		if(_context.physicsController.IsGrounded())
 		{
 			targetPosition  = _context.iaController.iaTarget.Position;
@@ -61,7 +62,7 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 
 	public void OnTargetEnterAttack(Collider2D pTarget){
 		if(pTarget.CompareTag("Player")){
-			//Debug.Log(pTarget.name);
+			Debug.Log(pTarget.name);
 			BaseActor actor = pTarget.GetComponent<BaseActor>();
 
 			if(actor == _context.iaController.iaTarget){
@@ -81,6 +82,17 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 			}
 		}
 
+	}
+
+	public void OnTargetStay (Collider2D pCollider) {
+		if(pCollider.CompareTag("Player")) {
+			//Debug.Log (pCollider.name);
+			BaseActor actor = pCollider.GetComponent<BaseActor>();
+
+			if (actor == _context.iaController.iaTarget) {
+				_machine.changeState<Enemy_AttackState>();
+			}
+		}
 	}
 	
 }

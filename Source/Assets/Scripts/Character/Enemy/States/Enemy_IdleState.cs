@@ -11,6 +11,7 @@ public class Enemy_IdleState : SKMecanimState<EnemyController> {
 		bool landed = false;
 		time = 0;
 		base.begin ();
+
 		_context.lineOfSight.onTriggerEnterCallback += OnTargetEnter;
 
 		if(!landed){

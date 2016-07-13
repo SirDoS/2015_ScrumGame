@@ -10,7 +10,7 @@ public class Panda_IdleState : SKMecanimState<PandaController> {
 		base.begin ();
 
 		if(!landed){
-			landed =true;
+			landed = true;
 			_context.physicsController.SetVelocity(new Vector2(0.05f, 0.0f));
 
 		}

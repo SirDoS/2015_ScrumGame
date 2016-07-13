@@ -55,14 +55,13 @@ public class Enemy_PatrolState : SKMecanimState<EnemyController> {
 			_machine.changeState<Enemy_AttackState>();
 			return;
 		}*/
-
 	}
 
 	public void OnTargetEnter(Collider2D pTarget){
 		if(pTarget.CompareTag("Player")){
 			//Debug.Log(pTarget.name);
 			_context.iaController.iaTarget = pTarget.GetComponent<BaseActor>();
-			_machine.changeState<Enemy_AttackState>();
+			_machine.changeState<Enemy_OnChaseState>();
 		}
 	}
 	
