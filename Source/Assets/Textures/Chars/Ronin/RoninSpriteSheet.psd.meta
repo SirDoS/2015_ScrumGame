@@ -1,0 +1,501 @@
+fileFormatVersion: 2
+guid: 27ed293cf80084ddaa88cfee1fe955a7
+timeCreated: 1472046361
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ronin_Idle_1
+    21300002: Ronin_Idle_2
+    21300004: Ronin_Idle_3
+    21300006: Ronin_Idle_4
+    21300008: Ronin_Idle_5
+    21300010: Ronin_Run_1
+    21300012: Ronin_Run_2
+    21300014: Ronin_Run_3
+    21300016: Ronin_Run_4
+    21300018: Ronin_Run_5
+    21300020: Ronin_Run_6
+    21300022: Ronin_Attack_1
+    21300024: Ronin_Attack_2
+    21300026: Ronin_Attack_3
+    21300028: Ronin_Attack_4
+    21300030: Ronin_Attack_5
+    21300032: RoninSpriteSheet_16
+    21300034: RoninSpriteSheet_17
+    21300036: RoninSpriteSheet_18
+    21300038: RoninSpriteSheet_19
+    21300040: RoninSpriteSheet_20
+    21300042: RoninSpriteSheet_21
+    21300044: RoninSpriteSheet_22
+    21300046: Ronin_Death_1
+    21300048: Ronin_Death_2
+    21300050: Ronin_Death_3
+    21300052: Ronin_Death_4
+    21300054: Ronin_Death_5
+    21300056: Ronin_Death_6
+    21300058: Ronin_Death_7
+    21300060: Ronin_Death_8
+    21300062: Ronin_Death_9
+    21300064: Ronin_Death_10
+    21300066: Ronin_Jump
+    21300068: Ronin_Fall
+    21300070: Ronin_SWAG
+    21300072: Ronin_Land
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ronin_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 160
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 160
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 160
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Run_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Run_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 128
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Run_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 128
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Run_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Run_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 128
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Run_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 128
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 96
+        width: 25
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 96
+        width: 54
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 96
+        width: 26
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 96
+        width: 26
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 64
+        width: 24
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 74
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 64
+        width: 24
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 64
+        width: 26
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 26
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 64
+        width: 27
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: RoninSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 64
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 32
+        width: 20
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 32
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 32
+        width: 21
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 32
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 32
+        width: 27
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 32
+        width: 34
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 32
+        width: 33
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_9
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 32
+        width: 34
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Death_10
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 32
+        width: 36
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Jump
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Fall
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_SWAG
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 17
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ronin_Land
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

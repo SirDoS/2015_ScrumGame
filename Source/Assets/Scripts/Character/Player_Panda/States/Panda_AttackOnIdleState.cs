@@ -9,13 +9,13 @@ public class Panda_AttackOnIdleState : SKMecanimState<PandaController>
 	public override void begin () {
 		base.begin();
 		timeOnState = 0;
-		_context.animatorController.PlayState("AttackOnIdle");
+		_context.animatorController.PlayState("Ronin_Attack");
 		_context.attackController.Attack();
 	}
 	
 	public override void reason (){
 		base.reason();
-		if(timeOnState > 0.2f){
+		if(timeOnState > 0.5f){
 			float horizontal = Input.GetAxis("Horizontal2");
 			if(Input.GetKey(KeyCode.UpArrow)){
 				_machine.changeState<Panda_JumpState>();

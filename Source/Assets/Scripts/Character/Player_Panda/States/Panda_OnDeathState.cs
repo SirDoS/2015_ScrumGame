@@ -10,7 +10,7 @@ public class Panda_OnDeathState : SKMecanimState<PandaController> {
 		respawnTime = 0;
 		_context.physicsController.SetVelocity(Vector2.zero);
 
-		_context.animatorController.PlayState("OnDeath");
+		_context.animatorController.PlayState("Ronin_Death");
 	}
 
 	public override void reason ()

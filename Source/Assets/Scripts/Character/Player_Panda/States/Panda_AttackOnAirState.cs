@@ -9,14 +9,14 @@ public class Panda_AttackOnAirState : SKMecanimState<PandaController>
 	public override void begin() {
 		base.begin();
 		timeOnState = 0;
-		_context.animatorController.PlayState("AttackOnAir");
+		_context.animatorController.PlayState("Ronin_Attack");
 		_context.attackController.Attack();
 	}
 	
 	public override void reason (){
 		
 		base.reason();
-		if(timeOnState > 0.2f)
+		if(timeOnState > 0.5f)
 		_machine.changeState<Panda_OnAirState>();
 	}
 	

@@ -6,7 +6,9 @@ public class Panda_LandState : SKMecanimState<PandaController> {
 	public override void begin ()
 	{
 		base.begin ();
-		
+
+
+		_context.animatorController.PlayState("Ronin_Land");
 		//Tocar animacao LAND.
 		//Parar o personagem.
 	}

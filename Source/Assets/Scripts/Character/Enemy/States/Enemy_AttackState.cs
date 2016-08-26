@@ -3,7 +3,6 @@ using System.Collections;
 using Prime31.StateKit;
 
 public class Enemy_AttackState : SKMecanimState<EnemyController> {
-
 	float time;
 
 	public override void begin()
@@ -68,9 +67,11 @@ public class Enemy_AttackState : SKMecanimState<EnemyController> {
 			if (actor == _context.iaController.iaTarget) {
 				_context.animatorController.PlayState("Enemy1_Attack");
 
-				if(time < 0.2){
-					_context.physicsController.SetVelocity(new Vector2(0,0));
+				if(time == .5){
 					_context.attackController.Attack();
+				}else{
+					_context.physicsController.SetVelocity(new Vector2(0,0));
+					time = 0;
 				}
 			}
 		}
