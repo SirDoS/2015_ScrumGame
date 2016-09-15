@@ -20,9 +20,35 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 		}
 	}
 
+	/// <summary>
+	/// A value indicating how much the enemy walked, it's not the real amount
+	/// <para /> walked, but a value which the higer the value, the closer to the goal.
+	/// </summary>
+	/// <returns>The to goal.</returns>
+	public float distanceToGoal() {
+		float distance = Vector3.Distance(startPosition, gameObject.transform.position);
+		return F_function (distance);
+		return distance;
+	}
+
+	/// <summary>
+	/// <para />Retorna f(_x) onde é garantido que o valor retornado estara entre currentCheckpoint - 1 até currentcheckpoint.
+	/// <para />, resumidamente descreve uma função que sera alterada conforme o checkpoint para medir as distancias
+	/// <para />garantindo que a distancia de um enemy que esteja em um checkpoint mais proximo do fim sempre estara na frente.
+	/// <para />Duvidas verificar: http://www.wolframalpha.com/input/?i=(x%5E2+%2B+0)%2F(x%5E2+%2B+1)
+	/// <para />http://www.wolframalpha.com/input/?i=(2x%5E2+%2B+1)%2F(x%5E2+%2B+1)
+	/// <para />http://www.wolframalpha.com/input/?i=(4x%5E2+%2B+3)+%2F(x%5E2+%2B+1)
+	/// </summary>
+	/// <returns>The function.</returns>
+	/// <param name="_x">X.</param>
+	private float F_function(float _x){
+		return ((currentWaypoint * (Mathf.Pow ((_x), 2)) + (currentWaypoint - 1))
+			/ (Mathf.Pow((_x),2) + 1)); 
+	}
+
 	#region IWalker implementation
 
-	public float speed = 0.05f;
+	public float speed = 0.01f;
 
 	public event System.EventHandler reachedPoint;
 
@@ -53,7 +79,7 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 
 			} 
 		}
-
+		/*
 		if (Input.GetKey (KeyCode.Space)) {
 			//if (targetX != -1f) {
 				//Vector3 startPosition = gameObject.transform.position;
@@ -71,7 +97,7 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 				} 
 			//}
 		}
-
+		*/
 	}
 
 	/*
@@ -116,9 +142,14 @@ void Update(){
 		gameObject.transform.position = new Vector3 (x, y, 0);
 	}
 
+	/// <summary>
+	/// Destroys this instance.
+	/// </summary>
+	/// <returns>true</returns>
+	/// <c>false</c>
 	public bool destroyMe ()
 	{
-		GameObject.Destroy (this);
+		Destroy (gameObject);
 		return true;
 	}
 

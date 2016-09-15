@@ -44,6 +44,11 @@ public class MapGenerator
 		public GameObject towerSpawnTile;
 
 	/// <summary>
+	/// Transform that is the parent of all generated tiles. 
+	/// </summary>
+	public Transform MapHolder;
+
+	/// <summary>
 	/// Deletar essa porra dps
 	/// </summary>
 	public GameObject TEMPORARIOENEMY;
@@ -114,31 +119,20 @@ public class MapGenerator
 
 	// Update is called once per frame
 	void Update () {
-		/*if (Input.GetKey (KeyCode.UpArrow) && temp == 0) {
-			temp++;
-			if (generatePath (2, 2, 10, 10, alreadyGenerated)) {
-				Debug.Log ("Generated");
-			} else {
-				Debug.Log ("Falhei em gerar, sorry");
+		
+	}
 
-			}
-		}
-		*/
-		/*
-		if (Input.GetKey (KeyCode.DownArrow)) {
-			if (temp2 == 0) {
-				temp2++;
-				GameObject teste =  (GameObject)GameObject.Instantiate (TEMPORARIOENEMY);
-				TD_Enemy1Controller control = teste.GetComponent<TD_Enemy1Controller> ();
-				if (caminhos.Count > 0) {
-					caminhos [0].followPath (control);
-				} else {
-					Debug.Log ("No caminhos");
-				}
-
-			}
-		}*/
-
+	/// <summary>
+	/// Marks the panda house.
+	/// </summary>
+	/// <param name="x">The x coordinate.</param>
+	/// <param name="y">The y coordinate.</param>
+	public void markPandaHouse(int x, int y){
+		inicializarGrid ();
+		grid [x, y] = 4;
+	}
+	public bool isUsed(int x, int y) {
+		return grid [x, y] != 0;
 	}
 
 	/// <summary>
@@ -148,7 +142,7 @@ public class MapGenerator
 		isDecorationGenerated = true;
 		inicializarGrid ();
 		tileGenerationInfo t = new tileGenerationInfo ();
-		t.TileSize = .32f;
+		t.TileSize = tileSize;
 		for (int i = 0; i < zoneWidth; i++) {
 			for (int j = 0; j < zoneHeight; j++) {
 				if (grid[i,j] == 0) {
@@ -170,7 +164,7 @@ public class MapGenerator
 
 	/// <summary>
 	/// Gets the amount of cells around that are of celltype.
-	/// <para>0 = FreeSpace, 1 = roadSpace, 2 = DecorationSpace, 3 = TowerLocation </para>
+	/// <para>0 = FreeSpace, 1 = roadSpace, 2 = DecorationSpace, 3 = TowerLocation 4 = pandaHouse </para>
 	/// </summary>
 	/// <returns>The surrounding cell type count.</returns>
 	/// <param name="gridX">Grid x.</param>
@@ -237,7 +231,7 @@ public class MapGenerator
 			throw new UnityException ("Tentando gerar Caminho após ter sido gerada a decoração. Isso dá ruin. pls stop.");
 		}
 		inicializarGrid ();
-		int failLimit = 3;
+		int failLimit = 2;
 		int currentFails = 0;
 		bool found;
 		if (usedSpace == null) {
@@ -252,12 +246,16 @@ public class MapGenerator
 		//Debug.Log("Teste of hell: " + genInfo.ActualX + "Y : " + genInfo.ActualY);
 		//int[,] grid = new int[zoneWidth, zoneHeight];
 		//Posições que serão re-startadas com 0 apos gerado o caminho.
-		List<Vector2> FreeLater = new List<Vector2> ();
+		List<Vector2> FreeLater;
 		//List<Ponto> FreeLater = new List<Ponto>();
+		List<Vector2> usedFree = new List<Vector2>();
 		//Preenche espaço ja utilizado
 		foreach (Vector2 pos in usedSpace) {
 			if (pos.x >= 0 && pos.x < zoneWidth && pos.y >= 0 && pos.y < zoneHeight) {
-				grid [(int)pos.x, (int)pos.y] = 1;
+				if (grid [(int)pos.x, (int)pos.y] == 0) {
+					grid [(int)pos.x, (int)pos.y] = 1;
+					usedFree.Add (new Vector2(pos.x, pos.y));
+				} 
 			}
 		}
 		if (grid [genInfo.X, genInfo.Y] == 1) {
@@ -271,6 +269,7 @@ public class MapGenerator
 
 		found = false;
 		while (!found) {
+			FreeLater = new List<Vector2> ();
 			//Testa se passou limite de tentativas.
 			if (currentFails >= failLimit)
 				return false;
@@ -278,7 +277,8 @@ public class MapGenerator
 
 			//Preenche com bloqueadores para gerar caminho bonito.
 			//Dividido por 1000 para limitar quantia de bloqueadores.
-			int realAmountOfObstacles = (grid.GetLength(0) * grid.GetLength(1)) * (obstacleFill / 100);
+			int realAmountOfObstacles = (int)((grid.GetLength(0) * grid.GetLength(1)) * (obstacleFill / 1000f) );
+			Debug.Log ("Obstaculos: " + realAmountOfObstacles);
 			for (int i = 0; i < realAmountOfObstacles; i++) {
 				FreeLater.AddRange (generateObstacles (targetX, targetY));
 			}
@@ -314,19 +314,17 @@ public class MapGenerator
 			firstRun = last;
 			if (last != null) {
 				while (last.parent != null) {
-					genInfo.X = last.X;
-					genInfo.Y = last.Y;
-					//genInfo.SpawnMe ();
-					grid [genInfo.X, genInfo.Y] = 1;
+					grid [last.X, last.Y] = 1;
 					last = last.parent;
 				}
 				//Debug.Log ("Last: " + last.X + " Y: " + last.Y);
-				genInfo.X = last.X;
-				genInfo.Y = last.Y;
-				grid [genInfo.X, genInfo.Y] = 1;
+				//genInfo.X = last.X;
+				//genInfo.Y = last.Y;
+				grid [last.X, last.Y] = 1;
 			}
 			else {
 				currentFails++;
+				FreeLater.AddRange (usedFree);
 				foreach (Vector2 position in FreeLater) {
 					grid [(int)position.x, (int)position.y] = 0;
 				}
@@ -334,8 +332,8 @@ public class MapGenerator
 				continue;
 			}
 
-			//Clean First Run.
-			foreach (Vector2 position in FreeLater) {
+			//Deixando o mesmo blocker para proxima parte da run.
+			/*foreach (Vector2 position in FreeLater) {
 
 				grid [(int)position.x, (int)position.y] = 0;
 			}
@@ -343,7 +341,7 @@ public class MapGenerator
 			//Second run
 			for (int i = 0; i < obstacleFill; i++) {
 				FreeLater.AddRange (generateObstacles (targetX, targetY));
-			}
+			}*/
 
 			last = greedySearch (intermediateX, intermediateY, targetX, targetY);
 			if (last != null) {
@@ -363,8 +361,6 @@ public class MapGenerator
 					if (firstRun.parent.dir != firstRun.dir) {
 						p = new Ponto(genInfo.intToActualPos(firstRun.parent.X), genInfo.intToActualPos(firstRun.parent.Y));
 						firstHalf.Add(p);
-						//Vector2 parentvec = new Vector2 (firstRun.parent.X, firstRun.parent.Y);
-						//wayPoints.Add (parentvec);
 					}
 					//Já preenchido a grid anteriormente.
 					grid [genInfo.X, genInfo.Y] = 1;
@@ -413,35 +409,28 @@ public class MapGenerator
 				//Fim segunda half.
 				caminhos.Add (new Caminho (firstHalf));
 
-				for (int i = 0; i < grid.GetLength(0); i++) {
-					for (int j = 0; j < grid.GetLength(1); j++) {
-						if (grid[i,j] != 0) {
-							alreadyGenerated.Add(new Vector2(i, j));
-						}
-					}
-				}
 				/*
 				Debug.Log ("Vectors 2: :");
 				foreach (Vector2 v in wayPoints) {
 					Debug.Log ("X: " + v.x + " " + v.y);
 				}
 				*/
-
+				FreeLater.AddRange (usedFree);
 				foreach (Vector2 position in FreeLater) {
 					grid [(int)position.x, (int)position.y] = 0;
 				}
 				return true;
 			} else {
-				while (firstRun.parent != null) {
-					genInfo.X = firstRun.X;
-					genInfo.Y = firstRun.Y;
-					grid [genInfo.X, genInfo.Y] = 0;
+				while (firstRun != null) {
+					grid [firstRun.X, firstRun.Y] = 0;
 					firstRun = firstRun.parent;
 				}
 				currentFails++;
+				FreeLater.AddRange (usedFree);
 				foreach (Vector2 position in FreeLater) {
 					grid [(int)position.x, (int)position.y] = 0;
 				}
+
 				Debug.Log ("No way found in Second turn : " + currentFails);
 				continue;
 			}
@@ -601,16 +590,18 @@ public class MapGenerator
 		int prioridade = Mathf.Abs ( targetX - startX) + Mathf.Abs (targetY - startY);
 		Pq.Enqueue (start, prioridade);
 		int impedeLoopInfinito = 0;
+		int limiteExpancoes = grid.GetLength (0) * (grid.GetLength (1) * 2);
 		while (Pq.Count > 0) {
 			Node current;
 			try {
 				current = Pq.Dequeue ();
 			} catch (UnityException ex) {
-				Debug.Log ("Fila vaziaa");
+				Debug.Log ("Fila vaziaa" + ex.Message);
 				return null;
 			}
 			impedeLoopInfinito++;
-			if (impedeLoopInfinito > 100000) {
+
+			if (impedeLoopInfinito > limiteExpancoes ) {
 				Debug.Log ("Expandiu nodes demais!" + Pq.Count);
 				return null;
 			}
@@ -631,7 +622,7 @@ public class MapGenerator
 	}
 
 
-	private List<Vector2> alreadyGenerated = new List<Vector2>();
+
 
 	/// <summary>
 	/// Node utilizado para executar pesquisas de caminho.
@@ -778,19 +769,42 @@ public class MapGenerator
 	/// Keeps information on a tile while building the map zone.
 	/// <para>Also used to spawn Tile Objects.</para>
 	/// </summary>
-	struct tileGenerationInfo {
+struct tileGenerationInfo {
+	
+
 		/// <summary>
 		/// Instanciates the Gameobject TileObject at this Struct's X and Y times tileSize.
 		/// <para/>If TileObject is null this method will do nothing.
 		/// </summary>
-		public void SpawnMe() {
+	public void SpawnMe() {
 			if (TileObject == null) {
 				Debug.Log ("Genio deu ruin. tileobject é null burro. / MapGenerator");
 				return;
 			}
 			Vector2 spPoint = new Vector2 (X * TileSize, Y * TileSize);
-			GameObject.Instantiate (TileObject, spPoint, Quaternion.identity);
+		GameObject obj = (GameObject)GameObject.Instantiate (TileObject, spPoint, Quaternion.identity);
+
+		//     GameObject go = Instantiate(A, new Vector3 (0,0,0), Quaternion.identity) as GameObject; 
+		//go.transform.parent = GameObject.Find("Stage Scroll").transform;
+	}
+
+	public void SpawnMe(Transform t){
+		if (TileObject == null) {
+			Debug.Log ("Genio deu ruin. tileobject é null burro. / MapGenerator");
+			return;
 		}
+		Vector2 spPoint = new Vector2 (X * TileSize, Y * TileSize);
+		GameObject obj = (GameObject)GameObject.Instantiate (TileObject, spPoint, Quaternion.identity);
+		obj.transform.parent = t;
+	}
+
+	public void SpawnMe (float _x, float _y, float z) {
+		if (TileObject == null) {
+			Debug.Log ("Genio deu ruin. tileobject é null burro. / MapGenerator");
+			return;
+		}
+		Vector3 spPoint = new Vector3 (_x * TileSize, _y * TileSize, z);
+	}
 
 		public float TileSize {
 			get;

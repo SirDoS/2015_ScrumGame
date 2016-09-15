@@ -9,6 +9,11 @@ public class Caminho {
 
 
 	/// <summary>
+	/// Occurs when enemy reached target.
+	/// </summary>
+	public event System.EventHandler enemyReachedTarget;
+
+	/// <summary>
 	/// The way point the monster follows.
 	/// </summary>
 	List<Ponto> WayPoint  = new List<Ponto>();
@@ -50,6 +55,7 @@ public class Caminho {
 
 
 
+
 	/// <summary>
 	/// Ações executadas quando um objeto termina de chegar em um waypoint
 	/// </summary>
@@ -59,7 +65,7 @@ public class Caminho {
 		IWalker currentWalker = ((IWalker)sender);
 		if (currentWalker.CurrentWaypoint + 1 == WayPoint.Count) {
 			currentWalker.destroyMe ();
-			//TODO fazer saporra avisar que chegou no final.
+			//enemyReachedTarget (this, System.EventArgs.Empty);
 		} else {
 			//Não chegou ao fim, continua andando.
 			int nextWaypoint = currentWalker.CurrentWaypoint + 1;
