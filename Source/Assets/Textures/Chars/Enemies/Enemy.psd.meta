@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e82fa8e8f26504341b6ebe67fcc52e58
-timeCreated: 1445517061
+timeCreated: 1472044362
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -71,7 +71,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -96,7 +96,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -112,8 +112,26 @@ TextureImporter:
         width: 60
         height: 58
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 58}
+        - {x: -19, y: 58}
+        - {x: -30, y: 44}
+        - {x: -30, y: 0}
+        - {x: 14, y: 0}
+        - {x: 13, y: 6}
+        - {x: 10, y: 7}
+        - {x: 10, y: 14}
+        - {x: 7, y: 17}
+        - {x: 9, y: 19}
+        - {x: 10, y: 12}
+        - {x: 14, y: 9}
+        - {x: 20, y: 1}
+        - {x: 21, y: 0}
+        - {x: 30, y: 0}
+        - {x: 30, y: 22}
+        - {x: 27, y: 40}
     - name: Enemy_1
       rect:
         serializedVersion: 2
@@ -122,8 +140,30 @@ TextureImporter:
         width: 60
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 56}
+        - {x: -17, y: 53}
+        - {x: -30, y: 35}
+        - {x: -30, y: 0}
+        - {x: -24, y: 0}
+        - {x: -14, y: 7}
+        - {x: 2, y: 0}
+        - {x: 5, y: 0}
+        - {x: 11, y: 1}
+        - {x: 13, y: 6}
+        - {x: 10, y: 7}
+        - {x: 10, y: 14}
+        - {x: 7, y: 17}
+        - {x: 9, y: 19}
+        - {x: 10, y: 12}
+        - {x: 14, y: 9}
+        - {x: 20, y: 1}
+        - {x: 21, y: 0}
+        - {x: 30, y: 0}
+        - {x: 30, y: 45}
+        - {x: 15, y: 56}
     - name: Enemy_2
       rect:
         serializedVersion: 2
@@ -132,8 +172,27 @@ TextureImporter:
         width: 63
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 56}
+        - {x: -31.5, y: 49}
+        - {x: -31.5, y: 8}
+        - {x: -25.5, y: 1}
+        - {x: -22.5, y: 0}
+        - {x: 13.5, y: 0}
+        - {x: 14.5, y: 6}
+        - {x: 11.5, y: 7}
+        - {x: 11.5, y: 14}
+        - {x: 8.5, y: 17}
+        - {x: 10.5, y: 19}
+        - {x: 11.5, y: 12}
+        - {x: 15.5, y: 9}
+        - {x: 21.5, y: 1}
+        - {x: 22.5, y: 0}
+        - {x: 31.5, y: 0}
+        - {x: 31.5, y: 46}
+        - {x: 23.5, y: 56}
     - name: Enemy_3
       rect:
         serializedVersion: 2
@@ -142,8 +201,26 @@ TextureImporter:
         width: 71
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: 56}
+        - {x: -13.5, y: 56}
+        - {x: -35.5, y: 37}
+        - {x: -35.5, y: 13}
+        - {x: -31.5, y: 0}
+        - {x: 20.5, y: 0}
+        - {x: 18.5, y: 6}
+        - {x: 15.5, y: 7}
+        - {x: 15.5, y: 14}
+        - {x: 12.5, y: 17}
+        - {x: 14.5, y: 19}
+        - {x: 15.5, y: 12}
+        - {x: 19.5, y: 9}
+        - {x: 23.5, y: 0}
+        - {x: 35.5, y: 0}
+        - {x: 35.5, y: 23}
+        - {x: 29.5, y: 40}
     - name: Enemy_4
       rect:
         serializedVersion: 2
@@ -152,8 +229,25 @@ TextureImporter:
         width: 66
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 56}
+        - {x: -16, y: 55}
+        - {x: -33, y: 45}
+        - {x: -33, y: 0}
+        - {x: 13, y: 0}
+        - {x: 16, y: 6}
+        - {x: 13, y: 7}
+        - {x: 13, y: 14}
+        - {x: 10, y: 17}
+        - {x: 12, y: 19}
+        - {x: 13, y: 12}
+        - {x: 17, y: 9}
+        - {x: 21, y: 0}
+        - {x: 33, y: 0}
+        - {x: 33, y: 28}
+        - {x: 20, y: 56}
     - name: Enemy_5
       rect:
         serializedVersion: 2
@@ -162,8 +256,27 @@ TextureImporter:
         width: 63
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 56}
+        - {x: -31.5, y: 49}
+        - {x: -31.5, y: 8}
+        - {x: -25.5, y: 1}
+        - {x: -22.5, y: 0}
+        - {x: 13.5, y: 0}
+        - {x: 14.5, y: 6}
+        - {x: 11.5, y: 7}
+        - {x: 11.5, y: 14}
+        - {x: 8.5, y: 17}
+        - {x: 10.5, y: 19}
+        - {x: 11.5, y: 12}
+        - {x: 15.5, y: 9}
+        - {x: 21.5, y: 1}
+        - {x: 22.5, y: 0}
+        - {x: 31.5, y: 0}
+        - {x: 31.5, y: 46}
+        - {x: 23.5, y: 56}
     - name: Enemy_6
       rect:
         serializedVersion: 2
@@ -172,8 +285,17 @@ TextureImporter:
         width: 68
         height: 55
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -34, y: 40}
+        - {x: -34, y: 9}
+        - {x: -33, y: 6}
+        - {x: -6, y: 0}
+        - {x: 34, y: 0}
+        - {x: 34, y: 32}
+        - {x: 26, y: 55}
     - name: Enemy_7
       rect:
         serializedVersion: 2
@@ -182,8 +304,22 @@ TextureImporter:
         width: 86
         height: 55
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 4}
+        - {x: 34, y: 2}
+        - {x: 40, y: 0}
+        - {x: 43, y: 0}
+        - {x: 43, y: 25}
+        - {x: 40, y: 40}
+        - {x: 26, y: 55}
+        - {x: -6, y: 55}
+        - {x: -43, y: 35}
+        - {x: -43, y: 0}
+        - {x: 31, y: 0}
+        - {x: 32, y: 3}
+        - {x: 32, y: 10}
     - name: Enemy_8
       rect:
         serializedVersion: 2
@@ -192,8 +328,23 @@ TextureImporter:
         width: 76
         height: 55
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 20}
+        - {x: 33, y: 28}
+        - {x: 36, y: 40}
+        - {x: 27, y: 55}
+        - {x: -1, y: 55}
+        - {x: -27, y: 45}
+        - {x: -38, y: 33}
+        - {x: -38, y: 0}
+        - {x: -30, y: 0}
+        - {x: -24, y: 10}
+        - {x: 16, y: 0}
+        - {x: 38, y: 0}
+        - {x: 38, y: 19}
+        - {x: 31, y: 20}
     - name: Enemy_9
       rect:
         serializedVersion: 2
@@ -202,8 +353,27 @@ TextureImporter:
         width: 62
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 56}
+        - {x: -23, y: 52}
+        - {x: -31, y: 39}
+        - {x: -31, y: 6}
+        - {x: -29, y: 0}
+        - {x: 13, y: 0}
+        - {x: 14, y: 6}
+        - {x: 11, y: 7}
+        - {x: 11, y: 14}
+        - {x: 8, y: 17}
+        - {x: 10, y: 19}
+        - {x: 11, y: 12}
+        - {x: 15, y: 9}
+        - {x: 21, y: 1}
+        - {x: 22, y: 0}
+        - {x: 31, y: 0}
+        - {x: 31, y: 46}
+        - {x: 20, y: 56}
     - name: Enemy_10
       rect:
         serializedVersion: 2
@@ -212,8 +382,27 @@ TextureImporter:
         width: 64
         height: 58
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 58}
+        - {x: -27, y: 55}
+        - {x: -32, y: 42}
+        - {x: -32, y: 12}
+        - {x: -5, y: 0}
+        - {x: 11, y: 0}
+        - {x: 13, y: 1}
+        - {x: 15, y: 6}
+        - {x: 12, y: 7}
+        - {x: 12, y: 14}
+        - {x: 9, y: 17}
+        - {x: 11, y: 19}
+        - {x: 12, y: 12}
+        - {x: 16, y: 9}
+        - {x: 20, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 28}
+        - {x: 21, y: 58}
     - name: Enemy_11
       rect:
         serializedVersion: 2
@@ -222,8 +411,16 @@ TextureImporter:
         width: 65
         height: 86
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 17}
+        - {x: -10.5, y: 0}
+        - {x: 28.5, y: 0}
+        - {x: 32.5, y: 4}
+        - {x: 32.5, y: 86}
+        - {x: -10.5, y: 86}
+        - {x: -32.5, y: 76}
     - name: Enemy_12
       rect:
         serializedVersion: 2
@@ -232,8 +429,18 @@ TextureImporter:
         width: 77
         height: 95
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 95}
+        - {x: -11.5, y: 74}
+        - {x: -38.5, y: 45}
+        - {x: -38.5, y: 12}
+        - {x: -17.5, y: 0}
+        - {x: 33.5, y: 0}
+        - {x: 37.5, y: 2}
+        - {x: 38.5, y: 6}
+        - {x: 38.5, y: 95}
     - name: Enemy_13
       rect:
         serializedVersion: 2
@@ -242,8 +449,20 @@ TextureImporter:
         width: 48
         height: 98
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 56}
+        - {x: 4, y: 59}
+        - {x: 4, y: 95}
+        - {x: -1, y: 98}
+        - {x: -24, y: 98}
+        - {x: -24, y: 17}
+        - {x: -16, y: 0}
+        - {x: 19, y: 0}
+        - {x: 24, y: 2}
+        - {x: 24, y: 15}
+        - {x: 16, y: 48}
     - name: Enemy_14
       rect:
         serializedVersion: 2
@@ -251,9 +470,25 @@ TextureImporter:
         y: 207
         width: 84
         height: 87
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: 0.8653924, y: 0.018091837}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.30703735, y: 2.4260101}
+        - {x: 2.3070374, y: 0.42601013}
+        - {x: 11.307037, y: 0.42601013}
+        - {x: 11.307037, y: 11.42601}
+        - {x: 10.307037, y: 14.42601}
+        - {x: 7.3070374, y: 38.42601}
+        - {x: -4.6929626, y: 66.42601}
+        - {x: -39.692963, y: 85.42601}
+        - {x: -60.692963, y: 85.42601}
+        - {x: -72.69296, y: 66.42601}
+        - {x: -72.69296, y: 16.42601}
+        - {x: -20.692963, y: -1.5739899}
+        - {x: -0.69296265, y: -1.5739899}
+        - {x: 0.30703735, y: 1.4260101}
+        - {x: 0.30703735, y: 8.42601}
     - name: Enemy_15
       rect:
         serializedVersion: 2
@@ -261,9 +496,26 @@ TextureImporter:
         y: 202
         width: 77
         height: 61
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: 0.85772705, y: 0.116114385}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.04498291, y: 7.9170227}
+        - {x: -0.04498291, y: 1.9170227}
+        - {x: 1.9550171, y: -0.082977295}
+        - {x: 10.955017, y: -0.082977295}
+        - {x: 10.955017, y: 11.917023}
+        - {x: 9.955017, y: 13.917023}
+        - {x: 8.955017, y: 37.917023}
+        - {x: -0.04498291, y: 53.917023}
+        - {x: -25.044983, y: 53.917023}
+        - {x: -46.044983, y: 43.917023}
+        - {x: -66.04498, y: 18.917023}
+        - {x: -66.04498, y: -4.0829773}
+        - {x: -64.04498, y: -7.0829773}
+        - {x: -37.044983, y: -7.0829773}
+        - {x: -1.0449829, y: -4.0829773}
+        - {x: -0.04498291, y: 0.9170227}
     - name: Enemy_17
       rect:
         serializedVersion: 2
@@ -271,19 +523,46 @@ TextureImporter:
         y: 201
         width: 73
         height: 61
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: 0.9204511, y: 0.14191799}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.1929321, y: 17.343002}
+        - {x: -5.192932, y: 17.343002}
+        - {x: 0.8070679, y: 25.343002}
+        - {x: 2.8070679, y: 37.343002}
+        - {x: -7.192932, y: 52.343002}
+        - {x: -28.192932, y: 52.343002}
+        - {x: -67.19293, y: 16.343002}
+        - {x: -67.19293, y: -3.6569977}
+        - {x: -64.19293, y: -8.656998}
+        - {x: 4.807068, y: -8.656998}
+        - {x: 5.807068, y: -1.6569977}
+        - {x: 5.807068, y: 16.343002}
     - name: Enemy_18
       rect:
         serializedVersion: 2
         x: 559
-        y: 203
+        y: 206
         width: 69
-        height: 44
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        height: 41
+      alignment: 9
+      pivot: {x: 0.88779616, y: 0.09597555}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.7420654, y: -3.9349976}
+        - {x: 7.7420654, y: -2.9349976}
+        - {x: 7.7420654, y: 19.065002}
+        - {x: 6.7420654, y: 27.065002}
+        - {x: -3.2579346, y: 37.065002}
+        - {x: -38.257935, y: 37.065002}
+        - {x: -58.257935, y: 29.065002}
+        - {x: -61.257935, y: 19.065002}
+        - {x: -61.257935, y: -3.9349976}
+        - {x: -53.257935, y: -3.9349976}
+        - {x: -49.257935, y: 0.06500244}
+        - {x: -26.257935, y: -2.9349976}
+        - {x: -16.257935, y: -3.9349976}
     - name: Enemy_19
       rect:
         serializedVersion: 2
@@ -291,9 +570,22 @@ TextureImporter:
         y: 202
         width: 69
         height: 48
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: 0.9448251, y: 0.11477057}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.192932, y: 42.491013}
+        - {x: -65.19293, y: 27.491013}
+        - {x: -65.19293, y: -1.5089874}
+        - {x: -64.19293, y: -5.5089874}
+        - {x: -61.192932, y: -5.5089874}
+        - {x: -57.192932, y: -3.5089874}
+        - {x: -51.192932, y: 6.4910126}
+        - {x: -35.192932, y: -5.5089874}
+        - {x: 1.8070679, y: -5.5089874}
+        - {x: 3.8070679, y: -3.5089874}
+        - {x: 3.8070679, y: 29.491013}
+        - {x: -6.192932, y: 42.491013}
     - name: Enemy_20
       rect:
         serializedVersion: 2
@@ -301,9 +593,29 @@ TextureImporter:
         y: 207
         width: 66
         height: 56
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: 0.75040877, y: 0.042160306}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.52697754, y: 53.639023}
+        - {x: -32.526978, y: 53.639023}
+        - {x: -43.526978, y: 50.639023}
+        - {x: -49.526978, y: 38.639023}
+        - {x: -49.526978, y: 7.639023}
+        - {x: -45.526978, y: -2.3609772}
+        - {x: -8.526978, y: -2.3609772}
+        - {x: -2.5269775, y: -1.3609772}
+        - {x: -0.52697754, y: 3.6390228}
+        - {x: -3.5269775, y: 4.639023}
+        - {x: -3.5269775, y: 11.639023}
+        - {x: -6.5269775, y: 14.639023}
+        - {x: -4.5269775, y: 16.639023}
+        - {x: -3.5269775, y: 9.639023}
+        - {x: 0.47302246, y: 6.639023}
+        - {x: 4.4730225, y: -2.3609772}
+        - {x: 16.473022, y: -2.3609772}
+        - {x: 16.473022, y: 24.639023}
+        - {x: 13.473022, y: 38.639023}
     - name: Enemy_21
       rect:
         serializedVersion: 2
@@ -311,9 +623,21 @@ TextureImporter:
         y: 207
         width: 64
         height: 62
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 9
+      pivot: {x: 0.90579605, y: 0.03808028}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.970947, y: 59.639023}
+        - {x: -57.970947, y: 48.639023}
+        - {x: -57.970947, y: 21.639023}
+        - {x: -45.970947, y: -2.3609772}
+        - {x: -38.970947, y: -2.3609772}
+        - {x: -33.970947, y: 3.6390228}
+        - {x: -27.970947, y: 13.639023}
+        - {x: -0.97094727, y: -2.3609772}
+        - {x: 6.0290527, y: -2.3609772}
+        - {x: 6.0290527, y: 52.639023}
+        - {x: -7.9709473, y: 59.639023}
     - name: Enemy_22
       rect:
         serializedVersion: 2
@@ -322,8 +646,16 @@ TextureImporter:
         width: 90
         height: 82
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 82}
+        - {x: -45, y: 47}
+        - {x: -45, y: 16}
+        - {x: -19, y: 7}
+        - {x: 14, y: 0}
+        - {x: 45, y: 0}
+        - {x: 45, y: 82}
     - name: Enemy_23
       rect:
         serializedVersion: 2
@@ -332,8 +664,20 @@ TextureImporter:
         width: 90
         height: 73
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 69}
+        - {x: 28, y: 73}
+        - {x: -18, y: 73}
+        - {x: -45, y: 48}
+        - {x: -45, y: 26}
+        - {x: -40, y: 23}
+        - {x: -35, y: 22}
+        - {x: 24, y: 0}
+        - {x: 45, y: 0}
+        - {x: 45, y: 11}
+        - {x: 35, y: 25}
     - name: Enemy_24
       rect:
         serializedVersion: 2
@@ -342,8 +686,15 @@ TextureImporter:
         width: 69
         height: 77
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 6}
+        - {x: -17.5, y: 0}
+        - {x: 34.5, y: 0}
+        - {x: 34.5, y: 77}
+        - {x: 9.5, y: 77}
+        - {x: -34.5, y: 57}
     - name: Enemy_26
       rect:
         serializedVersion: 2
@@ -352,8 +703,19 @@ TextureImporter:
         width: 119
         height: 56
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.5, y: 2}
+        - {x: 59.5, y: 2}
+        - {x: 59.5, y: 21}
+        - {x: 51.5, y: 56}
+        - {x: -59.5, y: 56}
+        - {x: -59.5, y: 25}
+        - {x: 12.5, y: 0}
+        - {x: 48.5, y: 0}
+        - {x: 48.5, y: 10}
+        - {x: 48.5, y: 4}
     - name: Enemy_27
       rect:
         serializedVersion: 2
@@ -362,8 +724,21 @@ TextureImporter:
         width: 43
         height: 70
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 4}
+        - {x: 12.5, y: 2}
+        - {x: 21.5, y: 2}
+        - {x: 21.5, y: 70}
+        - {x: -2.5, y: 70}
+        - {x: -15.5, y: 63}
+        - {x: -21.5, y: 54}
+        - {x: -21.5, y: 26}
+        - {x: -3.5, y: 0}
+        - {x: 7.5, y: 0}
+        - {x: 10.5, y: 3}
+        - {x: 10.5, y: 10}
     - name: Enemy_28
       rect:
         serializedVersion: 2
@@ -372,8 +747,15 @@ TextureImporter:
         width: 43
         height: 60
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 60}
+        - {x: -21.5, y: 51}
+        - {x: -21.5, y: 15}
+        - {x: 5.5, y: 0}
+        - {x: 21.5, y: 0}
+        - {x: 21.5, y: 60}
     - name: Enemy_29
       rect:
         serializedVersion: 2
@@ -382,8 +764,26 @@ TextureImporter:
         width: 59
         height: 56
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 28}
+        - {x: -29.5, y: 12}
+        - {x: -29.5, y: -28}
+        - {x: 14.5, y: -28}
+        - {x: 12.5, y: -22}
+        - {x: 9.5, y: -21}
+        - {x: 9.5, y: -14}
+        - {x: 6.5, y: -11}
+        - {x: 8.5, y: -9}
+        - {x: 9.5, y: -16}
+        - {x: 13.5, y: -19}
+        - {x: 19.5, y: -27}
+        - {x: 20.5, y: -28}
+        - {x: 29.5, y: -28}
+        - {x: 29.5, y: 0}
+        - {x: 26.5, y: 13}
+        - {x: 12.5, y: 28}
     - name: Enemy_30
       rect:
         serializedVersion: 2
@@ -392,8 +792,16 @@ TextureImporter:
         width: 53
         height: 63
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 31.5}
+        - {x: -11.5, y: 31.5}
+        - {x: -26.5, y: 24.5}
+        - {x: -26.5, y: -31.5}
+        - {x: 26.5, y: -31.5}
+        - {x: 26.5, y: 9.5}
+        - {x: 23.5, y: 16.5}
     - name: Enemy_31
       rect:
         serializedVersion: 2
@@ -402,8 +810,23 @@ TextureImporter:
         width: 38
         height: 63
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: -25.5}
+        - {x: 7, y: -25.5}
+        - {x: 13, y: -23.5}
+        - {x: 19, y: -5.5}
+        - {x: 19, y: 22.5}
+        - {x: 16, y: 29.5}
+        - {x: 9, y: 31.5}
+        - {x: -13, y: 31.5}
+        - {x: -19, y: 27.5}
+        - {x: -19, y: -31.5}
+        - {x: -8, y: -31.5}
+        - {x: -5, y: -29.5}
+        - {x: 0, y: -11.5}
+        - {x: 0, y: -18.5}
     - name: Enemy_32
       rect:
         serializedVersion: 2
@@ -412,8 +835,24 @@ TextureImporter:
         width: 68
         height: 56
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -22}
+        - {x: -15, y: -27}
+        - {x: -9, y: -28}
+        - {x: 34, y: -28}
+        - {x: 34, y: 12}
+        - {x: 10, y: 28}
+        - {x: -17, y: 28}
+        - {x: -28, y: 12}
+        - {x: -28, y: -1}
+        - {x: -34, y: -12}
+        - {x: -34, y: -28}
+        - {x: -23, y: -28}
+        - {x: -15, y: -15}
+        - {x: -14, y: -9}
+        - {x: -14, y: -14}
     - name: Enemy_33
       rect:
         serializedVersion: 2
@@ -422,8 +861,28 @@ TextureImporter:
         width: 61
         height: 56
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: -22}
+        - {x: -11.5, y: -27}
+        - {x: -4.5, y: -28}
+        - {x: -1.5, y: -28}
+        - {x: 3.5, y: -24}
+        - {x: 8.5, y: -16}
+        - {x: 22.5, y: -27}
+        - {x: 23.5, y: -28}
+        - {x: 30.5, y: -28}
+        - {x: 30.5, y: 24}
+        - {x: 19.5, y: 28}
+        - {x: -15.5, y: 28}
+        - {x: -28.5, y: 13}
+        - {x: -30.5, y: 3}
+        - {x: -30.5, y: -28}
+        - {x: -19.5, y: -28}
+        - {x: -11.5, y: -15}
+        - {x: -10.5, y: -9}
+        - {x: -10.5, y: -14}
     - name: Enemy_34
       rect:
         serializedVersion: 2
@@ -432,8 +891,20 @@ TextureImporter:
         width: 70
         height: 55
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 27.5}
+        - {x: -35, y: 12.5}
+        - {x: -35, y: -22.5}
+        - {x: -26, y: -20.5}
+        - {x: -4, y: -26.5}
+        - {x: -2, y: -21.5}
+        - {x: 13, y: -27.5}
+        - {x: 32, y: -27.5}
+        - {x: 35, y: -25.5}
+        - {x: 35, y: 20.5}
+        - {x: 31, y: 27.5}
     - name: Enemy_35
       rect:
         serializedVersion: 2
@@ -442,8 +913,9 @@ TextureImporter:
         width: 38
         height: 23
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_36
       rect:
         serializedVersion: 2
@@ -452,8 +924,9 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_37
       rect:
         serializedVersion: 2
@@ -462,8 +935,9 @@ TextureImporter:
         width: 15
         height: 16
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_38
       rect:
         serializedVersion: 2
@@ -472,8 +946,9 @@ TextureImporter:
         width: 12
         height: 13
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_39
       rect:
         serializedVersion: 2
@@ -482,8 +957,9 @@ TextureImporter:
         width: 16
         height: 21
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_40
       rect:
         serializedVersion: 2
@@ -492,8 +968,9 @@ TextureImporter:
         width: 16
         height: 9
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_41
       rect:
         serializedVersion: 2
@@ -502,8 +979,9 @@ TextureImporter:
         width: 8
         height: 16
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_42
       rect:
         serializedVersion: 2
@@ -512,8 +990,9 @@ TextureImporter:
         width: 16
         height: 9
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_43
       rect:
         serializedVersion: 2
@@ -522,8 +1001,9 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_44
       rect:
         serializedVersion: 2
@@ -532,8 +1012,9 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_45
       rect:
         serializedVersion: 2
@@ -542,8 +1023,9 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_46
       rect:
         serializedVersion: 2
@@ -552,8 +1034,17 @@ TextureImporter:
         width: 42
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 21}
+        - {x: -21, y: 5}
+        - {x: -3, y: -21}
+        - {x: 17, y: -21}
+        - {x: 21, y: -18}
+        - {x: 21, y: -1}
+        - {x: 16, y: 16}
+        - {x: 8, y: 21}
     - name: Enemy_47
       rect:
         serializedVersion: 2
@@ -562,8 +1053,15 @@ TextureImporter:
         width: 43
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.5, y: 22.5}
+        - {x: -21.5, y: 8.5}
+        - {x: -21.5, y: -22.5}
+        - {x: -3.5, y: -22.5}
+        - {x: 21.5, y: -7.5}
+        - {x: 21.5, y: 22.5}
     - name: Enemy_48
       rect:
         serializedVersion: 2
@@ -572,8 +1070,9 @@ TextureImporter:
         width: 22
         height: 51
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_49
       rect:
         serializedVersion: 2
@@ -582,8 +1081,16 @@ TextureImporter:
         width: 42
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: -2}
+        - {x: -6, y: -21}
+        - {x: 21, y: -21}
+        - {x: 21, y: -3}
+        - {x: 8, y: 21}
+        - {x: -20, y: 21}
+        - {x: -21, y: 18}
     - name: Enemy_50
       rect:
         serializedVersion: 2
@@ -592,8 +1099,16 @@ TextureImporter:
         width: 43
         height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: -10.5}
+        - {x: -21.5, y: -22.5}
+        - {x: -3.5, y: -22.5}
+        - {x: 21.5, y: -3.5}
+        - {x: 21.5, y: 22.5}
+        - {x: 11.5, y: 22.5}
+        - {x: -0.5, y: 12.5}
     - name: Enemy_51
       rect:
         serializedVersion: 2
@@ -602,8 +1117,9 @@ TextureImporter:
         width: 22
         height: 51
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_52
       rect:
         serializedVersion: 2
@@ -612,8 +1128,9 @@ TextureImporter:
         width: 14
         height: 46
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: Enemy_53
       rect:
         serializedVersion: 2
@@ -622,8 +1139,10 @@ TextureImporter:
         width: 50
         height: 17
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -7,7 +7,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 	{
 		base.begin ();
 
-		_context.animatorController.PlayState("OnAir");
+		_context.animatorController.PlayState("Ronin_Fall");
 	}
 	
 	public override void reason ()
@@ -19,6 +19,7 @@ public class Panda_OnAirState : SKMecanimState<PandaController>{
 		if(_context.physicsController.IsGrounded())
 		{
 			_context.gameplayController.enableAirControl = true;
+			_context.animatorController.PlayState("Ronin_Land");
 			if(_context.physicsController.GetVelocity().y < 0.5f)
 			{
 				if(horizontal == 0){

@@ -13,12 +13,23 @@ public class PhysicsController : MonoBehaviour {
 	private Rigidbody2D cachedRigidbody;
 	private Collider2D cachedCollider;
 
+	public float jumpForce = 0.0f;
+
 	void Awake(){
 		if(cachedRigidbody == null){
 			cachedRigidbody = GetComponent<Rigidbody2D>();
 		}
 		if(cachedCollider == null){
 			cachedCollider = GetComponent<Collider2D>();
+		}
+	}
+
+	public float JumpForce {
+		get {
+			return jumpForce;
+		}
+		set {
+			jumpForce = value;
 		}
 	}
 
@@ -45,8 +56,8 @@ public class PhysicsController : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(groundCheckers[i].position, Vector2.down,
 			                                     (cachedCollider.bounds.size.y/2) + skinWidth, groundLayers.value);
 
-			/*Debug.DrawRay(groundCheckers[i].position, Vector2.down * ((cachedCollider.bounds.size.y/2) + skinWidth), 
-			Color.red, 0.50f);*/
+			Debug.DrawRay(groundCheckers[i].position, Vector2.down * ((cachedCollider.bounds.size.y/2) + skinWidth), 
+			Color.red, 0.50f);
 
 			if(hit.transform != null)
 				return true;

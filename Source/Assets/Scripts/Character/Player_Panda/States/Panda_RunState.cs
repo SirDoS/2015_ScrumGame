@@ -8,7 +8,7 @@ public class Panda_RunState : SKMecanimState<PandaController> {
 	{
 		base.begin ();
 
-		_context.animatorController.PlayState("Run");
+		_context.animatorController.PlayState("Ronin_Run");
 	}
 	
 	public override void reason ()
