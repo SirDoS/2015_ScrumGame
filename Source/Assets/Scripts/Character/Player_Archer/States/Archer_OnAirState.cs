@@ -51,11 +51,11 @@ public class Archer_OnAirState : SKMecanimState<ArcherController> {
 			_machine.changeState<Archer_WallJumpState>();
 		}
 
-		/*
-		if(Input.GetKeyDown(KeyCode.Slash)){
+
+		if(Input.GetKeyDown(KeyCode.F)){
 			_machine.changeState<Archer_AttackOnAirState>();
 		}
-		*/
+
 	}
 
 	public void Rotate(float pDirection){
