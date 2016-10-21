@@ -1,14 +1,24 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 
+/// <summary>
+/// Classe simples que representa uma wave
+/// Nao será adicionada muita logica complexa por motivos de tempo.
+/// </summary>
 [System.Serializable]
 public class Wave {
 	public GameObject enemyPrefab;
 	public float spawnInterval = 2;
 	public int maxEnemies = 20;
+	public int roadNumber = -1;
 }
 
-public class SpawnEnemy : MonoBehaviour {
+/// <summary>
+/// Gerencia os inimigos no mundo.
+/// </summary>
+[System.Serializable]
+public class SpawnEnemy  {
 
 	public GameObject[] waypoints;
 	public GameObject testEnemyPrefab;
@@ -20,6 +30,14 @@ public class SpawnEnemy : MonoBehaviour {
 
 	private float lastSpawnTime;
 	private int enemiesSpawned = 0;
+	private List<Caminho> paths;
+
+	public SpawnEnemy(List<Caminho> caminhos) {
+		paths = caminhos;
+		lastSpawnTime = Time.time;
+		gameManager =
+			GameObject.Find("TowerDefenseManager").GetComponent<TowerDefenseManager>();
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +47,7 @@ public class SpawnEnemy : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
 		// 1
 		int currentWave = gameManager.Wave;
 		if (currentWave < waves.Length) {
@@ -42,8 +60,21 @@ public class SpawnEnemy : MonoBehaviour {
 				// 3  
 				lastSpawnTime = Time.time;
 				GameObject newEnemy = (GameObject)
-					Instantiate(waves[currentWave].enemyPrefab);
-				newEnemy  .GetComponent<MoveEnemy>().waypoints = waypoints;
+					GameObject.Instantiate(waves[currentWave].enemyPrefab);
+				TD_Enemy1Controller controler =  newEnemy.GetComponent<TD_Enemy1Controller>();
+				if (currentWave < (waves.Length / 2)) {
+					//Encontra maior caminho disponivel e escolhe ele.
+					Caminho biggest = paths[0];
+					for (int i = 1; i < paths.Count; i++) {
+						if (paths [i].Size > biggest.Size)
+							biggest = paths [i];
+					}
+					biggest.followPath (controler);
+
+				} else {
+					paths [Random.Range (0, paths.Count)].followPath (controler);
+				}
+				//newEnemy.GetComponent<TD_Enemy1Controller>().waypoints = waypoints;
 				enemiesSpawned++;
 			}
 			// 4 
@@ -56,9 +87,10 @@ public class SpawnEnemy : MonoBehaviour {
 			}
 			// 5 
 		} else {
-			gameManager.gameOver = true;
-			GameObject gameOverText = GameObject.FindGameObjectWithTag ("GameWon");
-			gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
+			gameManager.GameOver = true;
+			Debug.Log ("YOU WIN");
+			//GameObject gameOverText = GameObject.FindGameObjectWithTag ("GameWon");
+			//gameOverText.GetComponent<Animator>().SetBool("gameOver", true);
 		}	
 	}
 }

@@ -17,14 +17,22 @@ public class Caminho {
 	/// The way point the monster follows.
 	/// </summary>
 	List<Ponto> WayPoint  = new List<Ponto>();
+	public int Size{get{ return size;}}
+	private int size;
+
 
 	/// <summary>
 	/// Cria um Novo caminho.
 	/// </summary>
 	/// <param name="_caminho">Lista de pontos que compôe o caminho.</param>
 	public Caminho(List<Ponto> _caminho){
+		size = 0;
 		WayPoint = _caminho;
-		
+		for (int i = 1; i < WayPoint.Count; i++) {
+			Ponto p0 = WayPoint [i - 1];
+			Ponto p1 = WayPoint [i];
+			size += (int)(Mathf.Abs (Mathf.Abs (p1.X) - Mathf.Abs (p0.X)) + Mathf.Abs (Mathf.Abs (p1.Y) - Mathf.Abs (p0.Y)));
+		}
 	}
 
 	/// <summary>
@@ -34,7 +42,7 @@ public class Caminho {
 	/// <param name="walker">Walker.</param>
 	public void followPath (IWalker walker){
 		if (WayPoint.Count >= 2) {
-			Debug.Log (this.ToString());
+			//Debug.Log (this.ToString());
 			walker.reachedPoint += onReach;
 			walker.Teleport (WayPoint [0].X, WayPoint [0].Y);
 			walker.Walk (WayPoint [1].X, WayPoint [1].Y);
@@ -65,7 +73,7 @@ public class Caminho {
 		IWalker currentWalker = ((IWalker)sender);
 		if (currentWalker.CurrentWaypoint + 1 == WayPoint.Count) {
 			currentWalker.destroyMe ();
-			//enemyReachedTarget (this, System.EventArgs.Empty);
+			enemyReachedTarget (this, System.EventArgs.Empty);
 		} else {
 			//Não chegou ao fim, continua andando.
 			int nextWaypoint = currentWalker.CurrentWaypoint + 1;

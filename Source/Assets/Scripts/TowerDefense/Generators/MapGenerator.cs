@@ -38,6 +38,11 @@ public class MapGenerator
 		/// Decoration tiles that will be randomly used for looks.
 		/// </summary>
 		public GameObject[] decorationTiles;
+	public GameObject pandaHouse;
+
+
+	public GameObject arvore;
+
 		/// <summary>
 		/// The Tile that will be where towers are placed.
 		/// </summary>
@@ -47,12 +52,6 @@ public class MapGenerator
 	/// Transform that is the parent of all generated tiles. 
 	/// </summary>
 	public Transform MapHolder;
-
-	/// <summary>
-	/// Deletar essa porra dps
-	/// </summary>
-	public GameObject TEMPORARIOENEMY;
-
 
 	/// <summary>
 	/// Lista de caminhos possiveis de serem seguidos no momento.
@@ -70,10 +69,29 @@ public class MapGenerator
 	public int roadCountPlace = 3;
 
 	/// <summary>
+	/// Occurs when enemy has reached the Target.
+	/// </summary>
+	public event System.EventHandler enemyReachedHouse;
+
+	void propagateDeath(object sender, System.EventArgs e){
+		enemyReachedHouse (sender, e);
+	}
+
+
+	/// <summary>
 	/// Max amount of towers nearby, ex: If there are two towers already placed, this one will not be placed.
 	/// </summary>
 	public int towerLimit = 2;
 
+	private int towerAmount = 0;
+	public int TowerAmount {
+		get{
+			return towerAmount;
+		}
+		set{ 
+			towerAmount = value;
+		}
+	}
 
 
 	private  byte[,] grid;// = new byte[zoneWidth, zoneHeight];
@@ -122,6 +140,7 @@ public class MapGenerator
 		
 	}
 
+
 	/// <summary>
 	/// Marks the panda house.
 	/// </summary>
@@ -143,8 +162,16 @@ public class MapGenerator
 		inicializarGrid ();
 		tileGenerationInfo t = new tileGenerationInfo ();
 		t.TileSize = tileSize;
+		bool firstEncounter = true;
 		for (int i = 0; i < zoneWidth; i++) {
 			for (int j = 0; j < zoneHeight; j++) {
+				if (grid[i,j] == 4 && firstEncounter) {
+					t.X = i;
+					t.Y = j;
+					t.TileObject = pandaHouse;
+					t.SpawnMe ();
+					firstEncounter = false;
+				}
 				if (grid[i,j] == 0) {
 					t.X = i;
 					t.Y = j;
@@ -152,8 +179,25 @@ public class MapGenerator
 					t.SpawnMe ();
 					grid [i, j] = 2;
 				}
+				if (j > 4) {
+					if (Random.Range (0, 100) > 70) 
+						continue;
+					//Se gambiarra
+					//Debug.Log("Gridij: " + (grid [i, j] == 2));
+					//Debug.Log("Gridij-1"+ (grid [i, j- 1 ] == 2));
+					//Debug.Log("Gridij-2: " + (grid [i, j- 2 ] == 2));
+					//Debug.Log("Gridij-3: " + (grid [i, j- 3 ] == 2));
+					if ((grid [i, j] == 2) && (grid [i, j - 1] == 2) && (grid [i, j - 2] == 2) && (grid [i, j - 3] == 2)) {
+						t.X = i;
+						t.Y = j - 3;
+						t.TileObject = arvore;
+						//Debug.Log ("Criando arvore");
+						t.SpawnMe ();
+					}
+				}
 			}
 		}
+		CameraFocus.UpperEdge = grid.GetLength (0) * tileSize;
 	}
 
 	////////////////////////////Lembrar de mover isso para cima
@@ -211,6 +255,7 @@ public class MapGenerator
 					info.TileSize = tileSize;
 					info.TileObject = towerSpawnTile;
 					info.SpawnMe ();
+					towerAmount++;
 					grid [i, j] = 3;
 				}
 			}
@@ -231,7 +276,7 @@ public class MapGenerator
 			throw new UnityException ("Tentando gerar Caminho após ter sido gerada a decoração. Isso dá ruin. pls stop.");
 		}
 		inicializarGrid ();
-		int failLimit = 2;
+		int failLimit = 3;
 		int currentFails = 0;
 		bool found;
 		if (usedSpace == null) {
@@ -278,7 +323,7 @@ public class MapGenerator
 			//Preenche com bloqueadores para gerar caminho bonito.
 			//Dividido por 1000 para limitar quantia de bloqueadores.
 			int realAmountOfObstacles = (int)((grid.GetLength(0) * grid.GetLength(1)) * (obstacleFill / 1000f) );
-			Debug.Log ("Obstaculos: " + realAmountOfObstacles);
+			//Debug.Log ("Obstaculos: " + realAmountOfObstacles);
 			for (int i = 0; i < realAmountOfObstacles; i++) {
 				FreeLater.AddRange (generateObstacles (targetX, targetY));
 			}
@@ -328,7 +373,7 @@ public class MapGenerator
 				foreach (Vector2 position in FreeLater) {
 					grid [(int)position.x, (int)position.y] = 0;
 				}
-				Debug.Log ("No way found in first turn : " + currentFails);
+				//Debug.Log ("No way found in first turn : " + currentFails);
 				continue;
 			}
 
@@ -408,7 +453,7 @@ public class MapGenerator
 				firstHalf.AddRange (secondHalf);
 				//Fim segunda half.
 				caminhos.Add (new Caminho (firstHalf));
-
+				caminhos [caminhos.Count - 1].enemyReachedTarget += propagateDeath;
 				/*
 				Debug.Log ("Vectors 2: :");
 				foreach (Vector2 v in wayPoints) {
@@ -431,7 +476,7 @@ public class MapGenerator
 					grid [(int)position.x, (int)position.y] = 0;
 				}
 
-				Debug.Log ("No way found in Second turn : " + currentFails);
+				//Debug.Log ("No way found in Second turn : " + currentFails);
 				continue;
 			}
 			/*foreach (Vector2 position in FreeLater) {

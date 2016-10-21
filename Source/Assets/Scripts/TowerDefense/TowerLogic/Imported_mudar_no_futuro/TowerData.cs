@@ -20,6 +20,8 @@ public class TowerLevel {
 	/// The fire rate.
 	/// </summary>
 	public float fireRate;
+
+	public float radius;
 }
 
 
@@ -50,6 +52,7 @@ public class TowerData : MonoBehaviour {
 				if (levelVisualization != null) {
 					if (i == currentLevelIndex) {
 						(this.GetComponentInChildren <SpriteRenderer>()).sprite = levels [i].visualization;
+						(this.GetComponentInChildren <CircleCollider2D>()).radius = levels [i].radius;
 						//levels[i].visualization.SetActive(true);						
 					} else {
 						//levels[i].visualization.SetActive(false);

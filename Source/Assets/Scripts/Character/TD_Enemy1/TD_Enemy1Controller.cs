@@ -28,7 +28,7 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 	public float distanceToGoal() {
 		float distance = Vector3.Distance(startPosition, gameObject.transform.position);
 		return F_function (distance);
-		return distance;
+		//return distance;
 	}
 
 	/// <summary>
@@ -79,57 +79,9 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 
 			} 
 		}
-		/*
-		if (Input.GetKey (KeyCode.Space)) {
-			//if (targetX != -1f) {
-				//Vector3 startPosition = gameObject.transform.position;
-				Vector3 endPosition = new Vector3 (targetX, targetY);
-
-				float pathLength = Vector3.Distance (startPosition, endPosition);
-				float totalTimeForPath = pathLength / speed;
-				float currentTimeOnPath = Time.time - lastWaypointSwitchTime;
-			gameObject.transform.position = Vector3.Lerp (startPosition, endPosition, currentTimeOnPath / totalTimeForPath * totalTimeForPath);
-				if (gameObject.transform.position.Equals (endPosition)) {
-					if (reachedPoint != null) {
-						reachedPoint (this, System.EventArgs.Empty);
-					}
-
-				} 
-			//}
-		}
-		*/
 	}
 
-	/*
-void Update(){
-		// 1 
-	Vector3 startPosition = waypoints [currentWaypoint].transform.position;
-	Vector3 endPosition = waypoints [currentWaypoint + 1].transform.position;
-	// 2 
-	float pathLength = Vector3.Distance (startPosition, endPosition);
-	float totalTimeForPath = pathLength / speed;
-	float currentTimeOnPath = Time.time - lastWaypointSwitchTime;
-	gameObject.transform.position = Vector3.Lerp (startPosition, endPosition, currentTimeOnPath  / totalTimeForPath);
-	// 3 
-	if (gameObject.transform.position.Equals(endPosition)) {
-	  if (currentWaypoint < waypoints.Length - 2) {
-		// 3.a 
-		currentWaypoint++;
-		lastWaypointSwitchTime = Time.time;
-		RotateIntoMoveDirection();
-	  } else {
-		// 3.b 
-		Destroy(gameObject);
-	 
-		AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-		AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
-		GameManagerBehavior gameManager =
-		GameObject.Find("GameManager").GetComponent<GameManagerBehavior>();
-		gameManager.Health -= 1;
-	  }
-	}
 
-	*/
 
 	void Start(){
 		lastWaypointSwitchTime = Time.time;

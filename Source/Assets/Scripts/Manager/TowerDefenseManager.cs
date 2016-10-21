@@ -2,7 +2,9 @@
 using UnityEngine.EventSystems;
 using System.IO;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 
@@ -14,6 +16,7 @@ public class TowerDefenseManager : MonoBehaviour {
 	public MapGenerator generator;
 
 	public int HouseSize = 1;
+	public Text goldLabel;
 	/// <summary>
 	/// Quantia de Gold no jogo.
 	/// </summary>
@@ -28,22 +31,28 @@ public class TowerDefenseManager : MonoBehaviour {
 		}
 		set	{ 
 			gold = value;
+			goldLabel.GetComponent<Text>().text = "GOLD: " + gold;
 		}
 	}
+
+
+
 	private int wave;
 	public int Wave {
 		get { return wave; }
 		set {
 			wave = value;
-			if (!gameOver) {
+			//if (!gameOver) {
 				//for (int i = 0; i < nextWaveLabels.Length; i++) {
 				//	nextWaveLabels[i].GetComponent<Animator>().SetTrigger("nextWave");
 				//}
-			}
+			//}
 			//waveLabel.text = "WAVE: " + (wave + 1);
 		}
 	}
 		
+
+	public Text healthLabel;
 	/// <summary>
 	/// Gets or sets the health.
 	/// </summary>
@@ -54,6 +63,12 @@ public class TowerDefenseManager : MonoBehaviour {
 		}
 		set { 
 			health = value;
+			healthLabel.GetComponent<Text>().text = "Vidas: " + health;
+			if (health == 0) {
+				Debug.Log ("Voce falhou na sprint!, na vida, em tudo, como vc é um bosta caralho!");
+				GameOver = true;
+
+			}
 		}
 	}
 	private int health;
@@ -63,6 +78,21 @@ public class TowerDefenseManager : MonoBehaviour {
 		get{ return level;}
 		set{level = value;}
 	}
+
+	private bool gameOver;
+	public bool GameOver{
+		get{ return gameOver;}
+		set{gameOver = value;}
+	}
+
+	/// <summary>
+	/// Inimigos utilizados no jogo, por definição:R
+	/// Enemies[0] = normal
+	/// Enemies[1] = rapido, menor hp
+	/// Enemies[2] = lento, mais hp
+	/// Enemies[3] = boss
+	/// </summary>
+	public GameObject[] Enemies;
 
 	/// <summary>
 	/// The instance (Singleton pattern).
@@ -82,25 +112,41 @@ public class TowerDefenseManager : MonoBehaviour {
 	}
 	public int LEVELTESTE = 1;
 
-	public EventSystem getSystem () {
-		return this.GetComponent<EventSystem> ();
+	public SpawnEnemy spwn;
+
+
+	public void mudarCena() {
+		CenaManager cm = CenaManager.Instance;
+		cm.mudarCena ("Fogueira");
 	}
 
 	void Start(){
-		health = 10;
+		//Tester Start
+
 		createScene (LEVELTESTE);
+		setWaves (LEVELTESTE);
+		//Debug.Log ("Created scence and started spwn! lvl is: " + level);
+		Gold = 1500;
+		Health = 10;
+		generator.enemyReachedHouse +=	(object sender, System.EventArgs e) => {
+			Health--;
+		};
 		/*generator.generatePath (2, 2, 12, 15, new List<Vector2>());
 		//generator.generatePath (22, 19, 2, 16, new List<Vector2>());
 		generator.generateTowerLocations();
 		generator.generateDecoration ();
 		*/
 	}
+
 		
 	void Update(){
+		if (spwn != null  && !GameOver) {
+			spwn.Update ();
+		}
 		if (Input.GetKey(KeyCode.Space)) {
 			if (generator.caminhos.Count > 0) {
 				foreach (Caminho c  in generator.caminhos) {
-					GameObject teste =  (GameObject)GameObject.Instantiate (generator.TEMPORARIOENEMY);
+					GameObject teste =  (GameObject)GameObject.Instantiate (Enemies[1]);
 					TD_Enemy1Controller control = teste.GetComponent<TD_Enemy1Controller> ();
 					c.followPath (control);
 				}
@@ -158,9 +204,9 @@ public class TowerDefenseManager : MonoBehaviour {
 			int xS = Random.Range(0,100) < 50 ? option1 : option2;
 			option1 = (middle + pathSize) + Random.Range (0, generator.zoneWidth - middle - pathSize);
 			option2 = (middle - pathSize) - Random.Range (0, generator.zoneWidth - middle - pathSize);
-			Debug.Log ("op1: " + option1 + " opt2: " + option2 + " Size: " + generator.zoneWidth);
+			//Debug.Log ("op1: " + option1 + " opt2: " + option2 + " Size: " + generator.zoneWidth);
 			int yS = Random.Range(0,100) < 50 ? option1 : option2;
-			Debug.Log ("ys: " + yS + " xs" + xS);
+			//Debug.Log ("ys: " + yS + " xs" + xS);
 			Vector2 selecionado = new Vector2(-1,-1);
 			do {
 				if(selecionado != null)
@@ -174,7 +220,9 @@ public class TowerDefenseManager : MonoBehaviour {
 				caminhosCriados++;
 			else {
 				if (generator.obstacleFill == 5) {
-					Debug.Log ("deu realmente ruin, sem caminhos mesmo desobstruido");
+					Debug.Log ("Gambiarra workers");
+					generator.generateTowerLocations ();
+					generator.generateDecoration ();
 					return;
 				}
 				generator.obstacleFill = 5;
@@ -233,6 +281,30 @@ public class TowerDefenseManager : MonoBehaviour {
 	/// <param name="_level">Level.</param>
 	private int F_PathSize(int _level){
 		return (int)((Random.Range(_level/3, _level/1.2f)) + 4);
+	}
+
+	private void setWaves(int lvl){
+		int chosenRoad;
+		float spawnIntervalBase = 2;
+		int waveAmount = 2 + lvl;
+		spwn = new SpawnEnemy (generator.caminhos);
+		//Determinado quantia de waves = 2 + lvl
+
+		spwn.waves = waveAmount > 10 ? new global::Wave[9 + (lvl/10)] : new global::Wave[2 + lvl];
+		dynamic road; // quantia de ruas
+		//Define as waves.
+		int sumOfEnemies = 0;
+		for (int i = 0; i < spwn.waves.Length; i++) {
+			Wave w = new global::Wave ();
+			//Caminho escolhido é aleatorio apos nivel 4.
+			w.roadNumber = i > 5 ? Random.Range(0, generator.caminhos.Count) : 0;
+			w.enemyPrefab = i > 3 && i % 2 == 0 ?  Enemies[Random.Range(0,Enemies.Length)] : Enemies[0];
+			w.maxEnemies = 5 + (int)(Random.Range(1f, 2f) * i);
+			sumOfEnemies += w.maxEnemies;
+			w.spawnInterval = i > spwn.waves.Length ? spawnIntervalBase * (1 - Random.Range(0.00f, (i / spwn.waves.Length)/2)) : spawnIntervalBase;
+			spwn.waves [i] = w;
+		}
+		Health = 1 + (int)Mathf.Ceil(sumOfEnemies * 0.05f);
 	}
 
 	#endregion
