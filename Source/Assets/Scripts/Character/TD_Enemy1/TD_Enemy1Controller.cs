@@ -57,7 +57,7 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 		targetX = x;
 		targetY = y;
 		startPosition = gameObject.transform.position;
-
+		RotateIntoMoveDirection();
 	}
 
 
@@ -79,6 +79,22 @@ public class TD_Enemy1Controller : BaseChar ,  IWalker {
 
 			} 
 		}
+	}
+
+	private void RotateIntoMoveDirection() {
+		//1
+		Vector3 newStartPosition = startPosition;
+	    Vector3 newEndPosition = new Vector3(targetX, targetY);
+		Vector3 newDirection = (newEndPosition - newStartPosition);
+		//2
+		float x = newDirection.x;
+		float y = newDirection.y;
+		float rotationAngle = Mathf.Atan2 (y, x) * 180 / Mathf.PI;
+		//3
+		//gameObject.transform.rotation = Quaternion.AngleAxis(rotationAngle, Vector3.forward);
+		GameObject sprite = (GameObject) gameObject.transform.FindChild("Sprite").gameObject;
+		sprite.transform.rotation = Quaternion.AngleAxis(rotationAngle, Vector3.forward);
+			
 	}
 
 

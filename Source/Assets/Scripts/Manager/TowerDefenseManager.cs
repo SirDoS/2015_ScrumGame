@@ -298,7 +298,8 @@ public class TowerDefenseManager : MonoBehaviour {
 			Wave w = new global::Wave ();
 			//Caminho escolhido é aleatorio apos nivel 4.
 			w.roadNumber = i > 5 ? Random.Range(0, generator.caminhos.Count) : 0;
-			w.enemyPrefab = i > 3 && i % 2 == 0 ?  Enemies[Random.Range(0,Enemies.Length)] : Enemies[0];
+			w.enemyPrefab = Enemies[Random.Range(0,Enemies.Length)];
+			//w.enemyPrefab = i > 3 && i % 2 == 0 ?  Enemies[Random.Range(0,Enemies.Length)] : Enemies[0];
 			w.maxEnemies = 5 + (int)(Random.Range(1f, 2f) * i);
 			sumOfEnemies += w.maxEnemies;
 			w.spawnInterval = i > spwn.waves.Length ? spawnIntervalBase * (1 - Random.Range(0.00f, (i / spwn.waves.Length)/2)) : spawnIntervalBase;

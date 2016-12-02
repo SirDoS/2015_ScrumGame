@@ -33,7 +33,7 @@ public class PlaceTower : MonoBehaviour {
 	public void OnMouseUp () {
 		Debug.Log ("Ta clicando ao menos");
 		if (canPlaceTower ()) {
-			Vector3 inspos = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 1);
+			Vector3 inspos = new Vector3 (transform.position.x, transform.position.y + 0.5f, transform.position.z - 1);
 			monster = (GameObject)
 				Instantiate (monsterPrefab, inspos , Quaternion.identity);
 			//AudioSource audioSource =  gameObject.GetComponent<AudioSource>();
