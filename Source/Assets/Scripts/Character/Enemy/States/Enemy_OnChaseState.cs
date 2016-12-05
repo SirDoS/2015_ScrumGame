@@ -44,16 +44,12 @@ public class Enemy_OnChaseState : SKMecanimState<EnemyController> {
 
 	public void Chase (Vector3 pTargetPosition){
 		Vector3 direction = pTargetPosition - _context.Position;
-		Vector3 scale = _context.transform.localScale;
+		//Vector3 scale = _context.transform.localScale;
 		direction.Normalize();
 
 		if (direction.x > 0.0f) {
-//			scale.x = -1;
-//			_context.physicsController.SetScale (scale);
 			_context.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
 		} else if (direction.x < 0.0f) {
-//			scale.x = 1;
-//			_context.physicsController.SetScale (scale);
 			_context.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
 		}
 

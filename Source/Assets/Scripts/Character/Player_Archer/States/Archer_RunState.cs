@@ -38,12 +38,12 @@ public class Archer_RunState : SKMecanimState<ArcherController> {
 				_machine.changeState<Archer_JumpState>();
 				return;
 			}
-			/*
-			if(Input.GetKeyDown(KeyCode.Slash)){
+
+			if(Input.GetKeyDown(KeyCode.F)){
 				_machine.changeState<Archer_AttackOnRunState>();
 				return;
 			}
-			*/
+
 		}else{
 			_machine.changeState<Archer_OnAirState>();
 			return;

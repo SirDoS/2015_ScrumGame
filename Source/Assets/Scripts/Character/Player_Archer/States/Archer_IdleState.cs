@@ -39,11 +39,10 @@ public class Archer_IdleState : SKMecanimState<ArcherController> {
 				_machine.changeState<Archer_JumpState>();
 				return;
 			}
-			/*
-			if(Input.GetKeyDown(KeyCode.Slash)){
+
+			if(Input.GetKeyDown(KeyCode.F)){
 				_machine.changeState<Archer_AttackOnIdleState>();
 			}
-			*/
 
 			_context.physicsController.SetVelocity(Vector2.zero);
 		}

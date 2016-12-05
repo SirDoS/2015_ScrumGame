@@ -291,7 +291,6 @@ public class TowerDefenseManager : MonoBehaviour {
 		//Determinado quantia de waves = 2 + lvl
 
 		spwn.waves = waveAmount > 10 ? new global::Wave[9 + (lvl/10)] : new global::Wave[2 + lvl];
-		dynamic road; // quantia de ruas
 		//Define as waves.
 		int sumOfEnemies = 0;
 		for (int i = 0; i < spwn.waves.Length; i++) {

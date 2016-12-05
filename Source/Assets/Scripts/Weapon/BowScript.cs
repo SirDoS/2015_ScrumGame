@@ -3,11 +3,18 @@ using System.Collections;
 
 public class BowScript : BaseWeapon {
 
+	bool alreadyHitted = false;
+
+	void Update(){
+		if(!alreadyHitted){
+			alreadyHitted = true;
+			Attack();
+		}
+	}
+
 	public override void Attack ()
 	{
 		base.Attack ();
-
-		//Debug.Log("Katana Do Damage");
 
 		foreach(RaycastHit2D hit in GetEnemiesAhead()){
 			//Debug.Log(hit.transform.name);
