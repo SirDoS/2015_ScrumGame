@@ -1,7 +1,15 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DungeonTile : MonoBehaviour, IPoolObject{
+
+
+    /// <summary>
+    /// Indica que o objeto foi spawnado.
+    /// </summary>
+    //public EventHandler<EventArgs> Spawned;
 
 	public Transform entrance;
 	public Transform exit;
@@ -10,16 +18,34 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 
 	public bool alreadyTriggered;
 
-	public TriggerEvent triggerEntrance;
+    public float Width = 0;
+    public int resourceAmount = 6;
 
-	void Start () {
-		if(triggerEntrance != null){
-			triggerEntrance.onTriggerEnterCallback += OnTriggerEntrance;
-		}
+
+    /// <summary>
+    /// Locais onde podem ser spawnados recursos
+    /// </summary>
+    public List<Vector3> ResourcePoints = new List<Vector3>();
+
+    void Start () {
+        BoxCollider2D  bd= this.gameObject.GetComponent<BoxCollider2D>();
 	}
+    private void Update()
+    {
 
-	#region IPoolObject implementation
-	public void OnSpawn (SpawnPool pMyPool)
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            DungeonManager.Instance.onEnterTile(this.transform);
+        }
+    }
+
+
+    #region IPoolObject implementation
+    public void OnSpawn (SpawnPool pMyPool)
 	{
 		//Debug.Log("OnSpawn, apenas");
 		myPool = pMyPool;
@@ -38,12 +64,5 @@ public class DungeonTile : MonoBehaviour, IPoolObject{
 	}
 	#endregion
 
-	public void OnTriggerEntrance(Collider2D pCollider){
-		//Debug.Log(pCollider.name);
-		if(pCollider.CompareTag("Player") && alreadyTriggered == false){
-			DungeonManager.Instance.MessageInAEnter();
-			alreadyTriggered = true;
-		}
-	}
 
 }

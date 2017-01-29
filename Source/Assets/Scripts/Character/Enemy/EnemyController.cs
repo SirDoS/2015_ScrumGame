@@ -33,6 +33,10 @@ public class EnemyController : BaseChar, IPoolObject
 
 	void Update(){
 		EnemyStateMachine.update(Time.deltaTime);
+        if (this.gameObject.transform.position.y < -10)
+        {
+            this.Despawn();
+        }
 		Debug.Log(enemyStateMachine.currentState.ToString());
 
 		if(!isAlive)
